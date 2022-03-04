@@ -28,11 +28,14 @@
 %\usepackage[dvipdfm]{graphicx}
 \usepackage{graphicx}
 \usepackage{float}  %% H para posicionar figuras
+\usepackage[breaklinks=true]{hyperref}
 \usepackage[nottoc, notlot, notlof, notindex]{tocbibind} %% Opciones de índice
 \usepackage{latexsym}  %% Logo LaTeX
+\usepackage{amsmath, amsthm}
+
 
 \title{Memoria del Proyecto}
-\author{Nombre del autor}
+\author{Rosa Cristina Ruiz Rivas}
 
 \renewcommand{\baselinestretch}{1.5}  %% Interlineado
 
@@ -51,27 +54,27 @@
 \vspace{1.75cm}
 
 \Large
-TITULACIÓN EN MAYÚSCULAS
+DOBLE GRADO EN INGENIERÍA EN SISTEMAS DE TELECOMUNICACIÓN Y ADMINISTRACIÓN Y DIRECCIÓN DE EMPRESAS 
 
 \vspace{0.4cm}
 
 \large
-Curso Académico 202X/202X
+Curso Académico 2021/2022
 
 \vspace{0.8cm}
 
-Trabajo Fin de Grado/Máster
+Trabajo Fin de Grado
 
 \vspace{2.5cm}
 
 \LARGE
-TÍTULO DEL TRABAJO EN MAYÚSCULAS
+ANÁLISIS DE DATOS DEL PENSAMIENTO COMPUTACIONAL DE PROYECTOS DE SCRATCH Y SNAP!
 
-\vspace{4cm}
+\vspace{3cm} 
 
 \large
-Autor : Nombre del Alumno/a \\
-Tutor : Dr. Nombre del Profesor/a
+Autora : Rosa Cristina Ruiz Rivas \\
+Tutor : Dr. Gregorio Robles Martínez
 \end{center}
 \end{titlepage}
 
@@ -89,21 +92,21 @@ Tutor : Dr. Nombre del Profesor/a
 \vspace{-4cm}
 \begin{center}
 \LARGE
-\textbf{Trabajo Fin de Grado/Máster}
+\textbf{Trabajo Fin de Grado}
 
 \vspace{1cm}
 \large
-Título del Trabajo con Letras Capitales para Sustantivos y Adjetivos
+Análisis de Datos del Pensamiento Computacional de Proyectos de Scratch y Snap!
 
 \vspace{1cm}
 \large
-\textbf{Autor :} Nombre del Alumno/a \\
-\textbf{Tutor :} Dr. Nombre del Profesor/a
+\textbf{Autora :} Rosa Cristina Ruiz Rivas \\
+\textbf{Tutor :} Dr. Gregorio Robles Martínez
 
 \end{center}
 
 \vspace{1cm}
-La defensa del presente Proyecto Fin de Carrera se realizó el día \qquad$\;\,$ de \qquad\qquad\qquad\qquad \newline de 202X, siendo calificada por el siguiente tribunal:
+La defensa del presente Proyecto Fin de Grado se realizó el día \qquad$\;\,$ de \qquad\qquad\qquad\qquad \newline de 2022, siendo calificada por el siguiente tribunal:
 
 
 \vspace{0.5cm}
@@ -125,7 +128,7 @@ y habiendo obtenido la siguiente calificación:
 
 \vspace{1cm}
 \begin{flushright}
-Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 202X
+Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 2022
 \end{flushright}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -210,13 +213,67 @@ As it is the translation of the ``Resumen'', which is supposed to be written at 
 \label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
 \pagenumbering{arabic} % para empezar la numeración de página con números
 
-En este capítulo se introduce el proyecto.
-Debería tener información general sobre el mismo, dando la información sobre el contexto en el que se ha desarrollado.
+Nos encontramos inmersos en una transformación digital sin precedentes, donde saber gestionar grandes volúmenes de datos provenientes de diversas fuentes, automatizar procesos, aplicar algoritmos para que los dispositivos aprendan y sean capaces de predecir lo que se necesita, realizando acciones de manera autónoma, se ha convertido en una necesidad imperante en la sociedad. Para ello es indispensable que tanto niños como jóvenes desarrollen habilidades que les permitan no solo consumir tecnología, sino comprender las bases que la sustentan, siendo capaces de resolver problemas cada vez más complejos, buscando nuevas soluciones y creando tecnología.
 
-No te olvides de echarle un ojo a la página con los cinco errores de escritura más frecuentes\footnote{\url{http://www.tallerdeescritores.com/errores-de-escritura-frecuentes}}.
+%desde edades tempranas creando tecnología hackers, makers, sociedad eminentemente tecnológica.  
+Es de vital importancia que en todas las etapas educativas se fomente el aprendizaje y la aplicación del \textit{pensamiento computacional (PC)}, 
+de manera transversal e incremental, de forma que el alumno se implique y esté motivado con el proceso pudiendo formular un problema, descomponer el problema en partes más sencillas, abstraer lo relevante y aplicable en otras circunstancias, identificar distintas acciones a realizar ante diversas entradas y expresar soluciones (véase apartado~\ref{subsec:pc}). Han sido muchos los investigadores encargados de difundir y tratar de evaluar el \textit{pensamiento computacional (PC)}, desde distintas perspectivas. Uno de los enfoques es el propuesto en Dr. Scratch y desarrollado por alumnos e investigadores de la URJC.
 
-Aconsejo a todo el mundo que mire y se inspire en memorias pasadas.
-Las memorias de los proyectos que he llevado yo están (casi) todas almacenadas en mi web del GSyC\footnote{\url{https://gsyc.urjc.es/~grex/pfcs/}}.
+A partir de las prácticas realizadas en Programamos consistentes en la obtención de datos de un conjunto de 269844 proyectos de Scratch almacenados en el servidor de Dr. Scratch, para poder determinar las relaciones existentes entre las siete dimensiones del pensamiento computacional y establecer rutas de aprendizaje, mi tutor -Dr. Gregorio Robles- me propuso realizar un análisis de datos de los 113906 proyectos de Snap! Este Trabajo de Fin de Grado busca determinar a partir de un análisis exhaustivo y descriptivo cuales son las pautas seguidas en los proyectos de Snap! y Scratch en cuanto a las puntuaciones obtenidas a nivel general y para cada capacidad analizada del pensamiento computacional. 
+
+%En este capítulo se introduce el proyecto.
+%Debería tener información general sobre el mismo, dando la información sobre el contexto en el que se ha desarrollado.
+%
+%No te olvides de echarle un ojo a la página con los cinco errores de escritura más frecuentes\footnote{\url{http://www.tallerdeescritores.com/errores-de-escritura-frecuentes}}.
+%
+%Aconsejo a todo el mundo que mire y se inspire en memorias pasadas.
+%Las memorias de los proyectos que he llevado yo están (casi) todas almacenadas en mi web del GSyC\footnote{\url{https://gsyc.urjc.es/~grex/pfcs/}}.
+
+
+\section{Contexto}
+\label{sec:contexto}
+
+\subsection{Pensamiento computacional (PC)}
+\label{subsec:pc}
+Seymour Papert desarrolló el lenguaje de programación \texttt{Logo} en 1967 junto a Daniel Bobrow, Wallace Feurzeig, Cynthia Solomon y Dick Grant en Bolt, Beranek and Newman, Inc. (BBN), con fines pedagógicos~\cite{solomon20:_history}. A partir de 1969 continuaron su investigación en los Laboratorios de Inteligencia Artificial del MIT, junto a Marvin Minsk. Fue el primero en mencionar el \emph{pensamiento computacional} relacionándolo con el construccionismo, una nueva forma de aprendizaje donde el alumno es la parte activa~\cite{papert80:_mindstorm}.
+
+El niño programa al ordenador para poder expresar sus ideas cuando se enfrenta a problemas. Se fomenta un proceso de aprendizaje heurístico basado en la exploración y en la experimentación pudiendo aprender de los errores, depurándolos. Se concretizan conceptos abstractos y formales al implementar programas que la ``tortuga'' ejecuta, ya sea como robot o como cursor en la pantalla. Se crea un entorno libre que fomenta la creatividad, donde el niño construye sus propios proyectos, de cualquier temática, a la vez que construye sus estructuras intelectuales, planificando el proyecto, realizando diseños y modelos, mejorando el código e incrementando su complejidad.
+
+El niño como epistemólogo razona sobre su pensamiento al observar el resultado de sus ideas y comprende a través de sus programas cómo secuenciar instrucciones de manera precisa gracias a los algoritmos, cómo manejar variables y cambios de estado, cuándo emplear bucles o recursividad, la conveniencia de aplicar modularidad y descomposición del problema en procedimientos encargados de tareas concretas, cómo extraer lo relevante para resolver problemas similares desarrollando la abstracción, cómo emplear sincronismo y paralelismo para que las tortugas interactúen entre sí. El alumno comprende cuando es más apropiado emplear cada concepto computacional como herramienta para su aprendizaje. Está motivado al sentir el proyecto como propio y aumenta su expresividad al comunicar a los demás los resultados de sus hallazgos, en un entorno colaborativo donde el profesor incentiva las ideas de los alumnos y actúa de soporte. Esta forma de aprendizaje dota de recursos al alumnado para asimilar conceptos de otras materias que serán aplicables a cualquier carrera profesional. 
+
+Jeannette M. Wing popularizó el término definiendo el pensamiento computacional como la capacidad analítica que todas las personas deben desarrollar para resolver problemas en varios niveles de abstracción y diseñar sistemas eficientes en función de su complejidad, aplicando los conceptos fundamentales de la informática~\cite{wing2006computational}. Posteriormente añadió que es el proceso mental que permite formular problemas y encontrar soluciones de forma que un procesador pueda ejecutarlas, combinando para su resolución el razonamiento lógico, los algoritmos y la abstracción, que permite reconocer patrones, generalizar y utilizar la misma función para resolver aquellos subproblemas similares en que se divide el problema complejo inicial~\cite{wing2011research}.
+
+Alfred V. Aho indica que el pensamiento computacional es el ``proceso de pensamiento involucrado al formular problemas de manera que sus soluciones puedan ser representadas como pasos computacionales y algoritmos''~\cite[p. 832]{aho2012computation}. Resalta la importancia de la abstracción para crear y aplicar modelos computacionales.
+
+El marco conceptual de Brennan-Resnick fue elaborado en base a investigaciones y entrevistas a jóvenes diseñadores de proyectos en Scratch. Establece una definición operativa del PC que engloba 3 dimensiones~\cite{brennan2012new}: 
+\begin{enumerate}
+  \item \textbf{Conceptos computacionales:} Los niños emplean los siguientes conceptos cuando programan sus proyectos de Scratch: \emph{secuencias} de instrucciones definidas, concretas y ordenadas para realizar una actividad; \emph{bucles} o repetición de un conjunto de instrucciones; \emph{eventos} que provocan que se ejecute la secuencia asociada cuando ocurren; \emph{paralelismo} entre secuencias que se ejecutan simultáneamente; \emph{condicionales} o estructuras de control selectivas que deciden las sentencias a ejecutar en función de que se cumpla una situación; \emph{datos} para almacenar, recuperar y actualizar valores y \emph{operadores} para transformar esos datos.  
+  \item \textbf{Prácticas computacionales:} Se basan en el proceso de aprendizaje desarrollado al aplicar los conceptos en los proyectos y consisten en: \emph{ser incremental e iterativo}; \emph{evaluar y depurar} cada secuencia aplicando técnicas de prueba y error;
+  \emph{reutilizar y remezclar} programas preexistentes compartidos por otros usuarios para hacer modificaciones o combinaciones que permitan solucionar nuestro problema, y \emph{abstraer y modular} al construir a partir de programas concretos un proyecto más complejo y en el que algunas de las partes sean resueltas por la misma función tras descartar los detalles irrelevantes.
+  
+  \item \textbf{Perspectivas computacionales:} \emph{expresar} ideas y crear tecnología en función de sus intereses; \emph{conectar} con otros a través de la comunidad online de Scratch para compartir proyectos y dudas incrementando la creatividad y el aprendizaje, y \emph{cuestionar} el funcionamiento de la tecnología que los rodea y ser capaces de transformarla.
+\end{enumerate} 
+
+
+``El pensamiento computacional es la capacidad de formular y representar problemas para resolverlos mediante el uso de herramientas, conceptos y prácticas de la disciplina informática, como la abstracción, la descomposición o el uso de simulaciones''\footnote{\url{https://programamos.es/pensamiento-computacional-y-programacion-no-son-lo-mismo/}}
+% El pensamiento computacional parece estar exclusivamente relacionado con la informática y las ciencias de la computación pero es más un proceso cognitivo~\ref{moreno19:_programming} que puede ser desarrollado a partir de la programación, pero también a partir de otras actividades ``desenchufadas''. En nuestro caso, se analiza a partir de dos lenguajes de programación visual en bloques.
+
+Las definiciones planteadas del CT y los elementos que la componen son solo algunas de las propuestas de investigadores de todo el mundo. Puede ser desarrollado con actividades desenchufadas o ``unplugged'', programación visual con bloques o programación textual con lenguajes como python. En este caso se emplean dos lenguajes de programación visual con bloques: Scratch y Snap! \ldots
+
+Gracias a la colaboración de investigadores, asociaciones, empresas, gobiernos y educadores el CT se enseña en las escuelas de una gran cantidad de países, por el reconocimiento de que es una habilidad clave a desarrollar tan importante como leer, escribir y la arimética. Los profesores deben formarse para introducir el pensamiento computacional en las aulas, para que el desconocimiento de cómo hacerlo no sea un impedimento para que las nuevas generaciones sean capaces de crear y hacer las innovaciones del futuro en las carreras profesionales que elijan.
+\subsection{Análisis de datos}
+\label{subsec:analisis_datos}
+EDA, \emph{ML}
+% Tomar decisiones en base a datos. Resolver problemas de manera organizada
+%Planning   problem   solving,   natural   language   processing, knowledge  representation,
+%expert  systems,  neural  networks,  machine  learning,  robotic and  computer  vision  are  some  of  the  most  successful  and  broadly  used  in  current applications.  
+% McCarthy, Minsky, Rochester and Shannon during a workshop held  in  Dartmouth  in  the  summer  of 1956
+%El pensamiento computacional se emplea en otras disciplinas para poder almacenar, recuperar, procesar y visualizar masivas cantidades de datos, obteniendo modelos con una abstracción elevada ~\cite{wing2011research}.  https://people.cs.vt.edu/~kafura/CS6604/Papers/CT-What-And-Why.pdf
+% , researchers in all disci-plines—including the arts, humanitiesand social sciences—are discovering new knowledge using computational methods and tools.
+% third pillar of science, along with theory and experimentación
+experimentation
+\section{Motivación}
+\label{sec:motivación}
 
 \section{Sección}
 \label{sec:seccion}
@@ -350,6 +407,17 @@ Lo importante es que quede claro cuánto tiempo llevas (tiempo natural, p.ej., 6
 \chapter{Estado del arte}
 \label{chap:estado}
 
+\section{Scratch}
+\label{sec:scratch}
+Lenguaje de programación visual por bloques 
+
+\section{Dr. Scratch}
+\label{sec:dr_scratch}
+
+Dr. Scratch\footnote{\url{http://www.drscratch.org}} es una aplicación web open-source que analiza proyectos programados en Scratch a través de su url o en formato .sb3 extrayendo el JSON correspondiente y comprobando a partir de los bloques utilizados cuales son las destrezas del pensamiento computacional demostradas en los proyectos. De manera automática el alumno, profesor o programador de cualquier edad obtiene realimentación para mejorar en las áreas en las que menor puntuación obtenga, así como de las malas prácticas cometidas~\cite{moreno2015dr}
+
+% Scratch Crear y compartir ideas, para inspirarse y recibir realimentación
+% Meter imágenes de la aplicación de Dr. Scratch??
 Descripción de las tecnologías que utilizas en tu trabajo. 
 Con dos o tres párrafos por cada tecnología, vale. 
 Se supone que aquí viene todo lo que no has hecho tú.
@@ -390,8 +458,6 @@ Compila el fichero \texttt{memoria.tex} (\texttt{pdflatex memoria.tex}), añade 
 
 También existe la posibilidad de poner notas al pie de página, por ejemplo, una para indicarte que visite la página del GSyC\footnote{\url{http://gsyc.es}}.
 
-
-
 \section{Sección 1} 
 \label{sec:seccion1}
 
@@ -399,9 +465,11 @@ Hemos hablado de cómo incluir figuras.
 Pero no hemos dicho nada de tablas.
 A mí me gustan las tablas.
 Mucho.
-Aquí un ejemplo de tabla, la Tabla~\ref{tabla:ejemplo} (siento ser pesado, pero nota cómo he puesto la referencia).
 
-\begin{table}
+Aquí un ejemplo de tabla, la Tabla~\ref{tabla:ejemplo}
+(siento ser pesado, pero nota cómo he puesto la referencia).
+
+\begin{table}[H]
  \begin{center}
   \begin{tabular}{ | l | c | r |} % tenemos tres colummnas, la primera alineada a la izquierda (l), la segunda al centro (c) y la tercera a la derecha (r). El | indica que entre las columnas habrá una línea separadora.
     \hline
@@ -414,7 +482,6 @@ Aquí un ejemplo de tabla, la Tabla~\ref{tabla:ejemplo} (siento ser pesado, pero
   \caption{Ejemplo de tabla. Aquí viene una pequeña descripción (el \emph{caption}) del contenido de la tabla. Si la tabla no es autoexplicativa, siempre viene bien aclararla aquí.}
  \end{center}
 \end{table}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -487,6 +554,23 @@ En este capítulo se incluyen los resultados de tu trabajo fin de grado.
 
 Si es una herramienta de análisis lo que has realizado, aquí puedes poner ejemplos de haberla utilizado para que se vea su utilidad.
 
+\section{Análisis de datos de proyectos de Scratch} 
+\label{sec:result_scratch}
+
+Comparando las puntuaciones de cada dimensión del pensamiento computacional de los proyectos representativos de cada uno de los tres clusters con las que se obtuvieron en el estudio~\cite{moreno17:_paths} 
+
+\section{Análisis de datos de proyectos de Snap!} 
+\label{sec:result_snap}
+
+A continuación se observa la distribución de proyectos de Snap!
+
+\begin{figure}[H]
+	\centering
+  	\includegraphics[bb=0 0 800 600, width=11cm, keepaspectratio]{img/frequency_total_score.png}
+  	\caption{Distribución de proyectos de Snap! por puntuación total.}\label{fig:total}
+\end{figure}
+
+Como se aprecia en la figura~\ref{fig:total} existe una mayor concentración de los proyectos entre las puntuaciones totales de 4 y 10 puntos. La moda se localiza en los 5 puntos. La distribución de frecuencias absolutas es representada a partir del diagrama de barras.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -516,7 +600,8 @@ Para eso, en Linux tenemos aspell, que se ejecuta de la siguiente manera desde l
 \section{Aplicación de lo aprendido}
 \label{sec:aplicacion}
 
-Aquí viene lo que has aprendido durante el Grado/Máster y que has aplicado en el TFG/TFM. Una buena idea es poner las asignaturas más relacionadas y comentar en un párrafo los conocimientos y habilidades puestos en práctica.
+Aquí viene lo que has aprendido durante el Grado/Máster y que has aplicado en el TFG /TFM. 
+Una buena idea es poner las asignaturas más relacionadas y comentar en un párrafo los conocimientos y habilidades puestos en práctica.
 
 \begin{enumerate}
   \item a
