@@ -221,7 +221,7 @@ As it is the translation of the ``Resumen'', which is supposed to be written at 
 \label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
 \pagenumbering{arabic} % para empezar la numeración de página con números
 
-Nos encontramos inmersos en una transformación digital sin precedentes, donde saber gestionar grandes volúmenes de datos provenientes de diversas fuentes, automatizar procesos, aplicar algoritmos para que los dispositivos aprendan y sean capaces de predecir lo que se necesita, realizando acciones de manera autónoma, se ha convertido en una necesidad imperante en la sociedad. Para ello es indispensable que tanto niños como jóvenes desarrollen habilidades que les permitan no solo consumir tecnología, sino comprender las bases que la sustentan, siendo capaces de resolver problemas cada vez más complejos, buscando nuevas soluciones y creando tecnología.
+Nos encontramos inmersos en una transformación digital sin precedentes, donde saber gestionar grandes volúmenes de datos  de diversas fuentes, automatizar procesos, aplicar algoritmos para que los dispositivos aprendan y sean capaces de predecir lo que se necesita, realizando acciones de manera autónoma, se ha convertido en una necesidad imperante en la sociedad. Para ello es indispensable que tanto niños como jóvenes desarrollen habilidades que les permitan no solo consumir tecnología, sino comprender las bases que la sustentan, siendo capaces de resolver problemas cada vez más complejos, buscando nuevas soluciones y creando tecnología.
 
 %desde edades tempranas creando tecnología hackers, makers, sociedad eminentemente tecnológica.  
 Es de vital importancia que en todas las etapas educativas se fomente el aprendizaje y la aplicación del \textit{pensamiento computacional (PC)}, 
@@ -276,6 +276,8 @@ EDA, \emph{ML}
 
 %  KDD (Knowledge Discovery in Databases) para referirse al (amplio) concepto de hallar conocimiento en los datos, SEMMA no CRISP-DM Analisis de datos
 % Tomar decisiones en base a datos. Resolver problemas de manera organizada
+
+% CRISP-DM se diseñó pensando en los procesos asociados para cumplir los objetivos del proyecto, mientras que el nuevo enfoque de ciencia de datos requiere una aproximación más flexible que ponga el dato en el centro. Esta nueva perspectiva implica que los propios objetivos negocio podrían no estar disponibles al principio del proyecto, y que se tendrían que incluir en la metodología actividades de carácter exploratorio que ayuden a determinarlo a través de análisis sobre los propios datos.
 %Planning   problem   solving,   natural   language   processing, knowledge  representation,
 %expert  systems,  neural  networks,  machine  learning,  robotic and  computer  vision  are  some  of  the  most  successful  and  broadly  used  in  current applications.  
 % McCarthy, Minsky, Rochester and Shannon during a workshop held  in  Dartmouth  in  the  summer  of 1956
@@ -287,10 +289,10 @@ EDA, \emph{ML}
 % finding patterns or developing insights (Basu et al., 2017).
 
 %El análisis de los datos es el ``proceso de inspección, limpieza, transformación y modelado de datos con el objetivo de descubrir información útil, conclusiones informadas y servir de soporte en la toma de decisiones''. Hay 4 tipos:% cada uno incluye al anterior. Picture
-%- Análisis descriptivo <-- Qué ha sucedido. Resumen de los datos visualización y estadística.
-%- Análisis de diagnóstico, ¿Por qué ha sucedido? cuales son las causas de estas salidas.
+%- Análisis descriptivo <-- Qué ha sucedido. Resumen de los datos visualización y estadística. Describir y resumir
+%- Análisis de diagnóstico, ¿Por qué ha sucedido? cuales son las causas de estas salidas. Buscar causas y soluciones
 %- Análisis predictivo, Qué es probable que suceda.
-%utilizas los datos del pasado para predecir lo que pasará en el futuro.
+%utilizas los datos del pasado para predecir lo que pasará en el futuro. El análisis predictivo combina datos históricos y modelos estadísticos para pronosticar cómo se comportarán ciertas métricas en el futuro.  Los métodos van desde tomar promedios hasta entrenar algoritmos de agrupamiento u otros modelos de aprendizaje automático
 %- Análisis prescriptivo, Cómo hacer que suceda. Se utiliza todo lo descubierto en los datos con los análisis previos para plantear acciones y decisiones de un negocio.
 
 % Problemas principales a resolver, escuchar a otros componentes del equipo, realizar las preguntas correctas al inicio agiliza el trabajo. Problemas más importantes que necesitan insights para tomar decisiones.
@@ -299,6 +301,14 @@ EDA, \emph{ML}
 %Visualización de datos: Crear representaciones gráficas de la información para facilitar su interpretación, la extracción de conclusiones y la toma de decisiones. Depende del tipo de datos con el que se trabaje.
 %Pandas: leer y manipular los datos para responder a preguntas desde los datos.(Análisis de datos), Conteo medias, std, 25 percentiles...
 %Seleccionar, manipular, filtrar, merge, melt, groupby, pivot agrupar datos 
+%Importancia de graficar siempre los datos
+
+% Convertir realidades de comportamientos humanos en datos y esos datos en información para entender qué está pasando Explicar la realidad que se esconde detrás de los datos como se interpretan. los distintos canales de visualización
+
+% Dar sentido a los datos mediante la búsqueda de patrones o el desarrollo de conocimientos (insights). Qué quieres conseguir con tus datos.Qué preguntas quieres contestar con tus datos. limpiar y organizar los datos...Representación de datos Representar y organizar datos en gráficos, tablas, palabras o imágenes apropiados.
+
+% Data driven .... Tomar decisiones basado en datos.
+% John Tukey the future of data analysis,,eda  libros 
 
 \section{Motivación}
 \label{sec:motivación}
@@ -437,17 +447,56 @@ Lo importante es que quede claro cuánto tiempo llevas (tiempo natural, p.ej., 6
 
 \section{Scratch}
 \label{sec:scratch}
-Lenguaje de programación visual con bloques 
+Lenguaje de programación visual con bloques que permite la implementación desde el navegador web. 
+Resnick influenciado por Seymour Papert
+% Creatividad en la búsqueda de diferentes soluciones a un mismo problema...
 
 \section{Dr. Scratch}
 \label{sec:dr_scratch}
 
-Dr. Scratch\footnote{\url{http://www.drscratch.org}} es una aplicación web open-source que analiza proyectos programados en Scratch a través de su url o en formato .sb3 extrayendo el JSON correspondiente y comprobando a partir de los bloques utilizados cuales son las destrezas del pensamiento computacional demostradas en los proyectos. De manera automática el alumno, profesor o programador de cualquier edad obtiene realimentación para mejorar en las áreas en las que menor puntuación obtenga, así como de las malas prácticas cometidas~\cite{moreno2015dr}
-% tabla de métricas PC
+Dr. Scratch\footnote{\url{http://www.drscratch.org}} es una aplicación web open-source que analiza proyectos programados en Scratch a través de su url o en formato .sb3 extrayendo el JSON correspondiente y comprobando a partir de los bloques utilizados cuáles son las destrezas del pensamiento computacional demostradas en los proyectos. De manera automática el alumno, profesor o programador de cualquier edad obtiene realimentación para mejorar en las áreas en las que menor puntuación obtenga, así como de las malas prácticas cometidas~\cite{moreno2015dr}
+% tabla de métricas PC %CT formative–iterative tools
+% Arquitectura muy por encima????
+
+% https://www.researchgate.net/publication/333670771_Combining_Assessment_Tools_for_a_Comprehensive_Evaluation_of_Computational_Thinking_Interventions#pf13
 % It analyzes the code and, depending of the diversity of blocks used, the application gives a score to the project http://ceur-ws.org/Vol-2434/paper2.pdf
 
 % Scratch Crear y compartir ideas, para inspirarse y recibir realimentación
-% Meter imágenes de la aplicación de Dr. Scratch??
+
+
+%%%%%%%%% ponle dos páginas por cada cosa, con una captura para cada una, y una tabla para cada una con lo que se evalúa para Dr. Scratch y Dr. Snap.
+% Definir bloques funciones de cada categoría.
+% Funciones, listas, continuaciones de primera clase.
+% Sprites y clones, herencia de sprites
+% Funciones lambda
+
+\section{Snap!}
+\label{sec:snap}
+
+\section{Dr. Snap!}
+\label{sec:dr_snap}
+
+\section{Python}
+\label{sec:python}
+
+\section{Jupyter Notebooks}
+\label{sec:jupyter}
+
+%\section{Numpy} 
+%\label{sec:numpy}
+
+\section{Pandas} 
+\label{sec:pandas}
+
+\section{Matplotlib} 
+\label{sec:matplotlib}
+
+\section{Seaborn} 
+\label{sec:seaborn}
+
+\section{Scikit Learn} 
+\label{sec:sklearn}
+
 
 Descripción de las tecnologías que utilizas en tu trabajo. 
 Con dos o tres párrafos por cada tecnología, vale. 
@@ -523,44 +572,177 @@ Aquí un ejemplo de tabla, la Tabla~\ref{tabla:ejemplo}
 \cleardoublepage
 \chapter{Diseño e implementación}
 
-% Análisis descriptivo cuantitativo basado en las métricas establecidas en Dr. Scratch y las modificadas en Dr. Snap! Apartado 6.1.1 Explicando acceso a BBDD del servidor,.
+% Análisis descriptivo cuantitativo basado en las métricas establecidas en Dr. Scratch y las modificadas en Dr. Snap! Apartado 6.1.1 Explicando acceso a BBDD del servidor. Análisis estático.
+% Es mejor tener una respuesta aproximada a la pregunta correcta, que una respuesta exacta a la pregunta equivocada. Tukey
 
-Aquí viene todo lo que has hecho tú (tecnológicamente). 
-Puedes entrar hasta el detalle. 
-Es la parte más importante de la memoria, porque describe lo que has hecho tú.
-Eso sí, normalmente aconsejo no poner código, sino diagramas.
+En la fase de documentación se estudiaron las distintas tecnologías comentadas en el capítulo~\ref{chap:estado}, para conocer las métricas que ponderan el desarrollo del pensamiento computacional tanto en Dr. Scratch como en Dr. Snap! El objetivo era extraer patrones, tendencias y relaciones entre las habilidades a partir de un volumen de proyectos suficientemente amplio y representativo de ambas poblaciones para así poder compararlas. Se recurre a un análisis de datos descriptivo cuantitativo para explorar y conocer la información que se desprende al aplicar técnicas estadísticas y de visualización de datos. Se muestra en la figura~\ref{fig:diseño} el proceso y el diseño del script implementado. Lo obtenido en cada paso acota las herramientas a emplear en el siguiente. %En un análisis exploratorio, el conocimiento adquirido de los datos en cada etapa marca qué hacer en la siguiente. Responder preguntas en base a los datos.
 
-\section{Arquitectura general} 
-\label{sec:arquitectura}
-
-Si tu proyecto es un software, siempre es bueno poner la arquitectura (que es cómo se estructura tu programa a ``vista de pájaro'').
-
-Por ejemplo, puedes verlo en la figura~\ref{fig:arquitectura}.
-\LaTeX \ pone las figuras donde mejor cuadran. 
-Y eso quiere decir que quizás no lo haga donde lo hemos puesto\ldots
-Eso no es malo.
-A veces queda un poco raro, pero es la filosofía de \LaTeX: tú al contenido, que yo me encargo de la maquetación.
-
-\begin{figure}
-  \centering
-  \includegraphics[width=9cm, keepaspectratio]{img/arquitectura.png}
-  \caption{Estructura del parser básico.}\label{fig:arquitectura}
+% Diseño del script
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{img/diseno_script_2.png}
+    \caption{Diagrama del proceso de análisis de datos}\label{fig:diseño}
 \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Importancia del contexto. Entendimiento de los datos que se necesitan. Fuente de los datos. Obtención y selección de datos. Solicitadas a las APIs Interacción con el servidor de Snap! Tras procesarlos se representan los datos en un csv.
+Para ambos análisis se debían recolectar los proyectos almacenados en una base de datos e implementar un script que automatizara la recogida de las métricas de cada proyecto, las guardara en un fichero CSV para, posteriormente, cargarlo con Pandas y realizar el análisis de datos en los Jupyter Notebooks. Para completar la preparación de los datos se requiere eliminar datos espurios que distorsionen su comprensión, descartando de la muestra los proyectos duplicados o con atributos incompletos. Se formatean mediante la conversión de tipos de las variables o columnas que los caracterizan, que facilite su estudio estadístico, su representación gráfica y el entendimiento de lo que representan. % reducción del tiempo de cómputo ante un gran volumen de datos, que puedan ser procesados. Limpiar y categorizar los datos.
+
+En la tercera etapa se comienza a conocer cómo se distribuyen los proyectos en función del nivel alcanzado, la valoración total conseguida y las puntuaciones obtenidas en cada unas de las siete habilidades del pensamiento computacional. Se filtran, combinan y agrupan los valores de las columnas para analizar la competencia demostrada general y particular para cada destreza considerada de las ciencias de la computación. % tendencias de la distribución.
+
+Posteriormente, se calculan los estadísticos que resumen las propiedades de las variables en cuanto a tendencia central, dispersión y posición, pudiendo perfilar que habilidades resultan más fáciles y si sus métricas están muy concentradas. %% Se completa el análisis de las distribuciones anterior y se vislumbran ciertas relaciones en las distribuciones.
+
+Se completa el análisis exploratorio de datos (EDA) tratando de encontrar las relaciones y dependencias entre las habilidades gracias a las correlaciones, considerando todos los proyectos y desglosándolos según la puntuación total conseguida, para ver su evolución según aumenta la complejidad de los proyectos.
+
+Para descubrir similitudes entre los proyectos ocultas a simple vista, se aplica un modelo de aprendizaje no supervisado, el clustering K-Means. Segmenta la totalidad de los proyectos en k grupos, aplicando un criterio de mínima distancia al centro del grupo, según su posición definida por las siete dimensiones. Se estima el valor de k, ya sea con herramientas de validación externa o con índices que relacionan las distancias intra-clúster o inter-clúster, escogiendo el valor de k que los minimice o los maximice, según sea el caso, o donde convergan diferentes criterios. Una vez tenemos el valor de k, se ejecuta iterativamente el algoritmo K-Means hasta encontrar la posición óptima de los proyectos representativos del grupo. Éstos pueden interpretarse como prototipos en el proceso de aprendizaje.
+
+\section{Recolección y extracción de datos}  
+\label{sec:collect_data}
+
+% en el disco duro del servidor, en GCP
+Cuando se analiza con Dr. Scratch un proyecto, ya sea a través de su url o cargando el proyecto de Scratch desde el ordenador, se almacena una copia del proyecto en la base de datos MySQL en los formatos comprimidos propios de Scratch, según la versión de Scratch utilizada para implementarlo. La mayoría de los proyectos pertenecen a la versión 3.0 de Scratch que se corresponde con la extensión .sb3. No obstante, algunas de las copias salvadas cuentan con extensiones .sb2 y .sb, vinculadas a versiones antiguas. % ojo se comprueba y cambia la versión. Por lo general son .sb3, ya que se replicó la fucionalidad de Hairball y se integró en Dr. Scratch Django==1.11.11 python==2.7
+
+% Desplegada en PaaS en Google Cloud con un Servidor de Apache ---- donde está alojado Dr. Scratch. Arquitectura LAMP. 
+% autentificación por clave pública-privada
+% directorio /var/www/drscratchv3/uploads/
+Se accedió al servidor en remoto vía ssh mediante clave pública-privada para descargar los 271558 proyectos de Scratch que se encontraban en el directorio \texttt{drscratchv3/uploads/}. Ocupaban cerca de 80GB y estaban fechados entre el 1 junio de 2019 y el 31 de julio de 2021. Se fueron copiando por lotes en local, gracias a scp y rsync, en función del mes y año. % filtrándolos por mes y año, redirigiendo la lista de los proyectos a copiar a un fichero que es transferido a una carpeta local con scp e indicando a rsync cuales son los proyectos a copiar, permitiendo la sincronización de archivos, de manera que solo se reciban los proyectos que han cambiado o no han sido transferidos desde el servidor remoto a local, si falla la conexión.
+%  autentificación por clave pública-privada requerida para descargar los proyectos por scp a un archivo con los ficheros encontrados según mes y año y despues emplear rsync para descargar los proyectos sb3.
+
+%Se almacena en formato sb3 el que viene por url. Se solicita el JSON a los servidores del MIT, se comprueba si viene bien... /utemp.... Se registra el análisis en un fichero logFile, guarda el proyecto en /uploads% y luego analiza el PC.
+%JSON es una alternativa para el intercambio de documentos. Sintaxis con la misma estructura de datos básica que diccionarios y listas. Aplicaciones  peticiones a un servidor. El servidor me devuelve datos en formato JSON.  Es más simple no hay validadores, un formato más compacto. Es fácil de leer, consume menos ancho de banda.
+
+% automatiza el análisis desde línea de comandos.
+El módulo \texttt{analyzer.py} de Dr. Scratch asigna puntuaciones a cada una de las 7 habilidades del pensamiento computacional en función de los bloques empleados. Para ello, analiza el documento JSON que almacena el código fuente de cada proyecto, ubicado en el directorio comprimido. Se adaptó el módulo para que pudiera ser ejecutado desde línea de comandos como programa principal, pasándole como argumento el proyecto de Scratch a analizar (en formato comprimido .sb*) o la ruta al mismo. Se modificó para que imprimiera por pantalla las métricas de cada habilidad, el total obtenido al sumarlas y la valoración media para cada proyecto, en una fila separada por comas. Se redirigió la salida estándar al fichero \emph{results.csv}.  
+Con un bucle for en bash scripting se automatizó el análisis para todos los lotes de proyectos, indicando el path al directorio donde se localizan. El flujograma del script se representa en~\ref{fig:script_extract} 
+
+% JSON con formato inválido
+Aquellos proyectos que generaban excepciones por fallos en la descompresión del proyecto, en la conversión del objeto JSON a un diccionario o en el acceso y obtención de elementos o claves al recorrer la estructura de diccionarios anidados, fueron registrados redirigiendo el flujo de errores estándar, \emph{stderr}, al fichero \texttt{error.csv}. Este fichero indicaba la ruta al proyecto, el tipo de excepción capturada y la línea donde se produce. Contenía 1714 proyectos excluidos del análisis de datos posterior.
+% KeyError, AttributeError, RecursionError, zipfile.BadZipFile, json.decoder.JSONDecodeError. Excepciones volcadas.
+
 
 \begin{figure}
     \centering
-    \includegraphics[bb=0 0 800 600, width=12cm, keepaspectratio]{img/foro1}
-    \caption{Página con enlaces a hilos}\label{fig:_arquitectura}
+    \includegraphics[height=.7\textheight]{img/script_extraccion_datos.png}
+    \caption{Diagrama de flujo del script get\_csv}
+    \label{fig:script_extract}
 \end{figure}
 
- 
-Recuerda que toda figura que añadas a tu memoria debe ser explicada.
-Sí, aunque te parezca evidente lo que se ve en la figura~\ref{fig:arquitectura}, la figura en sí solamente es un apoyo a tu texto.
-Así que explica lo que se ve en la figura, haciendo referencia a la misma tal y como ves aquí.
-Por ejemplo: En la figura~\ref{fig:arquitectura} se puede ver que la estructura del \emph{parser} básico, que consta de seis componentes diferentes: los datos se obtienen de la red, y según el tipo de dato, se pasará a un \emph{parser} específico y bla, bla, bla\ldots
+%{\footnotesize
+%\begin{verbatim}
 
-Si utilizas una base de datos, no te olvides de incluir también un diagrama de entidad-relación.
+%for i in *.sb*; do python3 /home/rcruiz/Programamos_DrScratch3/ProyectosScratchRosa/analyzer.py "$i" >> resultados.csv; done
 
+%for i in *.sb*; do python3 /home/rcruiz/Programamos_DrScratch3/ProyectosScratchRosa/analyzer.py "$i" 2>> error.csv; done
+%\end{verbatim}
+%}
+
+Para los proyectos de Snap!, mi tutor, Gregorio, me pasó un enlace a un archivo comprimido. Se transfirió su contenido a un disco duro externo. El directorio generado ocupaba 31,9 GB e incluía 113906 proyectos almacenados cada uno en un directorio distinto.
+
+Para extraer la información seleccionada de esta fuente de datos se codificó un script de python, \texttt{get\_csv.py} cuyo diagrama se muestra en~\ref{fig:script_extract}. Si se ejecuta como programa principal, se crea el fichero \emph{result\_snap\_metrics.csv}. Gracias a la librería \texttt{glob}, se recorre una lista con las rutas a los proyectos de Snap! conforme a un patrón específico y se van rellenando las filas del CSV para cada proyecto según los atributos escogidos. Para ello llama a la función \texttt{calcular\_puntuacion(file\_xml)} del módulo \texttt{analyzer.py}. Este módulo recogía las funciones encargadas de calcular el desarrollo del PC de la lógica de la aplicación web de Dr. Snap! Se adaptó para que el parámetro de entrada de la función \texttt{calcular\_puntuacion(file\_xml)} no sea la url, sino el path del proyecto Snap! a analizar, almacenado como documento XML en un árbol de directorios contenidos en un disco duro externo. Se extrajo a otro módulo la parte encargada de parsear el documento XML, que describe la estructura del código fuente del proyecto solicitado al servidor de Snap! Berkeley. 
+
+En el módulo parser se importa el módulo estándar xml.sax. Se genera un parser SAX que procesa el documento como un stream, de manera que el parser genérico creado lee eventos de interés según se van produciendo, y llama a métodos concretos del manejador que especifican qué hacer cuando encuentra determinadas etiquetas anidadas dentro del nodo raíz o elemento project y cómo tratar algunos de sus atributos. En concreto, guarda el nombre del proyecto, los nombres de los bloques utilizados en cada script contenido dentro de un personaje o sprite, los nombres de los bloques personalizados o funciones propias definidas por el programador, así como los bloques utilizados para su implementación y los nombres de las variables declaradas. Además realiza un recuento de las etiquetas sprite, script, bloque, bloque personalizado y variable que aparecen en el documento XML del proyecto. Esta información se almacena en variables del objeto hasta que el parser encuentra el fin de la etiqueta project. Llama al método de la clase del manejador endElement y se almacenan los datos en un documento JSON. % JSON y XML datos semiestructurados
+
+% extensión de funcionalidad tomada de Dr. Snap
+Se define una clase ParserXML cuyo constructor consta de dos atributos: un objeto que es el parser genérico creado a partir de make\_parser() y un manejador que instancia un objeto de la clase myContentHandler, que hereda a su vez de la clase ContentHandler predefinida en el módulo handler de la librería xml.sax. Se vincula el parser con el manejador modificado, para que cuando encuentre eventos de contenido, se desencadene la ejecución de los métodos del manejador con la extensión de funcionalidad indicada anteriormente, tomada de Dr. Snap! La clase recibe como parámetro de entrada la ruta del documento XML con la estructura del proyecto codificado en Snap!, almacenado en el disco duro externo. El parser analiza el fichero XML según el comportamiento indicado en el manejador, salvo que localice en el flujo de datos errores en la sintaxis del XML, caracteres terminales no permitidos o \emph{invalid\_token}. En ese caso el proyecto se registra en un fichero donde se indica el tipo de error que se produce y en qué punto salta la excepción. Todos los documentos XML mal formados fueron corregidos. 
+
+% los datos que nos interesan aprovisionamiento de datos
+% cuando se convierte a un objeto python
+% que facilita el cálculo de las métricas escogidas para analizar el desarrollo del pensamiento computacional.
+Cuando se llama a calcular\_puntuacion desde el módulo principal get\_csv, se instancia un objeto de la clase ParserXML que devuelve un fichero en formato JSON, con el contenido que nos interesa en una estructura de datos más compacta, legible y ligera. Se convierte en un diccionario de listas, que es el parámetro de entrada de las funciones que analizan las habilidades del pensamiento computacional en función de los bloques utilizados en los proyectos, el nº de scripts y el nº de sprites. Se corrigieron duplicidades y se mejoró el código del módulo analyzer.
+
+% Funcionamiento del programa principal o diagrama de script extracción de datos.
+Se cambió la puntuación total en vez de como media, como suma de las puntuaciones obtenidas en cada dimensión y se pasó de 4 a 3 niveles de competencia suprimiendo la categoría sin nivel.
+
+Tras realizar el proceso de análisis de datos completo, con todos los proyectos, se comprobó que las métricas que definen cada habilidad no estaban bien calibradas. Se quitó la dimensión de diversidad, por no aportar expresividad. El cálculo de las métricas de abstracción y condicionales fue completamente reformulado. Se incluyó la presencia de clones en el código como componente a evaluar en el proyecto de Snap! Por lo tanto, la descomposición del problema en partes más sencillas una vez definido qué es lo relevante para resolverlo, se mide en función del nº de scripts y de sprites, la declaración de funciones o bloques personalizados codificados por el desarrollador de Snap! y la instanciación de objetos o personajes. Se tiene en cuenta la complejidad incremental, de manera que para obtener 2 puntos se incluyen 2 cualesquiera de las prácticas mencionadas y para obtener la máxima puntuación deben aparecer las 3. Para condicionales se propuso una metodología equivalente, asignando 1 punto cuando se emplea un if o un if-else o algún operador lógico, 2 puntos si se usan dos de estas estructuras selectivas y 3 puntos cuando se aplican todas de manera apropiada.
+
+% Esto te pide una tabla
+Para paralelismo, sincronización, control de flujo e interactividad con el usuario, se mapearon los elementos inherentes a cada habilidad de manera diferente, haciendo que las métricas fueran discriminantes y presentaran una dificultad creciente. Mediante ensayo y error se fueron reajustando hasta obtener unas distribuciones y rutas de aprendizaje válidas y con mayor sentido tanto a nivel teórico como práctico. 
+
+%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Está alojado en una máquina virtual en Google Cloud Platform (PaaS) con sistema operativo Linux 18.04
+
+
+\section{Limpieza y tratamiento de datos} 
+\label{sec:clean_data}
+
+A pesar de que se ha tenido especial cuidado en la fase de obtención y selección de datos a partir de ambas fuentes, el script de automatización puede recoger proyectos con campos vacíos o proyectos duplicados. Además es conveniente homogeneizar los datos y ajustar los tipos de las variables que los caracterizan. De esta manera se depuran los datos en crudo obtenidos de \emph{results.csv} y \emph{result\_snap\_metrics.csv} y cargados en la estructura de datos bidimensional o dataframe en sendos \emph{Jupyter Notebooks}\footnote{https://github.com/rcruiz/pruebaCT/blob/main/Dr\_Scratch\_Analysis.ipynb} \footnote{https://github.com/rcruiz/DrSnap-Analysis/blob/main/Dr\_Snap\_complete\_analysis.ipynb}. El proceso seguido en esta segunda etapa se muestra en la figura~\ref{fig:script_clean}. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=.6\textheight]{img/script_clean2.png}
+    \caption{Diagrama de flujo: limpieza de datos}\label{fig:script_clean}
+\end{figure}
+
+A partir de este script se obtienen 269842 proyectos de Scratch y 112894 proyectos de Snap! únicos y válidos con un nivel asignado de tipo categórico y cuyas puntuaciones totales y parciales para cada habilidad del PC son variables discretas. Estos datos determinan el tipo de agrupaciones y distribuciones que visualizar en la siguiente etapa.
+
+%Se definen objetos de tipo df, y se accede a los atributos y metodos que informan sobre duplicidades... Sería ya meter código.
+%Cada objeto de la clase dataframe de la librería Pandas instanciado
+
+%base de datos estructurada raw data datos en crudo convertirlos en información poder comprender esos datos.
+%Buscar tendencias en los datos Transformar los datos en conocimiento. 
+
+
+\section{EDA univariante: distribuciones por nivel, total y dimensiones CT} 
+\label{sec:EDA_univariante}
+
+Las observaciones o proyectos de Scratch y de Snap! recogidos en la estructura de datos tabular por sí mismas no aportan mucha información. Para comenzar a describir y resumir los datos de ambas poblaciones se filtran en función del nivel, que es una variable categórica ordinal con 3 posibles valores: básico, intermedio y avanzado. Se recurre al método value\_counts() de Pandas para determinar las frecuencias de ocurrencia y se ordenan de menor a mayor nivel. Se preparan los datos para ser representados como diagrama de barras y de sectores, gracias a las funciones pertinentes de las bibliotecas seaborn y matplotlib.pyplot.  
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=.5\textheight]{img/diseno_distribucion}
+    \caption{Diseño de etapa EDA univariante: distribuciones}\label{fig:eda_uni}
+\end{figure}
+
+Para continuar indagando en este análisis exploratorio de datos, los proyectos de cada nivel son ordenados y filtrados según la puntuación total conseguida. Al representar los resultados en un diagrama de barras, podemos descubrir tendencias y conocer las puntuaciones más frecuentes en cada nivel.
+Se concatenan los dataframes de cada nivel para obtener un diagrama de barras con la frecuencia de ocurrencia de cada puntuación total. Con ello se vislumbra la distribución de los proyectos según su puntuación total, si existen asimetrías hacia las puntuaciones más bajas y las modas de la distribución.
+
+Se instancia un objeto de la clase dataframe escogiendo las siete variables discretas que definen las capacidades del pensamiento computacional consideradas, llamado \texttt{df\_ct}. Se realiza un estudio unidimensional al agrupar los proyectos según la valoración recibida de 0 a 3 en cada dimensión. Se obtiene por iteración el objeto \texttt{df\_score\_ct}, con 4 filas y 7 columnas, gracias al método \texttt{groupby()} de Pandas. Así se pueden comparar las distribuciones de cada habilidad y la dificultad que entraña desarrollarlas, en base al extenso volumen de proyectos analizados. Además de conocer que habilidades resultan más fáciles, también se distingue si las métricas empleadas son consistentes con un grado de complejidad creciente para cada dimensión.
+
+\section{EDA: resumen por métricas estadísticas} 
+\label{sec:EDA_estadísticos}
+
+Se llama al método describe() del objeto \texttt{df\_ct} para obtener, de cada variable discreta del pensamiento computacional, su media, su desviación típica, el rango de valores, la posición de sus cuartiles cuando se ordenan los proyectos de menor a mayor puntuación y su mediana, que coincide con el segundo cuartil. La media y la mediana describen cada distribución por el centro de gravedad o la puntuación del proyecto situado en su centro. Con ellas podemos saber qué habilidades consiguen mejores puntuaciones. Con la varianza y la desviación típica se conoce la dispersión de los proyectos con respecto a la media. 
+
+Se representa el diagrama de cajas de las habilidades con la función \texttt{boxplot()}. Nos permite comparar las distribuciones en función de su rango intercuartílico ($IQR=Q_3 - Q_1$), los límites superior e inferior calculados a partir de él y la presencia de \emph{outliers} o valores atípicos. Se analizan en detalle en los apartados~\ref{subsec:estad_pc_Scratch} y~\ref{subsec:estad_pc_Snap}.   
+
+%Se muestra además en la tabla() las 5 medidas de posición que resumen y caracterizan a la distribución, menos sensibles a \emph{outliers} que la media, la varianza y la desviación típica, al ordenarse los proyectos de menor a mayor puntuación. La representación conjunta de las distintas habilidades en el mismo gráfico() nos da una primera aproximación a las posibles relaciones que se establecen entre ellas. Son el valor mínimo y máximo que determinan el dominio de la variable y los cuartiles.
+
+\section{EDA: correlaciones de las dimensiones CT} 
+\label{sec:EDA_corr}
+
+Con el objetivo de establecer el grado de dependencia existente entre la puntuación total con cada una de las variables o habilidades que la conforman, entre estas habilidades entre sí y la evolución de estas asociaciones según aumenta la puntuación total, se calcula el coeficiente de correlación de Pearson, definido en la ecuación~\ref{eq:correlacion}. % ¿Meto formula y explicación aquí?
+
+Primero se recurre al método \texttt{corrwith()} del objeto \texttt{df\_ct} para determinar cómo aumenta la puntuación total según se incrementa cada variable del pensamiento computacional. Devuelve un objeto de tipo serie que nos ayuda a identificar qué habilidades presentan menores interdependencias lineales con el total resultante de la agregación de sus valores.
+
+A continuación se obtiene la matriz simétrica con los coeficientes de correlación de Pearson entre cada par de capacidades. Se aplica el método corr() sobre \texttt{df\_ct} y se representa la matriz mediante un mapa de calor que resalta las habilidades con relaciones positivas más fuertes. Así se puede comprobar si las capacidades que conceptualmente se desarrollan juntas, como sincronización y paralelismo o control de flujo y pensamiento lógico, realmente muestran esa dependencia en las poblaciones de  proyectos de Scratch y Snap! analizadas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=.5\textheight]{img/diagrama_corr2.png}
+    \caption{Diagrama de flujo de df\_correlation\_bar\_chart(score, ct)}\label{fig:diagrama_corr}
+\end{figure}
+
+%Para mostrar las dependencias lineales que se van produciendo según aumenta la complejidad de los proyectos, se sigue el algoritmo representado en el diagrama~\ref{fig:diagrama_corr}. Se almacenan en la lista \texttt{total\_score} las distintas puntuaciones totales de los proyectos, tomadas de la columna \emph{Total} del dataframe. Se crea un objeto de tipo GroupBy() que divide los proyectos en grupos separados por puntuación total. Se guarda en otra lista los nombres de las variables o características del dataframe \texttt{df\_ct}. Para cada puntuación total desde 0 hasta 21, se llama a \texttt{df\_distrib\_score()}, que obtiene el grupo de proyectos con la puntuación total pasada como parámetro, filtrado para cada dimensión del CT. Se aplica un recuento de los proyectos que consiguen 0, 1, 2 o 3 puntos en cada habilidad para representar su distribución. Se comprueba que la puntuación total no valga 0 o 21, en cuyo caso no tiene sentido calcular la matriz de correlación, pues no existe variación conjunta de cada par de variables con respecto a su media, ni de cada una de ellas por separado, siendo su cociente indeterminado. Se calcula y representa la matriz de correlación, si la puntuación total es válida.
+
+Para mostrar las dependencias lineales que se van produciendo según aumenta la complejidad de los proyectos, se sigue el algoritmo representado en el diagrama~\ref{fig:diagrama_corr}. Recibe como parámetros de entrada dos listas, \texttt{total\_score}, con las puntuaciones totales únicas y ordenadas conseguidas por los proyectos, y \texttt{ct}, con las variables o atributos de \texttt{df\_ct}. Se encarga de obtener un dataframe con el grupo de proyectos para cada puntuación total, filtrarlos y devolver la distribución de puntuaciones para cada habilidad. Comprueba que el grupo de proyectos no sea el de las puntuaciones totales extremas, puesto que en ellos la media coincide con la valoración obtenida por cada proyecto para cada dimensión, no existiendo variación conjunta entre cada par de habilidades o covarianza, ni en cada una por separado o desviación típica. Su razón, que es la correlación, tampoco existe. Si la puntuación es válida, calcula y representa la matriz de correlación del grupo. Se repite el proceso para cada puntuación total. 
+
+\section{Rutas de aprendizaje con proyectos representativos}  
+\label{sec:rutas_diseño}
+
+Para poder responder a cómo es el proceso de aprendizaje empírico que se manifiesta al analizar las extensas poblaciones de proyectos de Scratch y Snap! se plantea el diagrama~\ref{fig:diagrama_rutas}. 
+
+En este caso no estamos interesados en segmentar los proyectos en k grupos aplicando el algoritmo K-Means directamente. El criterio elegido para su partición es la puntuación total que obtienen. El objeto devuelto por groupby() agrupa los proyectos de nuestro dataset en función de su puntuación total. K-Means toma el grupo de una puntuación con k=1 y se ejecuta iterativamente hasta que el centroide o centro se sitúa en el punto medio que minimiza la suma de las distancias euclídeas de cada proyecto del grupo a este centro. Cuando el algoritmo converge, se calcula cuál es el proyecto más cercano a este centroide, expresado como un vector de características cuyas coordenadas son las 7 dimensiones del pensamiento computacional que mejor caracterizan al grupo. Se repite el proceso para cada grupo definido por su puntuación total.
+
+Una vez se ha obtenido el proyecto representativo de cada puntuación total, se concatenan los dataframes de una fila, en los que se ha representado cada vector, en una única tabla \texttt{learning\_by\_total}, a la que se añade la variable total. Se representan los prototipos de cada puntuación total, para visualizar la mejora de qué habilidad nos permite pasar a la siguiente puntuación y qué valores recibe cada capacidad en cada nivel de complejidad. Los resultados se recogen en los diagramas de barras~\ref{fig:path_Scratch} y~\ref{fig:path_Snap}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=.45\textheight]{img/ruta_de_aprendizajeCaja.png}
+    \caption{Diagrama de flujo de get\_df\_representative(df, n), incluido en la obtención de las rutas de aprendizaje.}\label{fig:diagrama_rutas}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -583,24 +765,21 @@ Incluye también los resultados de validación que permiten afirmar que tus resu
 \cleardoublepage
 \chapter{Resultados}
 
-%En este capítulo se incluyen los resultados de tu trabajo fin de grado.
-
-%Si es una herramienta de análisis lo que has realizado, aquí puedes poner ejemplos de haberla utilizado para que se vea su utilidad.
-
 % Motivación
 Se filtran y agrupan los datos para realizar cálculos estadísticos y matemáticos que nos permitan descubrir y visualizar información contenida en los mismos empleando las bibliotecas de pandas, matplotlib y seaborn para ver qué habilidades del PC se desarrollan con mayor facilidad, cuáles resultan más complejas, ver si existen relaciones entre ellas, cuál es el camino de aprendizaje empírico demostrado a partir de un volumen de proyectos suficientemente amplio y representativo del conjunto de proyectos de Scratch y Snap! Comparándolos se puede ver si los desarrolladores de los proyectos siguen las mismas pautas o por el contrario tienen más facilidad para desarrollar un conjunto de capacidades distintas, puesto que se parte de la base de que los programadores de proyectos de Snap! ya tienen ciertos conocimientos tanto en programación como en el proceso cognitivo que la sustenta.
 
 \section{Análisis de datos de proyectos de Scratch} 
 \label{sec:result_scratch}
+
 \subsection{Extracción y limpieza de datos}
 \label{subsec:clean_data_Scratch}
 
 A partir del proceso de extracción y recolección de datos de los 269844 proyectos de Scratch desde el servidor de Dr. Scratch en un fichero llamado \emph{results.csv}, se obtiene un dataset de partida con tantas observaciones como proyectos y 11 variables, atributos o características. Estas variables incluyen el nombre único del proyecto de Scratch, las puntuaciones discretas en el rango [0, 3] conseguidas para cada una de las 7 dimensiones del pensamiento computacional, la suma y el valor medio de las mismas, asignadas a las características total y media y el nivel básico, desarrollador o profesional. En la figura~\ref{fig:df_Scratch} se muestra la estructura de datos bidimensional de los diez primeros proyectos y los valores en bruto de los datos para las características mencionadas. 
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=1.0\textwidth]{img/df_origen_Scratch.png}
-  	\caption{Dataframe de los proyectos de Scratch obtenido al cargar \emph{results.csv}}\label{fig:df_Scratch}
+    \centering
+    \includegraphics[width=1.0\textwidth]{img/df_origen_Scratch.png}
+    \caption{Dataframe de los proyectos de Scratch obtenido al cargar \emph{results.csv}}\label{fig:df_Scratch}
 \end{figure}
 
 Se comprueba que no existen proyectos de Scratch duplicados y se eliminan áquellos cuyas variables no tienen valores asignados. Como resultado se obtiene un dataset con 269842 proyectos. Se ajustan los tipos de las variables a discretas para las puntuaciones de cada dimensión y para la total, y de tipo categórico ordinal para los tres niveles que pueden alcanzar los proyectos de Scratch en función de su puntuación total: \emph{ básico o ``basic''} de 0 a 7 puntos, \emph{desarrollador o ``developing''} de 8 a 14 puntos y \emph{profesional o ``proficiency''} de 15 a 21 puntos. 
@@ -616,9 +795,9 @@ Tras el preprocesamiento y limpieza de datos, se continúa con el análisis expl
 En los diagramas de barras y de sectores de la figura~\ref{fig:level_Scratch} se clasifican los proyectos de Scratch según la etapa de desarrollo en que se encuentren. La categoría ``\emph{basic}'' es la más frecuente pues agrupa 131007 proyectos que constituyen un 48,55\% del conjunto total. El siguiente nivel más frecuente es el intermedio o ``\emph{developing}'' con un 38,59\% del dataset completo, que se corresponde con 104142 proyectos. Únicamente 34689 proyectos de Scratch, un 12,86\% del total, alcanzan el nivel avanzado o ``\emph{proficiency}''. Aproximadamente la mitad de los proyectos de Scratch analizados son muy sencillos y no consiguen puntuar por encima de los 7 puntos totales. En contraste solo un 12,86\% demuestran un dominio del pensamiento computacional superior a los 14 puntos.
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=1.0\textwidth]{img/freq_level_Scratch.png}
-  	\caption{Distribución de proyectos de Scratch por nivel asignado}\label{fig:level_Scratch}
+    \centering
+    \includegraphics[width=1.0\textwidth]{img/freq_level_Scratch.png}
+    \caption{Distribución de proyectos de Scratch por nivel asignado}\label{fig:level_Scratch}
 \end{figure}
 
 ¿Cómo se distribuyen los proyectos de Scratch entre las distintas puntuaciones asignadas a cada nivel?
@@ -660,7 +839,7 @@ En la tabla~\ref{table:mean_Scratch} se indican las medidas de tendencia central
     \textbf{Developing} & 10.535164 & 10 & 3.755300 &  1.937860 \\ \hline
     \textbf{Proficiency} & 17.198426 & 17 & 3.137785 &  1.771379 \\ \hline
   \end{tabular}
-  \caption{Medidas de tendencia central y dispersión para cada nivel.}
+  \caption{Medidas de tendencia central y dispersión para cada nivel de Scratch.}
   \label{table:mean_Scratch}
  \end{center}
 \end{table}
@@ -670,10 +849,10 @@ En la tabla~\ref{table:mean_Scratch} se indican las medidas de tendencia central
 Cómo se percibe en la figura~\ref{fig:total_Scratch}, se produce una elevada concentración de proyectos entre los 4 y los 11 puntos, con un máximo en los 7 puntos. La cantidad de proyectos que consiguen cada puntuación crece rápidamente hasta esta puntuación más frecuente o moda. A partir de la misma disminuye de manera más suave, obteniendo una cola que se extiende hacia la derecha según la valoración total del proyecto toma los valores más altos.
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=.9
-	\textwidth]{img/frequency_total_score_Scratch.png}
-  	\caption{Distribución de proyectos de Scratch por puntuación total}\label{fig:total_Scratch}
+    \centering
+    \includegraphics[width=.9
+    \textwidth]{img/frequency_total_score_Scratch.png}
+    \caption{Distribución de proyectos de Scratch por puntuación total}\label{fig:total_Scratch}
 \end{figure}
 
 % Es normal que haya gran cantidad de proyectos de nivel basic puesto que los alumnos se inician en la programación y en el desarrollo de su pensamiento computacional con proyectos sencillos, para luego ir incrementando su complejidad, viéndose motivados por la realimentación que proporciona Dr. Scratch para mejorar en cada área y evitar malas prácticas. 
@@ -684,7 +863,7 @@ Parece razonable que aproximadamente la mitad de los proyectos se encuentren en 
 
 ¿Cuál es la distribución de la puntuación en cada dimensión?
 
-% **Referenciar a la tabla en algún sitio o estado del arte dr. Scratch o diseño...
+% **Referenciar a la tabla estado del arte dr. Scratch
 Se filtran y agrupan los proyectos según las métricas establecidas en Dr. Scratch para cada destreza del pensamiento computacional.
 
 \begin{figure}[H]
@@ -701,9 +880,6 @@ Se filtran y agrupan los proyectos según las métricas establecidas en Dr. Scra
     \end{subfigure} 
 \caption{Distribución de proyectos de Scratch por puntuación para cada dimensión del PC}
 \end{figure}
-
-% Lo que estaba en el cuaderno. Cambiado para que sea comparable con Snap! para cada CT
-% Los peores resultados se obtienen en abstracción, donde 171517 proyectos tienen 0 puntos. Tanto en lógica como en representación de la información la frecuencia absoluta de la puntuación 0 es cercana a los 100000 proyectos, por lo que tampoco se consiguen buenos resultados en estas dimensiones, aunque en ellas las frecuencias están más repartidas entre las distintas puntuaciones. Tanto en sincronismo como en control de flujo del programa en torno a 150000 proyectos consiguen un punto. En paralelismo y en interactividad con el usuario la puntuación más frecuente es 2 puntos, siendo la puntuación de 1, la siguiente más frecuente.
 
 \begin{itemize}
     
@@ -731,17 +907,19 @@ Se filtran y agrupan los proyectos según las métricas establecidas en Dr. Scra
 Se complementa el análisis univariante calculando los estadísticos descriptivos más básicos para cada capacidad que se muestran en la figura~\ref{fig:describe_Scratch}. A partir del valor medio y de la medida de posición del segundo cuartil, que coincide con la mediana, se infiere que las habilidades más desarrolladas son paralelismo e interactividad con el usuario, mientras que abstracción es la que resulta más compleja. Su dispersión en torno a la media es una de las más altas, junto a la que se produce en representación de los datos y pensamiento lógico. El 75\% de los proyectos son valorados con 0 o 1 puntos en abstracción y sincronización, mientras que para el resto de dimensiones algunos de ellos alcanzan los 2 puntos. 
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{img/describe_Scratch.png}
-  	\caption{Media, desviación estándar y cuartiles de cada CT}\label{fig:describe_Scratch}
+    \centering
+    \includegraphics[width=1\textwidth]{img/describe_Scratch.png}
+    \caption{Media, desviación estándar y cuartiles de cada CT}
+    \label{fig:describe_Scratch}
 \end{figure}
 
 A continuación se representa en la figura~\ref{fig:cajas_Scratch} la concentración de las puntuaciones de cada habilidad del PC en base a la mediana y a los cuartiles y se comprueba si existen valores atípicos.
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{img/diag_cajas_Scratch2.png}
-  	\caption{Diagrama de cajas de cada dimensión del CT}\label{fig:cajas_Scratch}
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/diag_cajas_Scratch2.png}
+    \caption{Diagrama de cajas de cada dimensión del CT}
+    \label{fig:cajas_Scratch}
 \end{figure}
 
 \begin{itemize}
@@ -750,7 +928,6 @@ A continuación se representa en la figura~\ref{fig:cajas_Scratch} la concentrac
     \item\textbf{Pensamiento lógico y representación de los datos}: También siguen una dispersión similar, con un rango intercuartil de 0 a 2 puntos y la mediana en 1 punto. Sus valores están más dispersos que en las otras dimensiones. El límite superior está en 3 puntos. 
 \end{itemize}
 
-%Tendría sentido meter cv de Pearson y media y std para cada dimensión y nivel?
 Siguiendo con el análisis exploratorio de datos o EDA se calculan los coeficientes de correlación de Pearson existentes entre la puntuación total y las distintas habilidades, para determinar si existe una dependencia lineal perfecta o próxima a 1.% y el aporte de cada una. función lineal que una la variable x con la variable Y
 
 
@@ -758,11 +935,11 @@ Siguiendo con el análisis exploratorio de datos o EDA se calculan los coeficien
  \begin{center}
  \resizebox{15cm}{!} {
     \begin{tabular}{|c|c|c|c|c|c|c|c|}
-	\hline
-	\textbf{Correlación} & \textbf{Abstracción} & \textbf{Paralelismo} & \textbf{Lógica} & \textbf{Sincronización} & \textbf{Control de flujo} & \textbf{\begin{tabular}[c]{@{}c@{}}Interactividad\\ con el usuario\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Representación\\ de los datos\end{tabular}} \\
-	\hline
-	\textbf{Total} & 0.772359 & 0.720550 &  0.787795 & 0.753190 & 0.772396 & 0.609517 &  0.786001 \\
-	\hline
+    \hline
+    \textbf{Correlación} & \textbf{Abstracción} & \textbf{Paralelismo} & \textbf{Lógica} & \textbf{Sincronización} & \textbf{Control de flujo} & \textbf{\begin{tabular}[c]{@{}c@{}}Interactividad\\ con el usuario\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Representación\\ de los datos\end{tabular}} \\
+    \hline
+    \textbf{Total} & 0.772359 & 0.720550 &  0.787795 & 0.753190 & 0.772396 & 0.609517 &  0.786001 \\
+    \hline
     \end{tabular} }
     \caption{Correlación de la puntuación total con cada dimensión del PC}
     \label{table:corr_total_Scratch}
@@ -776,14 +953,12 @@ salvo en interactividad con el usuario, que sería la habilidad que menos aporta
 El siguiente paso es indagar si existen relaciones entre las dimensiones del pensamiento computacional o si por el contrario son todas independientes linealmente entre sí. Para ello se realiza un análisis multivariante, calculando la correlación de Pearson para cada par de características o dimensiones. % Si dos de ellas son dependientes se podrían agrupar  % Herramienta fundamental del EDA
 
 \begin{figure}[H]
-	\centering
-  	\includegraphics[width=.7\textwidth]{img/corr_Scratch.png}
-  	\caption{Matriz de correlación de Pearson de las dimensiones del PC.}\label{fig:corr_Scratch}
+    \centering
+    \includegraphics[width=.7\textwidth]{img/corr_Scratch.png}
+    \caption{Matriz de correlación de Pearson de las dimensiones del PC.}\label{fig:corr_Scratch}
 \end{figure}
 
 Se producen correlaciones positivas débiles y moderadas entre cada par de dimensiones. Las más bajas ocurren entre interactividad con el usuario con cada una de las siguientes: lógica, sincronización y representación de la información. Existe escasa dependencia entre implementar código que se encargue de las acciones que realice el usuario sobre el programa con determinar las sentencias que se ejecutan en función de condiciones, con la organización de la ejecución de los distintos programas de manera que interactúen entre sí y con la declaración y la modificación de los datos sobre los que se opera en los programas.
-
-%Que la interactividad con el usuario guarde escasa relación con el resto de dimensiones del pensamiento computacional es perfectamente comprensible ya que los 3 puntos se consiguen únicamente porque el usuario emplee el micrófono o la cámara y esto no requiere el uso de otra destreza del pensamiento computacional.
 
 Los mayores coeficientes de correlación, que se corresponden con una correlación positiva moderada, se obtienen entre:
 
@@ -800,22 +975,7 @@ Los mayores coeficientes de correlación, que se corresponden con una correlaci�
 
 Se profundiza en el análisis multivariante comprobando las dependencias lineales entre cada par de dimensiones del pensamiento computacional según aumenta la puntuación total. Para ello se observa la evolución de la matriz de correlación de Pearson y de las distribuciones de puntuación en cada dimensión. El objetivo es tratar de esclarecer cuáles son las dimensiones que se desarrollan antes, qué puntuaciones se les van asignando y qué relaciones se establecen entre ellas según aumenta la complejidad de los proyectos, determinada por la puntuación total.
 
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}[h]{.49\textwidth} 
-        \includegraphics[width=\textwidth]{img/distribucion_0_Scratch}
-        \caption{Puntuación total = 0}
-        \label{fig:total0}
-    \end{subfigure}       
-    \begin{subfigure}[h]{.49\textwidth} 
-        \includegraphics[width=\textwidth]{img/distribucion_21_Scratch}
-        \caption{Puntuación total = 21}
-        \label{fig:total21}
-    \end{subfigure}
-     \caption{Distribución de proyectos de Scratch para cada habilidad del PC para las puntuaciones totales mínima y máxima}
-\end{figure}
-
- Como paso previo se examinan las distribuciones de las puntuaciones totales de las figuras~\ref{fig:total0} y ~\ref{fig:total21}, que están sometidas a particularidades. En los casos extremos, cuando la puntuación total es de 0 y 21, todas las dimensiones tienen asignadas las mismas puntuaciones en cada proyecto, 0 y 3 respectivamente. No hay dispersión con respecto a la media, tanto al tomar cada variable o dimensión por separado como al analizar la variación conjunta de cada par de variables. Por lo tanto la covarianza y la raíz de la varianza o desviación típica son nulas y su razón, que conforma el coeficiente de correlación, indeterminada (véase la ecuación~\eqref{eq:correlacion}). % variación conjunta con respecto a las medias
+En los casos extremos, cuando la puntuación total es de 0 y 21, todas las dimensiones tienen asignadas las mismas puntuaciones en cada proyecto, 0 y 3 respectivamente. No hay dispersión con respecto a la media, tanto al tomar cada variable o dimensión por separado como al analizar la variación conjunta de cada par de variables. Por lo tanto la covarianza y la raíz de la varianza o desviación típica son nulas y su razón, que conforma el coeficiente de correlación, indeterminada (véase la ecuación~\eqref{eq:correlacion}). % variación conjunta con respecto a las medias
 
 \begin{equation}
    \rho_{xy} = \dfrac{Cov(X,Y)}{\sigma_{x}\sigma_{y}} = \dfrac{\sum_{i=1}^{n} (x_i - \overline{x})(y_i - \overline{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \overline{x})^{2}}\sqrt{\sum_{i=1}^{n} (y_i - \overline{y})^{2}}},  siendo: -1<\rho_{xy}<1
@@ -827,7 +987,7 @@ Se prosigue con el desglose de las puntuaciones conseguidas en cada habilidad pa
 Si la puntuación total es 1 aumenta paralelismo e interactividad con el usuario, y en menor medida control de flujo y sincronización, según vemos en el diagrama de barras~\ref{fig:total1}. Las dos primeras son las capacidades que se desarrollan cuando los programadores comienzan a utilizar  Scratch. Al repartirse el punto entre varias dimensiones,
 la matriz de correlación~\ref{fig:corr1} muestra una correlación perfecta positiva para cada par de dimensiones del pensamiento computacional.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_1_Scratch}
@@ -882,7 +1042,7 @@ Persisten las dependencias lineales positivas perfectas, con $\rho=1$, entre las
 
 En el diagrama de barras~\ref{fig:total4} se ve que en abstracción, lógica, sincronización y representación de los datos se siguen obteniendo 0 puntos en la mayoría de los proyectos. Sin embargo, se incrementan los que consiguen 1 punto en lógica, en sincronización y en control de flujo.
 
-En la matriz de correlación~\ref{fig:corr4} queda patente que  existe dependencia lineal casi perfecta entre las dimensiones cuya puntuación más frecuente es 0 puntos. Cuando se codifican programas interactivos aumentan las nociones algorítmicas, como se deduce de la elevada relación lineal directa entre interactividad con el usuario y control de flujo. No existe dependencia lineal entre representación de los datos y control de flujo, ni entre este último y abstracción. Existe una correlación negativa moderada entre paralelismo y abstracción. El aumento de la valoración en una de las habilidades no debería hacer disminuir la otra. De hecho, la descomposición del programa en subprogramas encargados de tareas concretas podría facilitar la ejecución simultánea de varios subprogramas. También se da este tipo de correlación negativa entre paralelismo y representación de los datos.%%
+En la matriz de correlación~\ref{fig:corr4} queda patente que existe dependencia lineal casi perfecta entre las dimensiones cuya puntuación más frecuente es 0 puntos. Cuando se codifican programas interactivos aumentan las nociones algorítmicas, como se deduce de la elevada relación lineal directa entre interactividad con el usuario y control de flujo. No existe dependencia lineal entre representación de los datos y control de flujo, ni entre este último y abstracción. Existe una correlación negativa moderada entre paralelismo y abstracción. El aumento de la valoración en una de las habilidades no debería hacer disminuir la otra. De hecho, la descomposición del programa en subprogramas encargados de tareas concretas podría facilitar la ejecución simultánea de varios subprogramas. También se da este tipo de correlación negativa entre paralelismo y representación de los datos.%%
 
 \begin{figure}[H]
     \centering
@@ -940,9 +1100,6 @@ Paralelismo y abstracción obtienen una correlación moderada en sentido negativ
 
 Para la puntuación total de 7, lo más destacable en la representación de frecuencias de la figura~\ref{fig:total7} es que el nº de proyectos con una puntuación de 2 en paralelismo aumenta.
 
-La correlación es perfecta positiva entre control de flujo y sincronización y entre lógica y representación de los datos, como se visualiza en la matriz~\ref{fig:corr7}. Se alcanzan valores elevados entre lógica y sincronización, representación de los datos y sincronización, control de flujo y lógica, interactividad con el usuario y control de flujo y entre interactividad con el usuario y sincronización. Que no exista correlación entre sincronización y paralelismo resulta contradictorio, ya que si se ejecutan flujos de código a la vez debería desarrollarse la capacidad de sincronizarlos, aunque no precisamente con el bloque de espera evaluado con 1 punto. Tampoco existe correlación entre abstracción y representación de los datos, puesto que aún no se ha desarrollado la capacidad de dividir el problema en partes más simples. % hasta esta puntuación total. % Esto implica que ser capaz de codificar scripts encargados de tareas concretas que resuelvan en conjunto un problema complejo, ejecutados por los  personajes del proyecto, no influye en cómo se modifiquen sus atributos.%% modularidad y abstracción de datos 0 puntos
-
-
 \begin{figure}[H]
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
@@ -957,6 +1114,8 @@ La correlación es perfecta positiva entre control de flujo y sincronización y 
     \end{subfigure}
      \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 7}
 \end{figure}
+
+La correlación es perfecta positiva entre control de flujo y sincronización y entre lógica y representación de los datos, como se visualiza en la matriz~\ref{fig:corr7}. Se alcanzan valores elevados entre lógica y sincronización, representación de los datos y sincronización, control de flujo y lógica, interactividad con el usuario y control de flujo y entre interactividad con el usuario y sincronización. Que no exista correlación entre sincronización y paralelismo resulta contradictorio, ya que si se ejecutan flujos de código a la vez debería desarrollarse la capacidad de sincronizarlos, aunque no precisamente con el bloque de espera evaluado con 1 punto. Tampoco existe correlación entre abstracción y representación de los datos, puesto que aún no se ha desarrollado la capacidad de dividir el problema en partes más simples. % hasta esta puntuación total. % Esto implica que ser capaz de codificar scripts encargados de tareas concretas que resuelvan en conjunto un problema complejo, ejecutados por los  personajes del proyecto, no influye en cómo se modifiquen sus atributos.%% modularidad y abstracción de datos 0 puntos
 
 \begin{figure}[H]
     \centering
@@ -977,7 +1136,7 @@ Cuando el total es 8, en interactividad con el usuario predominan los 2 puntos, 
 
 En la matriz de correlación~\ref{fig:corr8} se obtiene de nuevo una casi perfecta correlación directa entre control de flujo y sincronización. También se consigue una correlación muy alta y en sentido positivo entre paralelismo e interactividad con el usuario, entre control de flujo y representación de los datos, entre sincronización y representación de los datos, así como entre lógica y abstracción. Sincronización y paralelismo vuelven a ser independientes linealmente. Tampoco existe correlación entre abstracción y sincronización, ni entre paralelismo y representación de los datos, de modo que la codificación de scripts para su ejecución simultánea no se ve afectada por la declaración y modificación de atributos y variables que simplifiquen el tratamiento de datos en los scripts, ni entre  interactividad con el usuario y pensamiento lógico, por lo que la implementación de distintas alternativas según se cumpla una condición no está sujeta a los eventos provocados por quién pruebe el proyecto. Se consigue de nuevo una correlación moderada en sentido negativo entre paralelismo y abstracción.% cambios de estado 
 
-Para la puntuación total de 9, en la matriz de correlación~\ref{fig:corr9} se observan valores elevados próximos a 1, que indican correlación casi perfecta, en lógica con representación de los datos, en paralelismo con interactividad con el usuario, en control de flujo con representación de los datos y en control de flujo con sincronización. Las correlaciones entre sincronización con lógica y entre control de flujo con lógica son menores pero también elevadas. Sigue sin existir correlación entre control de flujo y abstracción, entre sincronización y abstracción, entre sincronización y paralelismo y entre lógica y paralelismo. Se vuelve además a obtener una correlación negativa moderada entre paralelismo y abstracción similar a la conseguida en puntuaciones anteriores, aún cuando se incrementa la destreza en abstracción, como se ve en el diagrama~\ref{fig:total9}.% =
+Para la puntuación total de 9, en la matriz de correlación~\ref{fig:corr9} se observan valores elevados próximos a 1, que indican correlación casi perfecta, en lógica con representación de los datos, en paralelismo con interactividad con el usuario, en control de flujo con representación de los datos y en control de flujo con sincronización. Las correlaciones entre sincronización con lógica y entre control de flujo con lógica son menores pero también elevadas. Sigue sin existir correlación entre control de flujo y abstracción, entre sincronización y abstracción, entre sincronización y paralelismo y entre lógica y paralelismo. Se vuelve además a obtener una correlación negativa moderada entre paralelismo y abstracción similar a la conseguida en puntuaciones anteriores, aún cuando se incrementa la destreza en abstracción, como se ve en el diagrama~\ref{fig:total9}.
 
 \begin{figure}[H]
     \centering
@@ -996,7 +1155,7 @@ Para la puntuación total de 9, en la matriz de correlación~\ref{fig:corr9} se 
 
 Para la puntuación total de 10, en el diagrama de barras~\ref{fig:total10} aumenta la obtención de 2 puntos en lógica y de 3 puntos en representación de los datos, por el uso de listas. 
 
-Existe una correlación perfecta directa entre lógica y paralelismo. Se consigue también una alta correlación positiva entre lógica e interactividad con el usuario y entre esta última y paralelismo. No hay dependencia lineal entre control de flujo y abstracción, ni entre sincronización y lógica, ni entre sincronización y paralelismo. Igual que en la puntuación anterior se obtiene una correlación moderada en sentido negativo entre abstracción y paralelismo. La capacidad de dividir el problema en partes sencillas de implementar y depurar, debería ayudar a descubrir cuáles de estas partes pueden ser ejecutadas de manera simultánea o concurrente, con una adecuada sincronización. Sin embargo el aumento de una habilidad hace que disminuya la otra. Además ambas son independientes de sincronización puesto que solo se usan bloques de espera. % %disminuye la ejecución de tareas de manera simultánea. según los datos analizados hasta ahora
+Existe una correlación perfecta directa entre lógica y paralelismo. Se consigue también una alta correlación positiva entre lógica e interactividad con el usuario y entre esta última y paralelismo. No hay dependencia lineal entre control de flujo y abstracción, ni entre sincronización y lógica, ni entre sincronización y paralelismo. Igual que en la puntuación anterior se obtiene una correlación moderada en sentido negativo entre abstracción y paralelismo. La capacidad de dividir el problema en partes sencillas de implementar y depurar, debería ayudar a descubrir cuáles de estas partes pueden ser ejecutadas de manera simultánea o concurrente, con una adecuada sincronización. Sin embargo el aumento de una habilidad hace que disminuya la otra. Además ambas son independientes de sincronización puesto que solo se usan bloques de espera. % Disminuye la ejecución de tareas de manera simultánea, según los datos analizados hasta ahora
 
 \begin{figure}[H]
     \centering
@@ -1030,7 +1189,7 @@ Existe una correlación perfecta directa entre lógica y paralelismo. Se consigu
 
 Para la puntuación total de 11, en el diagrama de barras~\ref{fig:total11} destaca el aumento de proyectos que consiguen 3 puntos en pensamiento lógico.
 
-En la matriz de correlación~\ref{fig:corr11} se observan valores elevados entre interactividad con el usuario y paralelismo, entre sincronización y representación de los datos y entre control de flujo con interactividad con el usuario. Son independientes linealmente: control de flujo y abstracción, representación de los datos y abstracción, lógica y representación de los datos, lógica y control de flujo, interactividad del usuario y representación de los datos. Vuelve a existir correlación en sentido negativo entre paralelismo y abstracción. También se da una correlación negativa prácticamente perfecta entre lógica y abstracción. Al aumentar el uso de estructuras selectivas que pueden incluir operadores lógicos, disminuye la capacidad para plantear soluciones a problemas descomponiéndolos en scripts o funciones encargadas de tareas concretas que pueden ser reutilizadas cuando se extrae lo relevante, se reconocen patrones y se generaliza. % Evolución de la programación estructura a la modular
+En la matriz de correlación~\ref{fig:corr11} se observan valores elevados entre interactividad con el usuario y paralelismo, entre sincronización y representación de los datos y entre control de flujo con interactividad con el usuario. Son independientes linealmente: control de flujo y abstracción, representación de los datos y abstracción, lógica y representación de los datos, lógica y control de flujo, interactividad del usuario y representación de los datos. Vuelve a existir correlación en sentido negativo entre paralelismo y abstracción. También se da una correlación negativa prácticamente perfecta entre lógica y abstracción. Al aumentar el uso de estructuras selectivas que pueden incluir operadores lógicos, disminuye la capacidad para plantear soluciones a problemas descomponiéndolos en scripts o funciones encargadas de tareas concretas que pueden ser reutilizadas cuando se extrae lo relevante, se reconocen patrones y se generaliza. % Evolución de la programación estructurada a la modular
 
 Para la puntuación de 12, según la matriz~\ref{fig:corr12}, existe una correlación elevada directa entre lógica y paralelismo, y entre paralelismo e interactividad con el usuario. Por ello cuando el usuario pulsa una tecla o un objeto se desencadena la ejecución de varias tareas a la vez. Se da una correlación positiva menor entre sincronización y abstracción y entre interactividad con el usuario y lógica. No hay correlación entre sincronización e interactividad con el usuario. La correlación en sentido negativo entre paralelismo y abstracción se aproxima a -1, mientras que entre lógica y abstracción es fuerte pero no perfecta, comparada con la puntuación anterior. %% Paralelismo e interactividad con el usuario cont $\rho\simeq1 $
 
@@ -1073,8 +1232,6 @@ y entre representación de los datos y abstracción. Al declarar atributos y lis
 Para la puntuación total de 14, en el diagrama de barras~\ref{fig:total14} la puntuación más frecuente en lógica es 3. En los proyectos que la consiguen 
 se evalúan varias situaciones utilizando operadores lógicos, que permiten elegir entre distintas alternativas, obteniendo salidas diferentes.% se decide entre distintas alternativas en base a situaciones, premisas o condiciones.
 
-En la matriz~\ref{fig:corr14} se observa una correlación positiva casi perfecta entre control de flujo e interactividad con el usuario. La dependencia lineal es elevada y positiva entre: paralelismo e interactividad con el usuario, representación de los datos con abstracción, control de flujo con paralelismo y lógica con paralelismo. Interactividad del usuario y sincronización son incorreladas, indicando que la gestión de las respuestas del usuario ante determinadas preguntas, de los movimientos con el ratón sobre objetos o de cómo responde el programa cuando se pulsa una tecla, no afecta a la capacidad del programador para planificar el orden en que se ejecutan las distintas tareas de modo que interactúen entre sí.%%
-
 \begin{figure}[H]
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
@@ -1089,6 +1246,8 @@ En la matriz~\ref{fig:corr14} se observa una correlación positiva casi perfecta
     \end{subfigure}
      \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 14}
 \end{figure}
+
+En la matriz~\ref{fig:corr14} se observa una correlación positiva casi perfecta entre control de flujo e interactividad con el usuario. La dependencia lineal es elevada y positiva entre: paralelismo e interactividad con el usuario, representación de los datos con abstracción, control de flujo con paralelismo y lógica con paralelismo. Interactividad del usuario y sincronización son incorreladas, indicando que la gestión de las respuestas del usuario ante determinadas preguntas, de los movimientos con el ratón sobre objetos o de cómo responde el programa cuando se pulsa una tecla, no afecta a la capacidad del programador para planificar el orden en que se ejecutan las distintas tareas de modo que interactúen entre sí.%%
 
 \begin{figure}[H]
     \centering
@@ -1111,7 +1270,7 @@ La matriz de correlación~\ref{fig:corr15} muestra una dependencia lineal direct
 
 En la puntuación total de 16 se consigue que la máxima puntuación sea la más frecuente en abstracción, \emph{lógica} y representación de los datos. En paralelismo, control de flujo e interactividad con el usuario persisten los 2 puntos, como se constata en el diagrama~\ref{fig:total16}.
 
-Según la figura~\ref{fig:corr16} se producen elevadas dependencias en sentido positivo, ordenadas de mayor a menor, entre interactividad del usuario y control de flujo, entre lógica y paralelismo, entre abstracción y representación de los datos, entre lógica y abstracción y entre paralelismo y abstracción. La dependencia lineal de este último par ha cambiado de sentido con respecto a las 12 primeras puntuaciones totales, de manera que al aumentar la capacidad para dar modularidad al código y utilizar clones, se incrementa la habilidad de discernir qué funciones y procedimientos pueden ejecutarse simultáneamente cuando se produzca un evento. No existe correlación entre control de flujo y sincronización, ni entre interactividad del usuario y sincronización, ni entre control de flujo y abstracción, ni entre interactividad del usuario y abstracción, ni entre paralelismo y sincronización, ni entre lógica y sincronización.
+Según la figura~\ref{fig:corr16} se producen elevadas dependencias en sentido positivo, ordenadas de mayor a menor, entre interactividad del usuario y control de flujo, entre lógica y paralelismo, entre abstracción y representación de los datos, entre lógica y abstracción y entre paralelismo y abstracción. La dependencia lineal de este último par ha cambiado de sentido con respecto a las 12 primeras puntuaciones totales, de manera que al aumentar la capacidad para dar modularidad al código y utilizar clones, se incrementa la habilidad de discernir qué funciones y procedimientos pueden ejecutarse simultáneamente cuando se produzca un evento. No existe correlación entre control de flujo y sincronización, ni entre interactividad del usuario y sincronización, ni entre control de flujo y abstracción, ni entre interactividad del usuario y abstracción, ni entre paralelismo y sincronización, ni entre lógica y sincronización. %@
 
 \begin{figure}[H]
     \centering
@@ -1134,7 +1293,7 @@ Según se muestra en la matriz de correlación~\ref{fig:corr17}
 se establecen interdependencias lineales perfectas directas entre las capacidades con 3 puntos, de manera que al descomponer en partes más sencillas el problema definiendo funciones propias o creando dinámicamente clones de los personajes, 
 se ejecutan simultáneamente varios flujos de código o programas y en algunos de ellos se emplean condicionales con operadores lógicos para decidir el conjunto de instrucciones a ejecutar y cómo se modifican los datos contenidos en listas.
 % se incrementa la capacidad de establecer cuáles de estas partes permiten su ejecución simultánea,
-No existe dependencia lineal entre control de flujo y abstracción, entre control de flujo y sincronización, ni entre interactividad del usuario y la mayor parte de las dimensiones, salvo control de flujo, porque cuando se crean programas interactivos aumenta la capacidad de diseñar y aplicar algoritmos iterativos. %%% Versión mas teórica al estar en 3, revisar.
+No existe dependencia lineal entre control de flujo y abstracción, entre control de flujo y sincronización, ni entre interactividad del usuario y la mayor parte de las dimensiones, salvo control de flujo, porque cuando se crean programas interactivos aumenta la capacidad de diseñar y aplicar algoritmos iterativos.
 
 \begin{figure}[H]
     \centering
@@ -1153,8 +1312,6 @@ No existe dependencia lineal entre control de flujo y abstracción, entre contro
 
 El paso de los 17 a los 18 puntos totales está marcado por el desarrollo casi completo de la sincronización, como se deduce al comparar los diagramas de barras~\ref{fig:total17} y ~\ref{fig:total18}.
 
-Se conservan las correlaciones casi perfectas explicadas en la puntuación anterior y se añaden las que surgen entre sincronización con las otras habilidades evaluadas con 3 puntos. Por ello cuando se establece previamente el orden en que los programas serán ejecutados, de forma que interactúen y se comuniquen entre sí con mensajes, eventos o esperando el resultado de algún script, resulta más fácil que las distintas partes en que se descompone el problema puedan ejecutarse en paralelo, empleen estructuras selectivas que indiquen por donde continúa el flujo del programa y se utilicen métodos propios de listas para modificar los datos que contiene, que a su vez pueden ser usados como condiciones o eventos. Existe una correlación positiva baja entre control de flujo y lógica. Entre cada par de variables no comentadas, se puede decir que no existe correlación. Todo esto queda reflejado en la matriz~\ref{fig:corr18}.
-
 \begin{figure}[H]
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
@@ -1169,6 +1326,8 @@ Se conservan las correlaciones casi perfectas explicadas en la puntuación anter
     \end{subfigure}
      \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 18}
 \end{figure}
+
+Se conservan las correlaciones casi perfectas explicadas en la puntuación anterior y se añaden las que surgen entre sincronización con las otras habilidades evaluadas con 3 puntos. Por ello cuando se establece previamente el orden en que los programas serán ejecutados, de forma que interactúen y se comuniquen entre sí con mensajes, eventos o esperando el resultado de algún script, resulta más fácil que las distintas partes en que se descompone el problema puedan ejecutarse en paralelo, empleen estructuras selectivas que indiquen por donde continúa el flujo del programa y se utilicen métodos propios de listas para modificar los datos que contiene, que a su vez pueden ser usados como condiciones o eventos. Existe una correlación positiva baja entre control de flujo y lógica. Entre cada par de variables no comentadas, se puede decir que no existe correlación. Todo esto queda reflejado en la matriz~\ref{fig:corr18}.
 
 \begin{figure}[H]
     \centering
@@ -1208,8 +1367,8 @@ La correlación es perfecta positiva entre todas las dimensiones del pensamiento
      \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 20}
 \end{figure}
 
-Por lo tanto la última dimensión en desarrollarse por completo es interactividad con el usuario como se deduce al comparar las distribuciones~\ref{fig:total20} y ~\ref{fig:total21}. El cambio de los 2 a los 3 puntos se produce por implementar acciones en los personajes que respondan a las modificaciones en el audio y el vídeo que realiza el usuario para interactuar con el proyecto de Scratch, aunque en el conjunto de proyectos analizado no se aplica demasiado. Resulta llamativo que sea de las primeras habilidades en manifestarse y de las últimas en completarse, y que mantenga dependencias lineales con control de flujo desde los 10 puntos totales %
-y con paralelismo hasta los 15 puntos totales. No obstante, con paralelismo comparte métricas similares, puesto que se ejecutan varios programas simultáneamente al pulsar sobre objetos, teclas o la bandera verde, que son acciones valoradas con 1 y 2 puntos en interactividad con el usuario. %%Revisar
+Por lo tanto la última dimensión en desarrollarse por completo es interactividad con el usuario. El cambio de los 2 a los 3 puntos se produce por implementar acciones en los personajes que respondan a las modificaciones en el audio y el vídeo que realiza el usuario para interactuar con el proyecto de Scratch, aunque en el conjunto de proyectos analizado no se aplica demasiado. Resulta llamativo que sea de las primeras habilidades en manifestarse y de las últimas en completarse, y que mantenga dependencias lineales con control de flujo desde los 10 puntos totales %
+y con paralelismo hasta los 15 puntos totales. No obstante, con paralelismo comparte métricas similares, puesto que se ejecutan varios programas a la vez al pulsar sobre objetos, teclas o la bandera verde, que son acciones puntuadas con 1 y 2 en interactividad con el usuario. %%Revisar
 % Las correlaciones según aumenta la puntuación total no tienen coincidencias con la correlación general de las 7 dimensiones. 
 % Sincronización y paralelismo deberían mostrar dependencias.
 
@@ -1225,15 +1384,15 @@ La entrada al algoritmo es un array de vectores con tantas filas como observacio
 Para aplicar K-Means es necesario conocer a priori el valor de k, el nº de grupos o centroides. Una de las técnicas más extendidas para estimarlo es la curva de Elbow. Se itera sobre un conjunto de posibles valores de k buscando un cambio abrupto en la inercia, de forma que un aumento en el valor de k no suponga una disminución significativa en dicha inercia. La inercia se define como la suma de las distancias euclídeas de cada punto con respecto al centroide o centro del clúster al que pertenece, como se indica en la ecuación~\eqref{eq:inercia}. %Se establece un compromiso entre un mínimo valor de inercia y una cantidad de grupos no muy elevado.
 
 \begin{equation}
-	Inercia=WCSS=\sum \limits _{i=0}^{N} \|{x_i-c_i\|^2}
-	\label{eq:inercia}
+    Inercia=WCSS=\sum \limits _{i=0}^{N} \|{x_i-c_i\|^2}
+    \label{eq:inercia}
 \end{equation}
 
 \begin{figure}
-	\centering
-	\includegraphics[width=.6\textwidth]{img/elbow_Scratch}
-	\caption{Curva de Elbow}
-	\label{fig:elbow_Scratch}
+    \centering
+    \includegraphics[width=.6\textwidth]{img/elbow_Scratch}
+    \caption{Curva de Elbow}
+    \label{fig:elbow_Scratch}
 \end{figure}
 
 % En metodología o en otra parte más teórica. 
@@ -1242,9 +1401,9 @@ La curva de Elbow de la figura~\ref{fig:elbow_Scratch} comienza a suavizarse a p
 En el artículo~\cite{moreno17:_paths} se establece un itinerario de aprendizaje en tres pasos, de complejidad incremental, basado en los proyectos representativos o prototipos de los 3 clústeres obtenidos de una muestra de 250 proyectos tomadas del repositorio de Scratch. Se propuso comparar esos prototipos con los proyectos representativos de los 3 clústeres conseguidos en nuestro dataset.  
 
 \begin{table}[H]
-	\begin{subtable}[h]{0.49\textwidth}
-		\centering
-		\begin{tabular}{lrrr}
+    \begin{subtable}[h]{0.49\textwidth}
+        \centering
+        \begin{tabular}{lrrr}
             {} & \multicolumn{3}{c}{\cellcolor[HTML]{FFCCC9}\textbf{Clúster}} \\ 
             \hline
             {} & \textbf{1} & \textbf{2} & \textbf{3} \\ 
@@ -1259,32 +1418,32 @@ En el artículo~\cite{moreno17:_paths} se establece un itinerario de aprendizaje
             \hline
             \textbf{Total} & 4 & 10 & 16 \\ 
             \hline
-            \end{tabular}
-            \caption{Dataset de 269842 proyectos}
-		\label{table:prototype_269842}
-	\end{subtable}
-	~
-	\begin{subtable}[h]{0.49\textwidth}
-		\centering
-		\begin{tabular}{lrrr}
-			{\color[HTML]{000000} {}} & \multicolumn{3}{c}{\cellcolor[HTML]{CBCEFB}\textbf{Clúster}} \\ 
-			\hline
-			{} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
-			\textbf{Pensamiento lógico} & 0 & 0 & 3 \\
-			\textbf{Abstracción} & 1 & 1 & 3 \\
-			\textbf{Interactividad con el usuario} & 1 & 1 & 2 \\
-			\textbf{Representación de los datos} & 1 & 1 & 2 \\
-			\textbf{Paralelismo} & 1 & 3 & 3 \\
-			\textbf{Sincronización} & 1 & 2 & 3 \\
-			\textbf{Control de flujo} & 2 & 2 & 2 \\ 
-			\hline
+        \end{tabular}
+        \caption{Dataset de 269842 proyectos}
+        \label{table:prototype_269842}
+    \end{subtable}
+    ~
+    \begin{subtable}[h]{0.49\textwidth}
+        \centering
+        \begin{tabular}{lrrr}
+        {\color[HTML]{000000} {}} & \multicolumn{3}{c}{\cellcolor[HTML]{CBCEFB}\textbf{Clúster}} \\ 
+            \hline
+            {} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
+            \textbf{Pensamiento lógico} & 0 & 0 & 3 \\
+            \textbf{Abstracción} & 1 & 1 & 3 \\
+            \textbf{Interactividad con el usuario} & 1 & 1 & 2 \\
+            \textbf{Representación de los datos} & 1 & 1 & 2 \\
+            \textbf{Paralelismo} & 1 & 3 & 3 \\
+            \textbf{Sincronización} & 1 & 2 & 3 \\
+            \textbf{Control de flujo} & 2 & 2 & 2 \\ 
+            \hline
             \textbf{Total} & 7 & 10 & 18 \\ 
             \hline
-		\end{tabular}
-		\caption{Muestra de 250 proyectos}
-		\label{table:prototype_250}
-	\end{subtable}
-	\caption{Similitud entre proyectos representativos de los 3 clústeres tras aplicar K-Means}
+        \end{tabular}
+        \caption{Muestra de 250 proyectos}
+        \label{table:prototype_250}
+    \end{subtable}
+    \caption{Similitud entre proyectos representativos de los 3 clústeres tras aplicar K-Means}
 \end{table}
 
 %Si haces tres clústeres (con K-Means, por ejemplo), ¿los proyectos representativos de cada clúster son similares a los que obtuvimos en el paper (ver Tabla 4 del paper)?
@@ -1343,32 +1502,635 @@ Con ello se consigue determinar el camino de aprendizaje seguido y la habilidad 
 \label{sec:result_snap}
 % Por lo demás, intenta siempre contar una historia: además de mostrar los resultados, que eso se os da bien, piensa en la motivación (por qué), en el método (cómo) y en las consecuencias (¿para qué?). 
 
-A continuación se observa la distribución de proyectos de Snap!
+\subsection{Extracción y limpieza de datos}
+\label{subsec:clean_data_Snap}
+
+% En diseño poner descripción detallada recolección de datos \texttt{project.xml} 
+A partir de un directorio de proyectos de Snap! almacenados como ficheros XML, se obtiene la evaluación de los proyectos tras modificar sus métricas y adaptar el código de Dr. Snap!, para que puedan ser analizados a través de su path, gracias a un script de python. Estas evaluaciones son volcadas al fichero \emph{results\_snap\_metrics.csv}. 
+
+En el Jupyter Notebook \emph{ Dr\_Snap\_complete\_analysis.ipynb}\footnote{\url{https://github.com/rcruiz/DrSnap-Analysis}} se cargan los datos del fichero CSV en un dataframe que consta de 113906 filas y 12 columnas. Por lo tanto, nuestro dataset en bruto está conformado por 113906 muestras u observaciones que son los proyectos de Snap! caracterizados por 12 atributos o variables. Cada proyecto queda identificado por su nombre y su ruta absoluta. 
+Las métricas establecidas para evaluar el desarrollo del pensamiento computacional determinan 7 dimensiones valoradas con puntuaciones enteras entre 0 y 3 puntos, que son: condicionales, sincronización, control de flujo, abstracción, paralelismo, interactividad con el usuario y representación de los datos. Al agregarlas se obtiene otra variable discreta, la puntuación total. A partir de ella se obtiene el valor medio definido en un rango continuo [0, 3] y se asigna un nivel de desarrollo: básico, intermedio y avanzado. Los 5 primeros proyectos y sus atributos correspondientes se reflejan en la figura~\ref{fig:df_Snap}.
+
+% Las 7 habilidades del pensamiento computacional evaluadas con puntuaciones discretas en el rango [0, 3] son: condicionales, sincronización, control de flujo, abstracción, paralelismo, interactividad con el usuario y datos. De su suma se obtiene el total y se asigna el valor medio y el nivel de dominio del pensamiento computacional demostrado en el proyecto, que puede ser básico, intemedio y avanzado. En la figura~\ref{fig:df_Snap} se representa la estructura de datos de los 5 primeros proyectos y los atributos correspondientes.  
 
 \begin{figure}[H]
-	\centering
-  	\includegraphics[bb=0 0 800 600, width=11cm, keepaspectratio]{img/frequency_total_score.png}
-  	\caption{Distribución de proyectos de Snap! por puntuación total.}\label{fig:total}
+    \centering
+    \includegraphics[width=1.0\textwidth]{img/df_origen_Snap.png}
+    \caption{Dataframe de los proyectos de Snap! obtenido al cargar \emph{results\_snap\_metrics.csv}}
+    \label{fig:df_Snap}
 \end{figure}
 
+Se transforman los tipos de datos de la característica nivel a categórico ordinal y de las puntuaciones a enteros sin signo, para facilitar su posterior procesamiento y para que la extensa base de datos ocupe menos en memoria. Se completa la limpieza del conjunto de proyectos eliminando áquellos sin nombre asignado y comprobando si existen duplicidades.
+
+Se verifica que existen 56242 con nombre único aunque todos tienen distinto path. Se debe a que varios programadores de Snap! se basaron en la misma animación o videojuego para implementar e incrementar la complejidad de sus proyectos, siguiendo algún curso, como el propuesto por Berkeley\footnote{\url{https://bjc.edc.org/bjc-r/topic/topic.html?topic=nyc_bjc/1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment}}. Posteriormente se subieron al repositorio de Snap! con el mismo nombre asignado. De hecho existe un proyecto que es la moda del conjunto total de proyectos, al ser el más frecuente, pues se repite 2085 veces, ``U1L1-ClickAlonzo'', perteneciente a dicho curso.
+
+\subsection{Análisis de los proyectos de Snap! por nivel o categoría asignada y puntuación total. Distribución de frecuencias}
+\label{subsec:frec_nivel_Snap}
+
+¿Cómo es la distribución de los proyectos de Snap! por nivel?
+
+Se continúa explorando la información contenida en los datos clasificando los proyectos de Snap! en función de la categoría de desarrollo alcanzado. Como se visualiza en la figura~\ref{fig:df_Snap}, según aumenta la complejidad las frecuencias absolutas y relativas disminuyen. La mayoría de los proyectos no superan el nivel básico, en concreto un 53,69\% de la población total analizada. El nivel intermedio reúne un 39,17\% del conjunto total, que suponen 44609 proyectos. Tan solo 8137 proyectos, un 7,14\%, logran superar el umbral de los 14 puntos. Se debería fomentar el aprendizaje de conceptos y prácticas del pensamiento computacional para que los programadores de Snap! incrementen la dificultad de sus proyectos y se valoren los aspectos más avanzados de cada dimensión. Con ello obtendrían puntuaciones globales mayores y subirían de nivel.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.95\textwidth]{img/freq_level_Snap.png}
+    \caption{Distribución de proyectos de Snap por nivel asignado}\label{fig:level_Snap}
+\end{figure}
+
+¿Cómo se distribuyen los proyectos de Snap! entre las puntuaciones asignadas a cada nivel?
+
+Se busca conocer más en detalle cómo se reparten las proyectos según las puntuaciones que determinan la pertenencia a cada una de las tres etapas de desarrollo.
+
+En la distribución~\ref{fig:basic_Snap} del nivel básico, la puntuación nula es la que menos veces aparece. Se incrementa la frecuencia de los proyectos hasta alcanzar un máximo en los 5 puntos, con 14302 proyectos de Snap! valorados con dicha puntuación. Se mantiene una frecuencia absoluta elevada para las calificaciones de 6 y 7, con 12134 y 11529 proyectos respectivamente.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.7\textwidth} 
+        \includegraphics[width=\textwidth]{img/basic_Snap}
+        \caption{Nivel básico}
+        \label{fig:basic_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.7\textwidth} 
+        \includegraphics[width=\textwidth]{img/intermediate_Snap}
+        \caption{Nivel intermedio}
+        \label{fig:intermediate}
+    \end{subfigure}
+    \begin{subfigure}[h]{.7\textwidth} 
+        \includegraphics[width=\textwidth]{img/advanced_Snap}
+        \caption{Nivel avanzado}
+        \label{fig:advanced}
+    \end{subfigure}
+    \caption{Distribución de proyectos de Snap por puntuaciones asignadas a cada nivel}
+\end{figure}
+
+En el nivel intermedio mostrado en la figura~\ref{fig:intermediate}, se sigue una tendencia descendente en las cantidades de proyectos atribuidas a cada puntuación, desde el máximo local situado en los 9 puntos con 10389 proyectos, hasta los 14 puntos con 3120 proyectos. Esta tendencia continúa en el nivel avanzado, con 2603 proyectos valorados con 15 puntos, magnitud que disminuye hasta los ínfimos 129 proyectos que logran 20 puntos y 8 proyectos que consiguen la excelencia en el desarrollo de todas las habilidades consideradas, como queda reflejado en la figura~\ref{fig:advanced}.
+% media - mediana = 50\% de los datos dispersos hacia
+En la tabla~\ref{table:mean_Snap} se comprueba que al ser la media del nivel básico menor que la mediana, la distribución tiene una asimetría negativa o hacia la izquierda. La mediana coincide con la moda para este nivel. En los niveles intermedio y avanzado la media supera a la mediana, y la asimetría es positiva o hacia la derecha, como también se percibe en los diagramas de barras~\ref{fig:intermediate} y~\ref{fig:advanced}.
+Las dispersiones con respecto a la media son más bajas que las obtenidas en Scratch (ver tabla~\ref{table:mean_Scratch}), por lo que la media se ve menos influenciada por puntuaciones extremas. 
+
+\begin{table}[H]
+ \begin{center}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+     \textbf{Nivel} & \textbf{Media} & \textbf{Mediana} & \textbf{Varianza} & \textbf{Desviación típica} \\ \hline
+    \textbf{Básico} & 4.717211 & 5 & 3.433791 & 1.853049 \\ \hline
+    \textbf{Intermedio} & 10.166984 & 10 & 3.520650 & 1.876339 \\ \hline
+    \textbf{Avanzado} & 16.375814 & 16 & 1.696996 & 1.302688 \\ \hline
+  \end{tabular}
+  \caption{Medidas de tendencia central y dispersión para cada nivel de Snap!}
+  \label{table:mean_Snap}
+ \end{center}
+\end{table}
+
+¿Cómo se distribuyen los proyectos de Snap! según la puntuación total?
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{img/frequency_total_score.png}
+    \caption{Distribución de proyectos de Snap! por puntuación total.}\label{fig:total}
+\end{figure}
+
+Como se aprecia en la figura~\ref{fig:total} existe una mayor concentración de los proyectos entre las puntuaciones totales de 4 y 10 puntos. La moda se localiza en los 5 puntos. La frecuencia decae abruptamente para las puntuaciones más bajas y disminuye de manera más suave para las puntuaciones más altas. Existe una asimetría positiva o hacia la derecha. %
+
+Por lo tanto, más de la mitad de los proyectos de Snap! se aglutinan en una etapa inicial o básica de aprendizaje del pensamiento computacional, siendo la calificación total más frecuente 5 puntos. Los programadores de Snap!, cuyos proyectos conforman nuestro dataset, deberían presentar puntuaciones totales superiores si realmente contaran con conocimientos previos. Sería oportuno que recibieran realimentación de cómo mejorar sus proyectos y se sintieran incentivados a incrementar la complejidad de los problemas que resuelven con ellos, para así poder mejorar en las distintas dimensiones y obtener mejores resultados globales. %%% CT formative–iterative tools:  motivados mejorar el desempeño
+
+\subsection{Frecuencia de los proyectos de Snap! por áreas del pensamiento computacional}
+\label{subsec:frec_pc_Snap}
+
+¿Cuál es la distribución de la puntuación en cada dimensión?
+
 % Se analiza si dichas valoraciones poseen una complejidad creciente con métricas discriminantes, que provoquen distribuciones decrecientes.
-% Se desglosa en función de cada una de las siete dimensiones del PC  y se halla la distribución de proyectos para cada puntuación entera entre 0 y 3. 
-% Se comprueba si las valoraciones establecidas representan una complejidad creciente que se traduzca en una distribución decreciente, de manera que la cantidad de proyectos que consiguen las puntuaciones más altas en cada dimensión desarrollada sea cada vez menor.
+%  se desglosa en función de las siete capacidades que caracterizan el pensamiento computacional y se calcula la cantidad de proyectos que consiguen las puntuaciones de 0, 1, 2 y 3 en cada una de estas dimensiones.
+Se desglosa en función de cada una de las siete habilidades del PC y se halla la distribución de proyectos para cada puntuación entera entre 0 y 3. Los resultados concretos así como su representación gráfica pueden verse en las figuras~\ref{fig:df_PC_Snap} y~\ref{fig:barras_PC_Snap}. 
+
+\begin{figure}[H]
+    \centering      
+    \begin{subfigure}[h]{1\textwidth} 
+        \includegraphics[width=\textwidth]{img/df_PC_Snap.png}
+        \caption{Dataframe con la cantidad de proyectos por puntuación y dimensión del PC}
+        \label{fig:df_PC_Snap}
+    \end{subfigure}
+    \begin{subfigure}[h]{1\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribution_PC_Snap.png}
+        \caption{Diagrama de barras con la cantidad de proyectos por puntuación y dimensión del PC}
+        \label{fig:barras_PC_Snap}
+    \end{subfigure} 
+\caption{Distribución de proyectos de Snap! por puntuación para cada dimensión del PC}
+\end{figure}
+Se corrobora que las métricas establecidas representen una complejidad creciente que se traduzca en una distribución decreciente, de manera que la cantidad de proyectos que consiguen las puntuaciones más altas en cada capacidad desarrollada sea cada vez menor. % métricas discriminantes y dotadas de expresividad.  
+
+\begin{itemize}
+    
+    \item \textbf{Condicionales}: Relacionado con el pensamiento lógico que permite discernir qué salidas se generan en función de diferentes situaciones o entradas. Es la habilidad menos desarrollada puesto que 73670 proyectos no utilizan ni if, ni if-else, ni operadores lógicos como estructuras selectivas que definen por dónde continúa el flujo del programa. Únicamente 21182 usan un tipo de condicional, y una cantidad aún menor de proyectos emplean 2 o los 3 condicionales especificados, 12623 y 6419, respectivamente.
+    
+    \item \textbf{Sincronización}: Es la segunda capacidad menos desarrollada pues en más de la mitad de los proyectos no existen bloques de espera, de parada, de intercambio de mensajes o sujetos a eventos y condiciones que organicen cómo interactúan y se comunican los distintos flujos de código y los personajes del proyecto. % procesos, hilos
+    
+    \item \textbf{Control de flujo}: La mayoría de los proyectos se concentran en torno a 1 y 2 puntos por resolver problemas de manera sistémica, ordenada y precisa mediante algoritmos con un flujo lineal o iterativo con bucles definidos o indefinidos.
+    Más de 16000 proyectos consiguen 3 puntos por utilizar bucles sujetos a condiciones.
+    
+    \item \textbf{Abstracción}: Se aplica un diseño algorítmico basado en la programación modular y en la técnica ``divide y vencerás'' para resolver problemas complejos dividiéndolo en partes más sencillas. Se cuenta con 59468 proyectos con 1 punto obtenido por contener más de un script y más de un \emph{sprite} o personaje, o una función definida por el programador encargada de una tarea concreta, o clones. Desciende a 18501 los proyectos que consiguen 2 puntos por usar dos de estas técnicas. Únicamente 1297 proyectos emplean todos las elementos de abstracción descritos.
+    
+    \item \textbf{Paralelismo}: En 30270 proyectos se cuenta con un personaje u objeto que realiza simultáneamente varias tareas, mientras que en 25960 hay 2 o más objetos que ejecutan los mismos programas a la vez, cuando se pulsa una tecla o la bandera verde.
+    Disminuye a 17479 los proyectos con procesos o hilos en paralelo que activan su ejecución cuando reciben mensajes, condiciones o son clones.
+    
+    % Videojuegos en cuenta los eventos que introduce el usuario en el programa
+    \item \textbf{Interactividad con el usuario}: La mitad de los proyectos son valorados con 1 punto por implementar acciones que respondan a que el usuario pulse una tecla, la bandera verde o actúe sobre un objeto. Se consiguen 2 puntos en 33119 proyectos cuando el usuario debe contestar a una pregunta, o mover el ratón o un personaje. Solo en 4360 proyectos los objetos son controlados por las modificaciones de audio o vídeo que introduce el usuario durante su ejecución.
+    
+    \item \textbf{Representación de los datos}: La capacidad que indica cómo se manejan y abstraen los datos requeridos por los programas consigue puntuaciones en sentido descendente. Hay más de 50000 proyectos donde se especifican los atributos de los personajes, 23910 en los que se declaran y modifican variables y 19088 que cuentan con operaciones sobre listas. % listas son de primera clase se pueden construir listas de listas, estructuras de datos bidimensionales, listas dinámicas y listas enlazadas.
+    
+\end{itemize}    
+
+\subsection{Análisis estadístico general de las dimensiones del pensamiento \\computacional con Snap!}
+\label{subsec:estad_pc_Snap}
+
+Se sigue con el análisis exploratorio de los datos desde un enfoque descriptivo univariante calculando las medidas de tendencia central, variabilidad y posición que resumen y caracterizan cada variable analizada del pensamiento computacional. Se reflejan en la figura~\ref{fig:describe_Snap}.
+%Control de flujo y representación de los datos consiguen las mayores medias y medianas, %indicando que el centro de gravedad de las observaciones o proyectos proyectos de Snap! se sitúa en una puntuación más alta y el 50\% de los proyectos de Snap! ordenados de menor a mayor puntuación tienen las puntuaciones más altas
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{img/describe_Snap.png}
+    \caption{Media, desviación estándar y cuartiles de cada CT}
+    \label{fig:describe_Snap}
+\end{figure}
+
+Control de flujo y representación de los datos consiguen las mayores medias y medianas, por lo que se deduce que son las destrezas que se adquieren con más facilidad, mientras que las menores medias y medianas son para condicionales y sincronización. El hecho de que no se apliquen en la mitad de los proyectos puede deberse a que no se requiera o resulten complicadas. Las habilidades con menor dispersión con respecto a la media son abstracción, interactividad con el usuario y control de flujo, como se concluye a partir de la desviación típica. Para el resto de capacidades su valor es elevado, en torno a 1,
+%La muestra de proyectos de Snap! analizados es suficientemente grande para que se vea menos afectada por la presencia de \emph{outliers} pero  
+% la desviación típica es muy sensible a la presencia de valores atípicos, por lo que se requiere analizar los 5 números que resumen y caracterizan la distribución para cada dimensión. %ojo 
+por lo que la mediana será más representativa que la media. En la figura~\ref{fig:describe_Snap} se indica además el valor de los cuartiles, que serán estudiados con mayor detalle en el diagrama de cajas~\ref{fig:cajas_Snap}. %La mediana más robusta frente a valores atípicos si la muestra es reducida. La variación media con respecto a la media es más sensible que MAD a outliers
+Nos muestra la dispersión de los proyectos ordenados de menor a mayor puntuación y podemos identificar si existen valores atípicos. Al representarlos en el mismo gráfico se puede comenzar a intuir alguna relación entre las dimensiones, aunque se siga con el análisis univariante.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/diag_cajas_Snap.png}
+    \caption{Diagrama de cajas de cada dimensión del CT}
+    \label{fig:cajas_Snap}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Condicionales, sincronización y abstracción}: Como ya se ha indicado la mitad de los proyectos no consiguen puntuar en condicionales y sincronización, estando el primer y el segundo cuartil en 0 puntos. Sin embargo, en sincronización el rango intercuartílico es de 2 puntos, implicando mayor dispersión de proyectos de Snap! entre la mediana y el $Q_3$ y que los 3 puntos marquen el límite superior, en vez de ser considerados valores atípicos o \emph{outliers}. Los proyectos con 3 puntos también son \emph{outliers} en abstracción, aunque igualmente válidos en nuestro estudio. En dicha dimensión, el 25\% de los proyectos tienen 0 puntos, la mitad de los proyectos son evaluados con 0 o 1 punto, y todos los proyectos entre la mediana y el tercer cuartil, se concentran en 1 punto. % Como 1.5 * Rango intercuartil + Q3 = 2.5 
+    \item \textbf{Paralelismo}: Su rango intercuartil es de 2 puntos con la mediana en 1 punto. Con respecto a las otras habilidades, las puntuaciones de los proyectos presentan mayor dispersión a ambos lados de este valor central, de modo que la mitad de los proyectos tienen 0 y 1 puntos, al llegar al $Q_3$ algunos obtienen 2 puntos, y el límite superior está en 3 puntos.
+    \item \textbf{Interactividad con el usuario, representación de los datos y control de flujo}: Las tres capacidades concentran la mitad de los proyectos entre 1 y 2 puntos, como se aprecia en el rango intercuartílico comprendido entre $Q_1$ y $Q_3$. Los proyectos están más dispersos para las puntuaciones inferiores en control de flujo, como se deduce de la posición del $Q_1$ y del $Q_2$, que para las puntuaciones superiores. Los valores se concentran en torno a 2 puntos, donde mediana y $Q_3$ coinciden. En cambio, en las otras dos capacidades, la asimetría es hacia la derecha, pues la primera mitad de los proyectos logran 1 punto, mientras que en la mitad superior obtienen valores entre 1, 2 y 3 puntos.
+\end{itemize}
+
+Para profundizar en las relaciones que puedan establecerse entre las habilidades y entre éstas con el total, se recurre al análisis descriptivo bivariante y en concreto a los coeficientes de correlación lineal de Pearson. Primero, se comprueba si existe una asociación lineal perfecta entre cada una de las capacidades consideradas del pensamiento computacional con la puntuación total obtenida. Se recogen en la tabla~\ref{table:corr_total_Snap} los valores de los coeficientes. 
+El menor grado de dependencia lineal con el total se produce en representación de los datos y abstracción. Al desarrollarse estas dimensiones, la puntuación total aumenta en menor medida que si se fomentan el resto de habilidades. Serían las que más información y expresividad aportan. Tanto en paralelismo como en sincronización existe una elevada dependencia lineal con el total. %Desarrollando estas capacidades se incrementa la puntuación total con mayor probabilidad que con el resto de habilidades. 
+
+\begin{table}[htbp]
+ \begin{center}
+ \resizebox{15cm}{!} {
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Correlación} & \textbf{Condicionales} & \textbf{Sincronización} & \textbf{Control de flujo} & \textbf{Abstracción} & \textbf{Paralelismo} & \textbf{\begin{tabular}[c]{@{}c@{}}Interactividad\\ con el usuario\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Representación\\ de los datos\end{tabular}} \\
+    \hline
+    \textbf{Total} & 0.641439 & 0.734082 & 0.595380 & 0.514194 & 0.740135 & 0.667972 & 0.491424 \\
+    \hline
+    \end{tabular} }
+    \caption{Correlación de la puntuación total con cada dimensión del PC}
+    \label{table:corr_total_Snap}
+ \end{center}
+\end{table}
+
+Es precisamente entre sincronización y paralelismo donde existe mayor dependencia lineal en sentido positivo, como se observa en la matriz de correlación~\ref{fig:corr_Snap}.
+Cuando en un proyecto de Dr. Snap! se ejecutan varios flujos de código a la vez, se necesitan mecanismos que organicen esa ejecución simultánea. Condicionales e interactividad con el usuario presentan una correlación positiva moderada. Cuando el usuario interactúa con el proyecto moviendo los objetos, con el ratón o pulsando una tecla y contestando a preguntas,
+se incrementa el uso de condicionales, seleccionando el conjunto de sentencias a ejecutar según la acción realizada. Abstracción y control de flujo son independientes linealmente. La descomposición del problema en scripts y funciones propias encargadas de tareas concretas no guarda relación con las nociones algorítmicas demostradas en cada script o función.
+Interactividad con el usuario y abstracción y representación de los datos con el resto de dimensiones también están incorreladas, con valores de $\rho\approx0$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.7\textwidth]{img/corr_Snap.png}
+    \caption{Matriz de correlación de Pearson de las dimensiones del PC.}\label{fig:corr_Snap}
+\end{figure}
+
+\subsection{Frecuencias y correlaciones de las dimensiones del PC en función de la puntuación total para proyectos de Snap!}
+\label{subsec:corr_21_Snap}
+
+Se busca ver la evolución de las correlaciones existentes entre cada par de habilidades según se incrementa la complejidad global de los proyectos, así como la distribución de puntuaciones en cada habilidad para cada puntuación total. Podemos hacernos una idea de qué habilidades son más difíciles de adquirir y de cómo los programadores de Snap! progresan en ellas.
+
+Como en el apartado~\ref{subsec:corr_21_Scratch}, se descartan los valores mínimo y máximo de la puntuación total, ya que todas las habilidades tienen la misma puntuación en cada proyecto de Snap! y no existen variaciones con respecto al valor medio, ni entre cada par de variables de manera conjunta, ni en cada una de ellas por separado. Así la covarianza y la desviación típica son nulas cuando el total es 0 o 21 y el cálculo de su coeficiente de correlación no tiene sentido (ver fórmula~\eqref{eq:correlacion}). % prob condicionada variable pierde su variabilidad y tiene un valor conocido, determinado. Probabilidad condicionada a puntuación total obtenida. Muy similar a lo del apartado... 
+
+Los proyectos más simples evaluados con 1 punto consiguen esta valoración principalmente por el desarrollo de la abstracción, como se demuestra en el diagrama de barras~\ref{fig:total1_Snap}. Llama la atención que la descomposición del problema en partes sencillas sea la primera habilidad en manifestarse. Estos proyectos contienen funciones definidas por el programador, varios scripts que resuelven subproblemas bien definidos y varios personajes u objetos cada uno con sus propios atributos y programas, o clones que son instancias de los objetos. En la matriz de correlación~\ref{fig:corr1_Snap} las dependencias lineales son perfectas positivas entre cada par de dimensiones con valores nulos, salvo en abstracción con el resto de dimensiones, donde es perfecta negativa. % clones creados dinámicamente o no en Snap!
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_1_Snap}
+        \caption{Diagrama de barras. Total=1}
+        \label{fig:total1_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_1_Snap}
+        \caption{Matriz de correlación. Total=1}
+        \label{fig:corr1_Snap}
+    \end{subfigure}
+     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_2_Snap}
+        \caption{Diagrama de barras. Total=2}
+        \label{fig:total2_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_2_Snap}
+        \caption{Matriz de correlación. Total=2}
+        \label{fig:corr2_Snap}
+    \end{subfigure}
+     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 2}
+\end{figure}
+
+Como se distingue en la distribución~\ref{fig:total2_Snap}, la puntuación total de 2 se obtiene de las distintas combinaciones del punto conseguido en control de flujo, interactividad con el usuario o abstracción. Entre estas dos últimas se da una correlación positiva casi perfecta. Control de flujo muestra una correlación positiva alta con el resto de dimensiones, mientras que en interactividad con el usuario y abstracción no existe correlación con las habilidades no desarrolladas. Estas dimensiones que no puntúan presentan entre sí correlaciones positivas perfectas, como se ve en la matriz~\ref{fig:corr2_Snap}.
 
 
-%ADATOS: Análisis multivariante:
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_3_Snap}
+        \caption{Diagrama de barras. Total=3}
+        \label{fig:total3_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_3_Snap}
+        \caption{Matriz de correlación. Total=3}
+        \label{fig:corr3_Snap}
+    \end{subfigure}
+     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 3}
+\end{figure}
+
+Aumenta la cantidad de proyectos que consiguen puntuar en representación de los datos y se consigue una ligera mejora en control de flujo, como se distingue en la distribución~\ref{fig:total3_Snap}.
+
+Según la matriz~\ref{fig:corr3_Snap}, en esta puntuación total de 3, surgen altas interdependencias directas entre cada dimensión con interactividad con el usuario, excluyendo control de flujo. Que el usuario presione la bandera verde o una tecla no guarda relación con una secuenciación finita, ordenada y precisa de las instrucciones que penden de esos bloques de inicialización del programa. En cambio sí depende de la resolución del problemas dividiéndolo en funciones o procedimientos encargados de una tarea determinada o empleando instancias de los personajes, propias de la abstracción, o de la modificación de los datos que caracterizan a cada personaje. Representación de los datos también se relaciona fuertemente con control de flujo y abstracción. Sincronización, condicionales y paralelismo siguen sin puntuar y presentan entre sí correlaciones perfectas directas, siendo independientes de control de flujo.
+
+Las diferencias del diagrama de barras~\ref{fig:total4_Snap} correspondiente a la puntuación total de 4 con respecto al anterior, son mayores frecuencias para el punto obtenido en paralelismo e interactividad y para los 2 puntos en control de flujo.
+
+Paralelismo mantiene correlaciones positivas perfectas con sincronización y condicionales, pese a que sea la única que progresa con respecto a las otras dos. Establece con abstracción una dependencia lineal fuerte en sentido positivo. Por ello aumenta la capacidad para ejecutar programas y funciones de manera simultánea cuando el problema se resuelve dividiéndolo en módulos más sencillos de codificar. 
+La misma dependencia surge entre interactividad con el usuario y representación de los datos, de forma que cuando el evento que provoca el usuario ocurre, se incrementan las operaciones sobre los atributos de los objetos. 
+Abstracción y control de flujo son independientes, las copias de los personajes, y los scripts o bloques encargados de tareas concretas que resuelven el problema en su conjunto, no influye en que se demuestren nociones algorítmicas en su codificación.
+Tampoco hay correlación entre condicionales con representación de los datos, ni entre esta última con sincronización. La ausencia tanto de condicionales como de sincronización, no afecta a la capacidad de definir los datos de los personajes que necesitan los programas, que se van modificando durante su ejecución.
+
+% La gestión de las acciones que realiza el usuario sobre el programa tiene una débil dependencia lineal con la correcta aplicación de algoritmos que estructuren el programa como una secuencia finita, precisa y concreta de instrucciones donde puedan aparecer bucles. 
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_4_Snap}
+        \caption{Diagrama de barras. Total=4}
+        \label{fig:total4_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_4_Snap}
+        \caption{Matriz de correlación. Total=4}
+        \label{fig:corr4_Snap}
+    \end{subfigure}
+     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 4}
+\end{figure}
+
+En la distribución~\ref{fig:total5_Snap}, cuando se filtra para un nivel de complejidad total de 5, los proyectos con 2 puntos prevalecen en control de flujo. En sincronización aumenta la cantidad de proyectos que consiguen 1 punto, si bien la mayoría no puntúan.
+
+En la matriz~\ref{fig:corr5_Snap} se mantiene una correlación perfecta entre sincronización y condicionales. Asimismo, son muy elevadas las dependencias lineales directas entre cada par conformado por abstracción, sincronización y paralelismo. Se descompone el problema en tareas más simples y en personajes para los que se ha establecido un orden temporal en el que ejecutar las distintas acciones de manera concurrente o simultánea, pudiendo interactuar entre sí. El usuario provoca que los objetos ejecuten esos procesos a la vez al pulsar una tecla o cambiando el estado del objeto, modificando las propiedades del objeto, ya sea su posición, disfraz o movimiento, generando altas dependencias entre interactividad con: abstracción, paralelismo y representación de los datos. Sin embargo, sincronización y representación de los datos están incorreladas. Se produce una correlación moderada negativa entre control de flujo y condicionales. 
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_5_Snap}
+        \caption{Diagrama de barras. Total=5}
+        \label{fig:total5_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_5_Snap}
+        \caption{Matriz de correlación. Total=5}
+        \label{fig:corr5_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 5}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_6_Snap}
+        \caption{Diagrama de barras. Total=6}
+        \label{fig:total6_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_6_Snap}
+        \caption{Matriz de correlación. Total=6}
+        \label{fig:corr6_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 6}
+\end{figure}
+
+En la distribución~\ref{fig:total6_Snap} la proporción de proyectos con 1 punto en sincronización, paralelismo e interactividad con el usuario se eleva. En menor medida, se consiguen 2 puntos en estas dos últimas, así como en abstracción. Incluso se obtienen 3 puntos al emplear estructuras de datos complejas como entrada de sus programas, siendo la primera capacidad en completarse.
+
+En la matriz~\ref{fig:corr6_Snap} de nuevo se presentan las mismas dependencias casi perfectas entre sincronización y condicionales, interactividad con el usuario y datos, abstracción con paralelismo y abstracción con sincronización. No se producen asociaciones entre interactividad con el usuario con condicionales, representación de los datos con condicionales, sincronización con representación de los datos, ni entre abstracción con control de flujo. Sigue dándose una correlación moderada negativa entre control de flujo con condicionales, de manera que al demostrar nociones algorítmicas por el uso de estructuras iterativas, se reducen los condicionales que permiten obtener distintas salidas según se cumpla o no una situación o un conjunto de ellas.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_7_Snap}
+        \caption{Diagrama de barras. Total=7}
+        \label{fig:total7_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_7_Snap}
+        \caption{Matriz de correlación. Total=7}
+        \label{fig:corr7_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 7}
+\end{figure}
+
+En el diagrama de barras~\ref{fig:total7_Snap} disminuye la habilidad demostrada en sincronización, mientras que trasciende la abstracción. En paralelismo se igualan los proyectos con 1 y 2 puntos.
+
+En la matriz de correlación~\ref{fig:corr7_Snap} de la puntuación global de 7, sincronización y condicionales son totalmente interdependientes entre sí puesto que apenas consiguen puntuar. Se conserva una correlación elevada entre interactividad con el usuario y representación de los datos y se obtienen además dependencias lineales elevadas entre cada una de ellas con abstracción. Al dividir la resolución del problema en partes mediante objetos o personajes, bloques personalizados o scripts con una funcionalidad muy concreta más fácil de programar y mantener, o con clones, se modifican y almacenan los datos que requieren en listas, variables, o atributos de los objetos y a su vez se gestionan los eventos causados por el usuario. Paralelismo y control de flujo están fuertemente correladas. Implica que si un personaje realiza varias acciones a la vez o varios personajes ejecutan simultáneamente el mismo código, se incrementa la capacidad de que cada programa siga una estructura secuencial o iterativa. No existe correlación entre paralelismo con condicionales, ni entre paralelismo con sincronización. La correlación negativa más remarcable es la que ocurre entre control de flujo con condicionales, que también se produce en las puntuaciones totales anteriores. %==
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_8_Snap}
+        \caption{Diagrama de barras. Total=8}
+        \label{fig:total8_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_8_Snap}
+        \caption{Matriz de correlación. Total=8}
+        \label{fig:corr8_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 8}
+\end{figure}
+
+En la puntuación total de 8 el uso de condicionales adquiere mayor relevancia y cerca de unos 1000 proyectos consiguen la máxima puntuación en paralelismo y control de flujo. En interactividad con el usuario y representación de los datos se incrementan los proyectos con 2 puntos, como se aprecia en el gráfico~\ref{fig:total8_Snap}.
+
+En la matriz~\ref{fig:corr8_Snap} se observan correlaciones positivas muy altas entre interactividad con el usuario y representación de los datos, y entre ambas con control de flujo, de forma que se desencadena la ejecución de secuencias y ciclos de sentencias que modifican los atributos de los objetos y los datos contenidos en listas y variables cuando el usuario responde a una pregunta, pulsa una tecla o mueve un objeto con el ratón. Sincronización y condicionales también son interdependientes, pues cuando se codifican sentencias alternativas en función de condiciones, se planifica la interacción de los distintos procesos con bloques de parada, espera e intercambio de mensajes. Interactividad con el usuario y sincronización están incorreladas.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_9_Snap}
+        \caption{Diagrama de barras. Total=9}
+        \label{fig:total9_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_9_Snap}
+        \caption{Matriz de correlación. Total=9}
+        \label{fig:corr9_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 9}
+\end{figure}
+
+% Variables: Se le llama variable a un espacio en memoria que puede ser modificado y que contiene un valor que nos será útil en un futuro para realizar un procedimiento específico
+
+% o la introducción de instrucciones que esperan que el usuario actúe sobre el programa
+%se selecciona por dónde continúa el flujo del programa cuando se cumple una o varias condiciones y hacer que las sentencias que ejecuta cada personaje sigan un orden temporal preestablecido de modo que interactúen entre sí;  
+
+Como se aprecia en el diagrama~\ref{fig:total9_Snap}, si el total es 9 puntos, la sincronización alcanza un nivel intermedio, aumentando a la vez la cantidad de proyectos con un desarrollo avanzado en paralelismo y control de flujo. 
+
+En la matriz ~\ref{fig:corr9_Snap} se constata que control de flujo presenta una elevada correlación directa con cada una de las siguientes: paralelismo, interactividad con el usuario y representación de los datos. 
+Los programas codificados en base a una correcta secuenciación de pasos que pueden incluir bucles, demuestran nociones algorítmicas que facilitan dividir el problema en un conjunto de tareas que se realizan simultáneamente, que puedan ejecutarse cuando el usuario cambia el estado de un objeto y se modifiquen sus atributos o se empleen variables o listas como elemento abstracto para manejar los datos sobre los que operan estos programas. 
+
+Abstracción es fuertemente interdependiente tanto con interactividad como con representación de los datos. Cuando el usuario controla el programa por teclado o por ratón se gestionan las acciones con clones, scripts o funciones propias, que emplean variables y listas para extraer patrones y generalizar a partir de scripts con una funcionalidad similar. Abstracción y sincronización son independientes entre sí. Existe una dependencia lineal moderada inversa entre control de flujo y condicionales y es aún más fuerte entre paralelismo y condicionales. 
+
+Cuando el total asciende a los 10 puntos, tanto en sincronización como en control de flujo la moda se localiza en los 2 puntos. En paralelismo, los proyectos están más repartidos, siendo ligeramente superior la cantidad de proyectos con 3 puntos, como se atisba en el diagrama~\ref{fig:total10_Snap}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_10_Snap}
+        \caption{Diagrama de barras. Total=10}
+        \label{fig:total10_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_10_Snap}
+        \caption{Matriz de correlación. Total=10}
+        \label{fig:corr10_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 10}
+\end{figure}
+
+En la figura~\ref{fig:corr10_Snap}, se comprueba la conservación de fuertes correlaciones directas entre representación de los datos e interactividad, entre ambas habilidades con abstracción, entre paralelismo y control de flujo y entre esta última con interactividad. Sincronización es independiente tanto de abstracción como de paralelismo. Establecer el orden en que se ejecutan los procesos mediante intercambio de mensajes o bloques de parada, no se ve influenciado por la modularidad presente en el código, ni porque estos módulos sean ejecutados a la vez por varios personajes cuando se reciben mensajes, o se producen eventos o condiciones. Las correlaciones negativas entre condicionales con control de flujo o con paralelismo son más intensas que en el caso anterior, sobre todo con esta última, que resulta perfecta. La ejecución simultánea de varios scripts, disminuye la ejecución de sentencias alternativas tras la evaluación de condiciones.
+
+En el diagrama de barras~\ref{fig:total11_Snap} de se observa una sustancial mejora en condicionales. En paralelismo y en interactividad con el usuario la puntuación más frecuente es 2 puntos.
+
+En la matriz de correlación~\ref{fig:corr11_Snap} se mantiene una fuerte dependencia lineal entre abstracción con interactividad y entre control de flujo con cada una de las siguientes: paralelismo, representación de los datos e interactividad con el usuario. Sin embargo la relación entre representación de los datos e interactividad con el usuario se modera. Control de flujo y sincronización están incorreladas, puesto que la estructura secuencial o iterativa seguida en los programas, no se relaciona con cómo interactúen entre sí para organizar su ejecución en el tiempo, ni entre interactividad con el usuario con condicionales, diferenciando entre los flujos de código que desencadenan su ejecución cuando ocurre un evento inducido por el usuario y aquellos sujetos a condiciones o cambios de estado provocados en el programa. Condicionales y paralelismo conservar una elevada interdependencia negativa.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_11_Snap}
+        \caption{Diagrama de barras. Total=11}
+        \label{fig:total11_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_11_Snap}
+        \caption{Matriz de correlación. Total=11}
+        \label{fig:corr11_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 11}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_12_Snap}
+        \caption{Diagrama de barras. Total=12}
+        \label{fig:total12_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_12_Snap}
+        \caption{Matriz de correlación. Total=12}
+        \label{fig:corr12_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 12}
+\end{figure}
+
+Si se comparan las distribuciones~\ref{fig:total11_Snap} y~\ref{fig:total12_Snap}, la alteración más destacable es que se eleva la cantidad de proyectos con 2 puntos en interactividad con el usuario.
+
+De nuevo control de flujo está fuertemente correlacionado con paralelismo, con datos y con interactividad con el usuario. Adicionalmente, la matriz~\ref{fig:corr12_Snap} refleja elevadas dependencias lineales entre abstracción y condicionales, de modo que al descomponer el problema en funciones y tareas concretas a realizar por varios personajes o clones, se incluyen en el código acciones diferentes a ejecutar dependiendo de la situación, y entre paralelismo y sincronización, de manera que si varios personajes llevan a cabo tareas simultáneas, se emplean mecanismos de coordinación que permiten que ocurran a la vez. Control de flujo y condicionales son independientes.
+Si el programa se estructura secuencial o iterativamente, no tiene por qué incluir sentencias condicionales. Tampoco hay dependencia  entre sincronización y datos. Si distintos flujos de código son concurrentes, no tienen por qué modificarse los datos en variables, listas o atributos de los personajes. Se suaviza la correlación negativa entre paralelismo con condicionales.
+
+%Expresar la solución como un conjunto ordenado de pasos y utilizar bucles no influye en el uso de condiciones.
+
+En la distribución~\ref{fig:total13_Snap} correspondiente a un total de 13 puntos, representación de los datos incrementa su frecuencia en los 2 puntos.
+
+En la matriz~\ref{fig:corr13_Snap} se refuerzan las correlaciones directas de la puntuación anterior, así como la dependencia positiva entre interactividad con el usuario y representación de los datos. No existe correlación entre paralelismo y abstracción. Cuando se aborda un problema complejo dividiéndolo en partes más sencillas de implementar y depurar, las funciones y scripts resultantes podrían ser ejecutadas por uno o varios personajes simultáneamente, pero en este caso, las variables que las definen son independientes linealmente. %%%
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_13_Snap}
+        \caption{Diagrama de barras. Total=13}
+        \label{fig:total13_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_13_Snap}
+        \caption{Matriz de correlación. Total=13}
+        \label{fig:corr13_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 13}
+\end{figure}
+
+Según el diagrama~\ref{fig:total14_Snap}, crece la cantidad de proyectos que consiguen 2 puntos en abstracción, cuando el total se sitúa en 14 puntos.
+
+Como se demuestra en la matriz~\ref{fig:corr14_Snap}, persisten las fuertes correlaciones positivas comentadas anteriormente. Además se obtiene una correlación casi perfecta entre control de flujo y sincronización. Si se ordenan instrucciones como una secuencia de pasos o se incluyen bucles que se repiten por siempre, un nº determinado de veces, o hasta que se cumpla una condición, aumenta la capacidad para organizar la ejecución de hilos y procesos para que interactúen entre sí. No existe dependencia lineal ni entre control de flujo con condicionales; ni entre paralelismo con condicionales, de modo que la ejecución simultánea de procesos no afecta a que se empleen estructuras selectivas; ni entre abstracción con sincronización o con paralelismo, por lo que si se descompone el problema en funciones o bloques propios encargados de tareas concretas, dando modularidad al código, o usando instancias de objetos, no dependerá de que los objetos se sincronicen para ejecutar sus scripts según un orden preestablecido o incluso simultáneamente.
+
+%La capacidad para realizar programas que serán ejecutados simultáneamente por varios objetos al pulsar una tecla, la bandera verde o cuando se cumpla una condición, se empiece como clon, o se reciba un mensaje;
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_14_Snap}
+        \caption{Diagrama de barras. Total=14}
+        \label{fig:total14_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_14_Snap}
+        \caption{Matriz de correlación. Total=14}
+        \label{fig:corr14_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 14}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_15_Snap}
+        \caption{Diagrama de barras. Total=15}
+        \label{fig:total15_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_15_Snap}
+        \caption{Matriz de correlación. Total=15}
+        \label{fig:corr15_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 15}
+\end{figure}
+
+Como se observa en la distribución~\ref{fig:total15_Snap}, el paso al nivel avanzado está marcado por la asimilación completa de la sincronización y del control de flujo en la mayor parte de los proyectos.   
+
+De hecho, ambas dimensiones presentan una dependencia lineal casi perfecta entre ellas y con paralelismo. Cuando se emplean estructuras de control iterativas, se utilizan mecanismos de parada, mensajes o espera condicionados a recibir una respuesta, a que se cumpla una condición o se produzca un evento para sincronizar los distintos flujos de código, algunos de los cuales pueden ejecutarse en paralelo.
+Condicionales refuerza su dependencia con datos y con interactividad con el usuario, habilidades que a su vez están perfectamente correlacionadas. Al implementar las instrucciones alternativas que se seleccionan tras evaluar una situación usando 1, 2, o 3 de las estructuras condicionales presentes en Snap!: se modifican las variables y las listas y se incluyen sentencias que se ejecutarán en función de la acción realizada por el usuario al mover o pinchar con el ratón un objeto, dar una respuesta con el teclado, pulsar una tecla o utilizar el micrófono, sonidos o vídeo. Abstracción sigue correlacionada con condicionales, pero es independiente de sincronización, de control de flujo y de paralelismo, según la matriz~\ref{fig:corr15_Snap}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_16_Snap}
+        \caption{Diagrama de barras. Total=16}
+        \label{fig:total16_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_16_Snap}
+        \caption{Matriz de correlación. Total=16}
+        \label{fig:corr16_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 16}
+\end{figure}
+
+Según la distribución~\ref{fig:total16_Snap}, las modas cuando el total alcanza los 16 puntos son: 2 puntos en condicionales, abstracción, interactividad con el usuario y representación de los datos y 3 puntos en sincronización, paralelismo y control de flujo.
+
+La matriz~\ref{fig:corr16_Snap} refleja las mismas correlaciones perfectas, fuertes y nulas analizadas en la matriz~\ref{fig:corr15_Snap}. No obstante, hay capacidades cuyas dependencias no eran tan elevadas en la puntuación anterior, como las que se producen entre paralelismo con condicionales, de forma que si los objetos ejecutan varias secuencias de instrucciones al mismo tiempo, estas secuencias contendrán sentencias alternativas o condicionales. Otro par de correlaciones que se ven reforzadas son las que se dan entre abstracción con interactividad con el usuario o con representación de los datos, de manera que si se extrae lo relevante del problema a resolver y se descompone en programas, ya sean scripts o funciones propias, y/o se instancian personajes, se crean y actualizan las variables y listas que contienen los datos que se van obteniendo en los programas, y se controlan los distintos eventos que el usuario provoque al interactuar con el proyecto. En cambio, control de flujo sigue disminuyendo su interdependencia tanto con datos como con interactividad. % bajo un diseño top-down %=
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_17_Snap}
+        \caption{Diagrama de barras. Total=17}
+        \label{fig:total17_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_17_Snap}
+        \caption{Matriz de correlación. Total=17}
+        \label{fig:corr17_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 17}
+\end{figure}
+
+En el diagrama~\ref{fig:total17_Snap} se perfilan las puntuaciones más frecuentes indicadas en la puntuación total anterior, aglutinando mayor proporción de proyectos para cada dimensión.
+
+La matriz de correlación~\ref{fig:corr17_Snap} es muy similar a la conseguida con la calificación total de 16. Condicionales incrementa la correlación obtenida con cada una de las capacidades del pensamiento computacional. Condicionales con sincronización y condicionales con control de flujo, que en la puntuación anterior poseían correlaciones moderadas, ahora presentan correlaciones altas. Si se emplean estructuras selectivas que permiten decidir el flujo de código a ejecutar en función del estado, situación evaluada o condición, pudiendo incluir operadores lógicos en la evaluación de la condición, aumentan las nociones algorítmicas y los bucles que iteran hasta que se cumpla cierta condición, y se ajusta la ejecución de los distintos programas según un orden predeterminado basado en la comunicación entre los mismos, de modo que ciertos resultados obtenidos en otras partes del proyecto activen la ejecución del código. %=
+%Al desarrollarse el pensamiento lógico asociado al uso de condicionales, el resto de capacidades también aumentan, presentando una fuerte dependencia con cada una de ellas. Las correlaciones entre condicionales con sincronización y con control de flujo pasan de moderadas a altas.
+
+Es justamente condicionales la que consigue un máximo en 3, cuando la complejidad global se establece en 18 puntos, como se constata en la figura~\ref{fig:total17_Snap}. Se desarrolla por completo el pensamiento lógico que permite preveer y codificar las salidas alternativas resultantes de la comprobación de las premisas que se evalúan en el programa con if, if-else y operadores lógicos. % instrucciones condicionales compuestas
+
+Además su correlación se hace prácticamente perfecta con sincronización, con paralelismo y con control de flujo. Cabe destacar que estas dimensiones presentan interdependencias perfectas, sentando las bases de la programación estructurada y la concurrencia. Por su parte, cada par conformado por abstracción, representación de los datos e interactividad con el usuario se relacionan linealmente de manera perfecta, como se indica en la matriz~\ref{fig:corr18_Snap}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_18_Snap}
+        \caption{Diagrama de barras. Total=18}
+        \label{fig:total18_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_18_Snap}
+        \caption{Matriz de correlación. Total=18}
+        \label{fig:corr18_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 18}
+\end{figure}
+
+Las capacidades más difíciles de asimilar son interactividad, abstracción y representación de datos, como se infiere del diagrama~\ref{fig:total19_Snap}. Es complicado que un proyecto reúna todos los elementos considerados en abstracción y por ello se distribuye uniformemente entre los 2 y los 3 puntos. Las listas imperan sobre las variables, conformando estructuras de datos más complejas. 
+
+Los coeficientes de correlación entre abstracción e interactividad con el usuario y entre esta última con representación de los datos son menores que las obtenidas en las puntuaciones totales anteriores. Sin embargo, son mucho más elevadas que las correlaciones que se obtienen entre interactividad con el usuario con el resto de dimensiones. No hay dependencia lineal entre las acciones que pueda realizar el usuario del programa, ya sea responder preguntas, mover objetos o personajes o insertar audio o vídeo, con emplear sentencias condicionales, ni con ordenar la ejecución de los distintos flujos de código de manera que interactúen entre sí, ni con el empleo de bucles, ni con la ejecución simultánea de varios scripts asociados a uno o varios objetos o personajes. Las correlaciones presentes entre abstracción y el resto de dimensiones son moderadas y las dependencias lineales entre representación de los datos con las demás capacidades son elevadas pero no perfectas.%=
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_19_Snap}
+        \caption{Diagrama de barras. Total=19}
+        \label{fig:total19_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_19_Snap}
+        \caption{Matriz de correlación. Total=19}
+        \label{fig:corr19_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 19}
+\end{figure}
+
+Interactividad con el usuario será la última habilidad en adquirirse, como se deduce del diagrama~\ref{fig:total20_Snap}. Al mantenerse en 2 puntos para la mayoría de proyectos, sus coeficientes de correlación con el resto de variables son perfectos negativos. Implica que la gestión de los eventos que provoque el usuario sobre el programa, disminuye el desarrollo de otras capacidades. El resto de dimensiones guardan entre sí una correlación positiva perfecta.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/distribucion_20_Snap}
+        \caption{Diagrama de barras. Total=20}
+        \label{fig:total20_Snap}
+    \end{subfigure}       
+    \begin{subfigure}[h]{.49\textwidth} 
+        \includegraphics[width=\textwidth]{img/corr_20_Snap}
+        \caption{Matriz de correlación. Total=20}
+        \label{fig:corr20_Snap}
+    \end{subfigure}
+    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 20}
+\end{figure}
+
+%Tampoco hay demasiados proyectos en los que el usuario introduzca audio o vídeo o se detecten colisiones entre objetos.
+%NOTA: Incluir deducciones de las correlaciones y pie a la  sección siguiente
+
+% Las situaciones a evaluar para elegir qué instrucciones se ejecutan, dependen de variables que almacenan el cambio de estado, del contenido de listas y de los eventos que provoca el usuario...
+% No es solo alfabetización computacional per se.
+
+%ADATOS: Análisis multivariante: con
 %- resumir los datos con la mínima pérdida de información 
 %-encontrar grupos en los datos si existen
 %-clasificar nuevas observaciones en los grupos definidos.
 %y relacionar dos conjuntos de variables, Entendimiento Grado de relación de 2 o más variables Gráfico de dispersión. Cuantificar o medir el grado de relación lineal entre dos variables, interdependencia, -1 1, invariante por transfomaciones lineales
+% Encontrar patrones entre los datos para llevar a cabo unas acciones u otras. Recopilar datos y analizarlos de forma estadística
 % Eventos: Acciones programadas para ese evento concreto. Un evento dispara la ejecución de las sentencias que penden de él
+% El flujo de control en las ciencias computacionales se refiere al orden en el cual las declaraciones, instrucciones o llamadas de funciones de un programa imperativo o declarativo son ejecutadas o evaluadas. El flujo de objetos es lo mismo que el flujo de control, pero es mostrado como líneas rayadas en lugar de líneas sólidas. 
+% comparar dos cosas = cotejar
 
+% Una de las fortalezas del desarrollo del pensamiento computacional (Computer Science) es el desarrollo de la creatividad en la búsqueda continua de diferentes soluciones para un mismo problema. Quizás ésta simplificación o depuración, conseguir más con menos, ahorrar recursos o instrucciones, sea el mayor de los retos en el desarrollo del código de los programas.
+% Proceso iterativo de mejra continua incrementando la complejidad
 
-Como se aprecia en la figura~\ref{fig:total} existe una mayor concentración de los proyectos entre las puntuaciones totales de 4 y 10 puntos. La moda se localiza en los 5 puntos. La distribución de frecuencias absolutas es representada a partir del diagrama de barras.
 
 \begin{itemize}
     \item[•] ffff
 \end{itemize}
+
+\subsection{Análisis de clustering entre niveles o puntuaciones totales. Ruta de aprendizaje demostrada en los proyectos de Snap!}
+\label{subsec:ruta_Snap}
+
+% Cada clúster queda representado por el proyecto más cercano al centro o valor medio de los proyectos del grupo....
 
 \begin{figure}[H]
 	\centering
