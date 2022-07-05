@@ -29,8 +29,8 @@
 \usepackage{graphicx}
 \usepackage{float}  %% H para posicionar figuras
 \usepackage{xurl}
-\usepackage[breaklinks]{hyperref}
-%\usepackage[breaklinks=true, hidelinks, colorlinks]{hyperref}
+%\usepackage[breaklinks, colorlinks]{hyperref}
+\usepackage[breaklinks=true, hidelinks]{hyperref}
 \usepackage[nottoc, notlot, notlof, notindex]{tocbibind} %% Opciones de índice
 \usepackage{latexsym}  %% Logo LaTeX
 \usepackage{amsmath, amsthm}
@@ -156,16 +156,13 @@ mi familia, amigos y profesores.}
 %\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
 \markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
 
-%Aquí vienen los agradecimientos\ldots Aunque está bien acordarse de la pareja, no hay que olvidarse de dar las gracias a tu madre, que aunque a veces no lo parezca disfrutará tanto de tus logros como tú\ldots 
-%Además, la pareja quizás no sea para siempre, pero tu madre sí.
-
 Agradezco a mis padres el apoyo recibido durante estos años, en especial a mi madre por su comprensión, cariño y paciencia cuando las cosas se tornaban complicadas. A mis tíos, por las palabras de aliento y momentos de sosiego que me han aportado. A mi hermano y a mis sobrinos a los que adoro y que son, en parte, los responsables de la elección de este tema para el trabajo de fin de grado. 
 
 No me cansaré de agradecer a Gregorio la oportunidad brindada tanto a la hora de realizar las prácticas en Programamos como en la propuesta y apoyo durante este trabajo. Tanto Gregorio como Jesús, han sabido guiarme cuando no veía las cosas claras, y me ponía algo pesada. Gracias por vuestra paciencia. 
 
 Ha sido un camino un tanto angosto en algunas ocasiones, pero muy gratificante. Guardo especial cariño a todos los profesores que han compartido su experiencia y sus consejos y han estado disponibles para resolver cualquier duda, no solo del ámbito académico. 
 
-Gracias a esta sinuosa trayectoria he podido coincidir y compartir momentos de estudio, prácticas, laboratorio y descansos, momentos de nervios, alegrías y conversaciones con compañeros y amigos que entendían lo complejo que resulta todo esto y lo han hecho más llevadero: Jorge, David, Diego, Iván, Natalia, Sandra, Anahit, Javi, Víctor, Teresa, Dani, Alfredo, María\ldots Es imposible citaros a todos.
+Gracias a esta sinuosa trayectoria he podido coincidir y compartir momentos de estudio, prácticas, laboratorio y descansos, momentos de nervios, alegrías y conversaciones con compañeros y amigos que entendían lo complejo que resulta todo esto y lo han hecho más llevadero: Jorge, David, Diego, Iván, Natalia, Sandra, Anahit, Javi, Víctor, Teresa, Dani, Alfredo, María... Es imposible citaros a todos.
 
 Por último agradecer a mis amigos, a los de siempre, a los que permanecen por más difícil y adverso que se ponga el mundo, que han sabido apoyarme hasta el final y comprenderme: Pablo, Carlos, Juan Carlos, Jorge, Laura, Gema, Carol, Fran, Encarna y a todos los que de una forma u otra han contribuido con su apoyo emocional a que lograra alcanzar esta meta. 
 
@@ -193,11 +190,6 @@ Por ende, es un estudio basado en datos que identifica el impacto de cada herram
 %\addcontentsline{toc}{chapter}{Summary} % si queremos que aparezca en el índice
 \markboth{SUMMARY}{SUMMARY} % encabezado
 
-%Here comes a translation of the ``Resumen'' into English. 
-%Please, double check it for correct grammar and spelling.
-%As it is the translation of the ``Resumen'', which is supposed to be written at the end, this as well should be filled out just before submitting.
-%%%%%%
-
 Digital competence has been included in compulsory education curricula. This is a great opportunity in order to foster computational thinking (CT) in a transversal way, as a means for students to develop other learnings and problem-solving expressing their ideas, materializing them into specific creations, through a heuristic process.
 
 In this final degree project, we analyse the dimensions of CT from two extensive Scratch and Snap! coded project samples. To do so, we collected the metrics that automatically assess their mastery in both Dr. Scratch and Dr. Snap! Then, we made a quantitative and static exploratory data analysis (EDA) in order to find trends in their distributions, relations and clusters that help us define the shown learning paths.
@@ -221,11 +213,11 @@ of this cognitive process and, at the same time, enables their comparison.
 %%%% Índice de contenidos
 \tableofcontents 
 %%%% Índice de figuras
-\cleardoublepage
+%\cleardoublepage
 %\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
 \listoffigures % indice de figuras
 %%%% Índice de tablas
-\cleardoublepage
+%\cleardoublepage
 %\addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
 \listoftables % indice de tablas
 
@@ -242,17 +234,17 @@ of this cognitive process and, at the same time, enables their comparison.
 
 Nos encontramos inmersos en una transformación digital sin precedentes, donde saber gestionar grandes volúmenes de datos de diversas fuentes, automatizar procesos, aplicar algoritmos para que los dispositivos aprendan y sean capaces de predecir lo que se necesita, realizando acciones de manera autónoma, se ha convertido en una necesidad imperante en la sociedad. Para ello es indispensable que tanto niños como jóvenes desarrollen habilidades que les permitan no solo consumir tecnología, sino comprender las bases que la sustentan, siendo capaces de resolver problemas cada vez más complejos, buscando nuevas soluciones y creando tecnología.
   
-Es de vital importancia que en todas las etapas educativas se fomente el aprendizaje y la aplicación del \textit{pensamiento computacional (PC)}, 
-de manera transversal e incremental, de forma que el alumno se implique y esté motivado con el proceso pudiendo formular un problema, descomponer el problema en partes más sencillas, abstraer lo relevante y aplicable en otras circunstancias, identificar distintas acciones a realizar ante diversas entradas y expresar soluciones (véase apartado~\ref{subsec:pc}). Han sido muchos los investigadores encargados de difundir y tratar de evaluar el \textit{PC}, desde distintas perspectivas. Uno de los enfoques es el propuesto en Dr. Scratch y desarrollado por alumnos e investigadores de la URJC.
+Es de vital importancia que en todas las etapas educativas se fomente el aprendizaje y la aplicación del pensamiento computacional (PC), 
+de manera transversal e incremental, de forma que el alumno se implique y esté motivado con el proceso pudiendo formular un problema, descomponer el problema en partes más sencillas, abstraer lo relevante y aplicable en otras circunstancias, identificar distintas acciones a realizar ante diversas entradas y expresar soluciones (véase apartado~\ref{subsec:pc}). Han sido muchos los investigadores encargados de difundir y tratar de evaluar el PC, desde distintas perspectivas. Uno de los enfoques es el propuesto en Dr. Scratch y desarrollado por alumnos e investigadores de la URJC.
 
-A partir de las prácticas realizadas en Programamos consistentes en la obtención de datos de un conjunto de 269844 proyectos de Scratch almacenados en el servidor de Dr. Scratch, para poder determinar las relaciones existentes entre las siete dimensiones del pensamiento computacional y establecer rutas de aprendizaje, mi tutor -Dr. Gregorio Robles- me propuso realizar un análisis de datos de los 113906 proyectos de Snap! Este Trabajo de Fin de Grado busca determinar a partir de un análisis exhaustivo y descriptivo cuales son las pautas seguidas en los proyectos de Snap! y Scratch en cuanto a las puntuaciones obtenidas a nivel general y para cada capacidad analizada del pensamiento computacional. 
+A partir de las prácticas realizadas en Programamos consistentes en la obtención de datos de un conjunto de 269844 proyectos de Scratch almacenados en el servidor de Dr. Scratch, para poder determinar las relaciones existentes entre las siete dimensiones del pensamiento computacional y establecer rutas de aprendizaje, mi tutor Gregorio Robles me propuso realizar un análisis de datos de los 113906 proyectos de Snap! Este trabajo de fin de grado busca determinar a partir de un análisis exhaustivo y descriptivo cuales son las pautas seguidas en los proyectos de Snap! y Scratch en cuanto a las puntuaciones obtenidas a nivel general y para cada capacidad analizada del pensamiento computacional. 
 
 \section{Contexto}
 \label{sec:contexto}
 
 \subsection{Pensamiento computacional (PC)}
 \label{subsec:pc}
-Seymour Papert desarrolló el lenguaje de programación \texttt{Logo} en 1967 junto a Daniel Bobrow, Wallace Feurzeig, Cynthia Solomon y Dick Grant en Bolt, Beranek and Newman, Inc. (BBN), con fines pedagógicos~\cite{solomon20:_history}. A partir de 1969 continuaron su investigación en los Laboratorios de Inteligencia Artificial del MIT, junto a Marvin Minsk. Fue el primero en mencionar el \emph{pensamiento computacional} relacionándolo con el construccionismo, una nueva forma de aprendizaje donde el alumno es la parte activa~\cite{papert80:_mindstorm}.
+Seymour Papert desarrolló el lenguaje de programación \texttt{Logo} en 1967 junto a Daniel Bobrow, Wallace Feurzeig, Cynthia Solomon y Dick Grant en Bolt, Beranek and Newman, Inc. (BBN), con fines pedagógicos~\cite{solomon20:_history}. A partir de 1969 continuaron su investigación en los Laboratorios de Inteligencia Artificial del MIT, junto a Marvin Minsk. Fue el primero en mencionar el pensamiento computacional relacionándolo con el construccionismo, una nueva forma de aprendizaje donde el alumno es la parte activa~\cite{papert80:_mindstorm}.
 
 El niño programa al ordenador para poder expresar sus ideas cuando se enfrenta a problemas. Se fomenta un proceso de aprendizaje heurístico basado en la exploración y en la experimentación pudiendo aprender de los errores, depurándolos. Se concretizan conceptos abstractos y formales al implementar programas que la ``tortuga'' ejecuta, ya sea como robot o como cursor en la pantalla. Se crea un entorno libre que fomenta la creatividad, donde el niño construye sus propios proyectos, de cualquier temática, a la vez que construye sus estructuras intelectuales, planificando el proyecto, realizando diseños y modelos, mejorando el código e incrementando su complejidad.
 
@@ -270,33 +262,37 @@ El marco conceptual de Brennan-Resnick fue elaborado en base a investigaciones y
     \item \textbf{Perspectivas computacionales:} \emph{expresar} ideas y crear tecnología en función de sus intereses; \emph{conectar} con otros a través de la comunidad online de Scratch para compartir proyectos y dudas incrementando la creatividad y el aprendizaje, y \emph{cuestionar} el funcionamiento de la tecnología que los rodea y ser capaces de transformarla.
 \end{enumerate} 
 
-``El pensamiento computacional es la capacidad de formular y representar problemas para resolverlos mediante el uso de herramientas, conceptos y prácticas de la disciplina informática, como la abstracción, la descomposición o el uso de simulaciones''\footnote{\url{https://programamos.es/pensamiento-computacional-y-programacion-no-son-lo-mismo/}}~\cite{moreno19programming}.
+El grupo KGB-L3 concluye en el estudio~\cite[p. 8]{moreno19programming} que ``el pensamiento computacional es la capacidad de formular y representar problemas para resolverlos mediante el uso de herramientas, conceptos y prácticas de la disciplina informática, como la abstracción, la descomposición o el uso de simulaciones''\footnote{\url{https://programamos.es/pensamiento-computacional-y-programacion-no-son-lo-mismo/}}.
 
-Las definiciones planteadas del CT y los elementos que la componen son solo algunas de las propuestas de investigadores de todo el mundo. Puede ser desarrollado con actividades desenchufadas o \emph{``unplugged''}, programación visual con bloques o programación textual con lenguajes como python. En este caso se emplean dos lenguajes de programación visual con bloques: Scratch y Snap!
+Las definiciones planteadas del PC y los elementos que la componen son solo algunas de las propuestas de investigadores de todo el mundo. Puede ser desarrollado con actividades desenchufadas o \emph{unplugged}, programación visual con bloques o programación textual con lenguajes como python. En este caso, se emplean dos lenguajes de programación visual con bloques: Scratch y Snap!
 
-Gracias a la colaboración de investigadores, asociaciones, empresas, gobiernos y educadores el CT se enseña en las escuelas de una gran cantidad de países, por el reconocimiento de que es una habilidad clave a desarrollar tan importante como leer, escribir y la arimética. Los profesores deben formarse para introducir el pensamiento computacional en las aulas, para que el desconocimiento de cómo hacerlo no  impida que las nuevas generaciones sean capaces de crear y hacer las innovaciones del futuro en las carreras profesionales que elijan.
+Gracias a la colaboración de investigadores, asociaciones, empresas, gobiernos y educadores, el PC se enseña en las escuelas de multitud de países que reconocen que es una habilidad clave a desarrollar tan importante como leer, escribir y la arimética. Los profesores deben formarse para introducir el pensamiento computacional en las aulas, para que el desconocimiento de cómo hacerlo no  impida que las nuevas generaciones sean capaces de crear y hacer las innovaciones del futuro en las carreras profesionales que elijan.
 
 \subsection{Análisis de datos}
 \label{subsec:analisis_datos}
 
 El precursor del análisis de datos fue John W. Tukey, que lo definió como el planteamiento de procedimientos y técnicas que faciliten la recolección de datos, el análisis de los mismos y el ajuste de las técnicas estadísticas para su correcta interpretación~\cite{tukey1962future}. En vez de partir de un análisis que confirme o refute hipótesis y modelos propios de la estadística inferencial, aboga por un análisis exploratorio de datos (EDA) que describa, a partir de técnicas estadísticas básicas y su representación visual, el comportamiento de los mismos, dejando que ``los datos hablen''~\cite{tukey1977Eda}.
 
-Con el crecimiento del volumen de datos que gestionan las empresas, surgieron estándares para concretar los pasos que deben seguirse en la extracción del conocimento oculto de los datos. En 1996 se definió el modelo KDD o \emph{Knowledge Discovery Databases}~\cite{fayyad1996kdd}. Es un proceso iterativo e incremental en el que se seleccionan, preprocesan, transforman, se aplica un proceso de minería de datos para reconocimiento de patrones y se evalúan e interpretan los resultados.
+Con el crecimiento del volumen de datos que gestionan las empresas, surgieron estándares para concretar los pasos que deben seguirse en la extracción del conocimento oculto de los datos. En 1996 se definió el modelo KDD o \emph{Knowledge Discovery Databases}~\cite{fayyad1996kdd}. Es un proceso iterativo e incremental en el que se seleccionan los datos, se preprocesan, se transforman, se aplica un proceso de minería de datos para reconocimiento de patrones y se evalúan e interpretan los resultados.
 
-El esquema SEMMA, \emph{Sample, Explore, Modify, Model and Access}, fue acuñado por SAS. Emplea sus tecnologías para tomar muestras representativas, explorar los datos, modificar las variables para ajustarlas al modelo y comprobar su viabilidad y accesibilidad. El proceso circular CRISP-DM o \emph{CRoss-Industry Standard Process for Data Mining}, cuenta con la compresión del negocio y de los datos, la preparación de los datos, modelado mediante técnicas estadísticas y aplicando técnicas de ML, evaluación del modelo y despliegue en producción si el modelo seleccionado es válido. En caso contrario, se repite el ciclo desde el principio~\cite{azevedo2008kdd, navlani2021python}.
+El esquema SEMMA, \emph{Sample, Explore, Modify, Model and Access}, fue acuñado por SAS. Emplea su software para tomar muestras representativas, explorar los datos, modificar las variables para ajustarlas al modelo y comprobar su viabilidad y accesibilidad~\cite{azevedo2008kdd}. 
 
-En la actualidad se adaptan estas metodologías, siguiendo procesos de ciencia de datos más flexibles. En vez de establecer y ceñirse a unos objetivos iniciales, se da relevancia a las preguntas que puedan surgir y resolverse en la fase exploratoria de los datos. Se distinguen tres roles en estos procesos: el arquitecto de datos, que se encarga de la extracción de datos de diversas fuentes y del despliegue del modelo en producción; el analista de datos, que realiza la fase exploratoria y trata de descubrir \emph{insights} en los datos, y el científico de datos que se basa en la información proporcionada para aplicar y seleccionar los modelos de ML más convenientes.
+El proceso circular CRISP-DM o \emph{CRoss-Industry Standard Process for Data Mining}, cuenta con la compresión del negocio y de los datos, la preparación de los datos, modelado mediante técnicas estadísticas y aplicando técnicas de ML, evaluación del modelo y despliegue en producción si el modelo seleccionado es válido. En caso contrario, se repite el ciclo desde el principio~\cite{azevedo2008kdd, navlani2021python}.
+
+En la actualidad, se adaptan estas metodologías, siguiendo procesos de ciencia de datos más flexibles. En vez de establecer y ceñirse rigurosamente a unos objetivos iniciales, se da relevancia a las preguntas que puedan surgir y resolverse en la fase exploratoria de los datos. 
+
+Se distinguen tres roles en estos procesos: el arquitecto de datos, que se encarga de la extracción de datos de diversas fuentes y del despliegue del modelo en producción; el analista de datos, que realiza la fase exploratoria y trata de descubrir \emph{insights} en los datos, y el científico de datos que parte de la información proporcionada para aplicar y seleccionar los modelos de ML más convenientes, interviniendo en el resto de etapas.
 
 \section{Estructura de la memoria}
 \label{sec:estructura}
 
-A continuación se expone una breve reseña que indica la organización de esta memoria y los puntos clave tratados en la misma. 
+A continuación se exponen los capítulos en los que se organiza esta memoria y los puntos clave tratados en cada uno de ellos. 
 
 \begin{itemize}
     \item \textbf{Capítulo~\ref{chap:intro}: Introducción.} Se explica la motivación y el contexto del proyecto, tratando de acotar el pensamiento computacional y el análisis de datos.
     \item \textbf{Capítulo~\ref{chap:objetivos}: Objetivos.} Se especifican los objetivos concretos en los que se divide el objetivo general marcado, así como la planificación temporal.
     \item \textbf{Capítulo~\ref{chap:estado}: Estado del arte.} Se describen las herramientas que analizan y favorecen el desarrollo del PC y las tecnologías utilizadas en el análisis de datos.
-    \item \textbf{Capítulo~\ref{chap:diseño_implementación}: Diseño e implementación.} Se detallan las etapas seguidas en el diseño del proceso de análisis de datos y los diagramas de cada una de ellas.
+    \item \textbf{Capítulo~\ref{chap:diseño_implementación}: Diseño e implementación.} Se detallan las etapas seguidas en el proceso de análisis de datos y los diagramas de cada una de ellas.
     \item \textbf{Capítulo~\ref{chap:experimentos}: Experimentos y validación.} Se indica el proceso iterativo seguido para validar las métricas del PC aportadas por Dr. Snap! a través del análisis de datos.
     \item \textbf{Capítulo~\ref{chap:resultados}: Resultados.} Se representan los resultados de los análisis de datos para los proyectos de Scratch y de Snap! Se reflejan y comentan las tendencias, patrones y asociaciones que se manifiestan en las métricas del PC. 
     \item \textbf{Capítulo~\ref{chap:conclusiones}:Conclusiones.} Se explica la concordancia existente entre los objetivos propuestos y los logros alcanzados. Se efectúa una comparativa del análisis de datos del desarrollo del PC para ambas tecnologías, en función de los objetivos específicos planteados. Se mencionan los conocimientos puestos en práctica adquiridos durante la carrera y en la elaboración de este trabajo de fin de grado. Se plantean futuras líneas de investigación. 
@@ -358,12 +354,12 @@ Desde que Gregorio me propuso este proyecto en junio de 2021, el rendimiento ha 
 \section{Scratch}
 \label{sec:scratch}
 
-Influenciado e inspirado por Seymour Papert, del que fue doctorando y colaborador en los MIT Media Lab, Mitchel Resnick y su grupo de investigación \emph{Lifelong Kindergarten} comenzaron a desarrollar en 2003 el entorno de programación Scratch, que fue lanzado al público en mayo de 2007. En esta primera versión se buscaba dotar a los niños de una herramienta de aprendizaje con el que explorar sobre sus ideas en un proceso en ``espiral del pensamiento creativo'': se \emph{imagina} lo que se quiere hacer, se \emph{crea} y diseña un proyecto basado en esas ideas, para luego \emph{jugar} y experimentar con el programa creado, se \emph{comparte} con la comunidad de Scratch, recibiendo realimentación de otros que lo prueban y lo remezclan para sus propias creaciones en un entorno colaborativo, se \emph{reflexiona} y se vuelve a \emph{imaginar} en un proceso iterativo donde los proyectos se van refinando para resolver problemas cada vez más complejos~\cite{resnick2007all, resnick2008sowing}. 
+Inspirado por Seymour Papert, del que fue doctorando y colaborador en los MIT Media Lab, Mitchel Resnick y su grupo de investigación \emph{Lifelong Kindergarten} comenzaron a desarrollar en 2003 el entorno web de programación Scratch\footnote{\url{https://scratch.mit.edu}}, que fue lanzado al público en mayo de 2007. En esta primera versión se buscaba dotar a los niños de una herramienta de aprendizaje con el que explorar sobre sus ideas en un proceso en ``espiral del pensamiento creativo''~\cite{resnick2008sowing}: se \emph{imagina} lo que se quiere hacer, se \emph{crea} y diseña un proyecto basado en esas ideas, para luego \emph{jugar} y experimentar con el programa creado, se \emph{comparte} con la comunidad de Scratch, recibiendo realimentación de otros que lo prueban y lo remezclan para sus propias creaciones en un entorno colaborativo, se \emph{reflexiona} y se vuelve a \emph{imaginar} en un proceso iterativo donde los proyectos se van refinando para resolver problemas cada vez más complejos~\cite{resnick2007all}.
 
-Los cuatro principios sobre los que se apoya Scratch como herramienta de aprendizaje son: \textit{proyectos, pasión, compañeros y juego}~\cite{resnick2017seeds}. Está orientada a la creación de \emph{proyectos}, ya sean historias, animaciones, arte, música o videojuegos en función de los intereses y la temática que decida explorar el \emph{scratcher}. El niño programa para aprender de manera transversal competencias de cualquier disciplina. Al escoger y dar forma a un proyecto concreto según lo que les importa y les \emph{apasiona}, se comprometen, profundizan en conceptos y prácticas y se esfuerzan más en solventar los problemas y adversidades que surjan. Uno de los focos principales de Scratch es su comunidad online, donde se reciben consejos, mensajes y donde se aprende de \emph{compañeros}. Los proyectos compartidos son fuente de inspiración y pueden ser reinventados y remezclados. Los programadores de Scratch \emph{juegan} y experimentan con los objetos, indicando las acciones que deben realizar a través de bloques que arrastran, sueltan y encajan, para construir los distintos scripts que describen su comportamiento.%%
+Los cuatro principios sobre los que se apoya Scratch como herramienta de aprendizaje son: \textit{proyectos, pasión, compañeros y juego}~\cite{resnick2017seeds}. Está orientada a la creación de \emph{proyectos}, ya sean historias, animaciones, arte, música o videojuegos en función de los intereses y la temática que decida explorar el \emph{scratcher}. El niño programa para aprender de manera transversal competencias de cualquier disciplina. Al escoger y dar forma a un proyecto concreto según lo que les importa y les \emph{apasiona}, se comprometen, profundizan en conceptos y prácticas y se esfuerzan más en solventar los problemas y adversidades que surjan. Uno de los focos principales de Scratch es su comunidad online, donde se reciben consejos, mensajes y donde se aprende de \emph{compañeros}. Los proyectos compartidos son fuente de inspiración y pueden ser reinventados y remezclados. Los programadores de Scratch \emph{juegan} y experimentan con los objetos, indicando las acciones que deben realizar a través de bloques que arrastran, sueltan y encajan, para construir los distintos scripts que describen su comportamiento.
 Van desarrollando la lógica de su proyecto, comprobando, depurando y mejorando su diseño.
 
-Como lenguaje de programación Scratch se planteó conforme a 3 objetivos: \emph{``low floor, high ceiling, wide walls''}~\cite{resnick2009scratch}. Es sencillo iniciarse en la código-alfabetización a través de Scratch, puesto que los bloques presentan formas que indican cómo deben unirse y están organizados conforme a su funcionalidad en 10 categorías con colores distintos: movimiento, apariencia, sonido, eventos, control, sensores, operadores, variables y mis bloques. Esta última categoría fue añadida en la versión 2.0 y permite definir procedimientos o bloques propios, que junto a las listas y variables suponen un nivel superior de abstracción, para crear proyectos cada vez más complejos y modulares. Así el aprendiz moldea su aprendizaje, adquiere destrezas computacionales y da rienda suelta a su imaginación escogiendo, en un entorno diverso los casos de uso, extensiones y temas que mejor se adapten a sus inquietudes, vagaje y raíces culturales. En la figura~\ref{fig:road_trip} se observa el editor de Scratch con uno de los proyectos analizados en este trabajo de fin de grado. 
+Como lenguaje de programación Scratch se planteó conforme a 3 objetivos: \emph{``low floor, high ceiling, wide walls''}~\cite{resnick2009scratch}. Es sencillo iniciarse en la código-alfabetización a través de Scratch, puesto que los bloques presentan formas que indican cómo deben unirse y están organizados conforme a su funcionalidad en 9 categorías con colores distintos: movimiento, apariencia, sonido, eventos, control, sensores, operadores, variables y mis bloques. Esta última categoría fue añadida en la versión 2.0 y permite definir procedimientos o bloques propios, que junto a las listas y variables suponen un nivel superior de abstracción, para crear proyectos cada vez más complejos y modulares. Así el aprendiz moldea su aprendizaje, adquiere destrezas computacionales y da rienda suelta a su imaginación escogiendo, en un entorno diverso los casos de uso, extensiones y temas que mejor se adapten a sus inquietudes, vagaje y raíces culturales. En la figura~\ref{fig:road_trip} se observa el editor de Scratch con uno de los proyectos analizados en este trabajo de fin de grado. 
 
 \begin{figure}
     \centering
@@ -371,7 +367,7 @@ Como lenguaje de programación Scratch se planteó conforme a 3 objetivos: \emph
     \caption{Proyecto de Scratch \emph{Road Trip} con funciones propias}\label{fig:road_trip}
 \end{figure}
  
-Scratch es el lenguaje de programación visual con fines educativos más extendido, con más de 91 millones de usuarios registrados de 200 países diferentes, que han compartido 105 millones de proyectos con la comunidad online\footnote{\url{https://scratch.mit.edu/statistics/}}. Es el resultado de incentivar el uso de Scratch en talleres, programas extracurriculares, centros comunitarios locales y Computer ClubHouses, hasta incluirlo en las etapas educativas obligatorias o K-12 como herramienta para adquirir las competencias digitales. La franja de edad más frecuente de los aprendices o \emph{tinkers} es de los 8 a los 16 años, como se indica en~\ref{fig:edades}. %70 idiomas
+Scratch es el lenguaje de programación visual con fines educativos más extendido, con más de 91 millones de usuarios registrados de 200 países diferentes, que han compartido 105 millones de proyectos con la comunidad online\footnote{\url{https://scratch.mit.edu/statistics/}}. Es el resultado de incentivar el uso de Scratch en talleres, programas extracurriculares, centros comunitarios locales y Computer ClubHouses, hasta incluirlo en las etapas educativas obligatorias o K-12 como herramienta para adquirir las competencias digitales. La franja de edad más frecuente de los aprendices o \emph{tinkers} es de los 8 a los 16 años, como se aprecia en la figura~\ref{fig:edades}. %70 idiomas
 
 \begin{figure}[H]
     \centering
@@ -393,7 +389,8 @@ Scratch es el lenguaje de programación visual con fines educativos más extendi
 
 Dr. Scratch\footnote{\url{http://www.drscratch.org}} es una aplicación web open-source que analiza proyectos programados en Scratch a través de su url o cargando el proyecto desde el ordenador. Los proyectos de la versión de Scratch 3.0 son almacenados en formato comprimido .sb3. Ya sea obteniendo el fichero de los servidores de Scratch o cargando el fichero JSON contenido en el directorio comprimido, analiza dicho fichero que contiene el código fuente del proyecto de Scratch e indica, a partir de los bloques utilizados en cada objeto, cuáles son las destrezas del pensamiento computacional demostradas en los proyectos. De manera automática el alumno, profesor u organización consiguen realimentación para mejorar en las áreas en las que menor puntuación obtenga, así como de las malas prácticas cometidas a la hora de programar~\cite{moreno2015dr, vargas2019bad}, pudiendo hacer un seguimiento de su progreso.
 
-Ante la ausencia de herramientas que automatizaran la evaluación del pensamiento computacional, Gregorio Robles y Jesús Moreno se propusieron desarrollar la heramienta web libre de código abierto (FLOSS) \texttt{Dr. Scratch} en 2014. Inspirada por Scrape y tomando como base los plugins de Hairball, se extendió su funcionalidad para evaluar la calidad del código de los proyectos de Scratch y poder establecer el dominio del PC, tomando como referencia los métodos de evaluación de otros investigadores y las recomendaciones del profesorado en los talleres organizados~\cite{moreno2015dr}. % Validez ecológica, convergente y  discriminante. Para la versión alpha contaron con la colaboración de David Chushig
+Ante la ausencia de herramientas que automatizaran la evaluación del pensamiento computacional, Gregorio Robles y Jesús Moreno se propusieron desarrollar la heramienta web libre de código abierto (FLOSS) 
+Dr. Scratch en 2014. Inspirada por Scrape y tomando como base los plugins de Hairball, se extendió su funcionalidad para evaluar la calidad del código de los proyectos de Scratch y poder establecer el dominio del PC, tomando como referencia los métodos de evaluación de otros investigadores y las recomendaciones en los talleres organizados~\cite{moreno2015dr}. % Validez ecológica, convergente y discriminante. 
 
 Los grupos de investigación GSyC-LibreSoft y KGB-L3 de la Universidad Rey Juan Carlos en colaboración con Programamos, así como doctorandos y alumnos han contribuido a que se despliegue la aplicación cliente - servidor en producción en una  máquina virtual alojada en Google Cloud Platform, a replicar e integrar la funcionalidad de Hairball y Kurt en la lógica de la aplicación para que analice los proyectos de Scratch 3.0~\cite{vargas2020analysis} y en adaptar la interfaz para que sea más intuitiva y adaptada al aprendizaje de los niños. 
 
@@ -442,8 +439,8 @@ Dr. Scratch se utiliza a escala mundial por organizaciones, investigadores, prof
 \section{Snap!}
 \label{sec:snap}
 
-Snap!\footnote{\url{https://snap.berkeley.edu/}} es un lenguaje de programación visual con bloques cuya primera versión fue desarrollada en 2008 por Jens Mönig y Brian Harvey. Denominada en sus orígenes \emph{BYOB, ``Build Your Own Blocks''}, extendía la funcionalidad de la versión 1.4 de Scratch incluyendo la posibilidad de definir procedimientos o funciones propias. Se puede elegir la categoría a la que pertenecen de las 8 disponibles y si el bloque definido, encapsulado como una primitiva, será utilizado por el objeto donde se declara o por todos los objetos del proyecto. % , diferenciadas por colores
-Estos bloques propios tienen forma de comando, si es una instrucción o procedimiento, de reportero cuando es una función que devuelve un valor o de condición si devuelve un booleano. Por ello permite la recursividad, como la que se aplica en el proyecto de Snap! de la figura~\ref{fig:fractal}. % De predicado valor booleano
+Snap!\footnote{\url{https://snap.berkeley.edu/}} es un lenguaje de programación visual con bloques cuya primera versión fue desarrollada en 2008 por Jens Mönig y Brian Harvey. Denominada en sus orígenes \emph{BYOB, ``Build Your Own Blocks''}, extendía la funcionalidad de la versión 1.4 de Scratch incluyendo la posibilidad de definir procedimientos o funciones propias. Se puede elegir la categoría a la que pertenecen de las 8 disponibles y si el bloque definido, encapsulado como una primitiva, será utilizado por el objeto donde se declara o por todos los objetos del proyecto.
+Estos bloques propios tienen forma de comando, si es una instrucción o procedimiento, de reportero cuando es una función que devuelve un valor o de condición si devuelve un booleano. Por ello permite la recursividad, como la que se aplica en el proyecto de Snap! de la figura~\ref{fig:fractal}.
 
 \begin{figure}[H]
     \centering
@@ -452,13 +449,13 @@ Estos bloques propios tienen forma de comando, si es una instrucción o procedim
     \label{fig:fractal}
 \end{figure}
 
-Según B. Harvey ``Snap! es Scheme disfrazado de Scratch''~\cite[p. 3]{harvey2017snap}, por lo que todos los tipos de datos son de primera clase, las listas, los procedimientos, las continuaciones, los objetos, los disfraces, los sonidos. De esta manera se pueden tener listas enlazadas, diccionarios, listas de listas o estructuras de datos heterogéneas cuyos elementos pueden ser de cualquier tipo. Los anillos grises permiten crear expresiones $\lambda$ a partir de bloques o scripts, para utilizarlas como parámetro o resultado de funciones de orden superior.
+Según B. Harvey ``Snap! es Scheme disfrazado de Scratch''~\cite[p. 3]{harvey2017snap}, por lo que todos los tipos de datos son de primera clase, las listas, los procedimientos, las continuaciones, los objetos, los disfraces y los sonidos. De esta manera se pueden tener listas enlazadas, diccionarios, listas de listas o estructuras de datos heterogéneas cuyos elementos pueden ser de cualquier tipo. Los anillos grises permiten crear expresiones $\lambda$ a partir de bloques o scripts, para utilizarlas como parámetro o resultado de funciones de orden superior.
 Por lo tanto, los programadores pueden experimentar con herramientas propias de la programación funcional, profundizando en conceptos abstractos y de diseño~\cite{harvey2015lambda}.
-Como muestra de la relevancia que adquiere en Snap! este paradigma, tanto su logo como su mascota Alonzo, el antiguo Gobo de Scratch, incluyen una $\lambda$ en honor al cálculo lambda de Alonzo Church.% Empleado en la IA
+Como muestra de la relevancia que adquiere en Snap! este paradigma, tanto su logo como su mascota Alonzo, el antiguo Gobo de Scratch, incluyen una $\lambda$ en honor al cálculo lambda de Alonzo Church.
 
 No obstante, Snap! permite un enfoque imperativo y una programación orientada a objetos basada en prototipos por delegación, orientado a las simulaciones. A diferencia de Scratch, un objeto puede enviar un mensaje a otro objeto en particular y los clones pueden añadir sus propios atributos, tras heredar todos los atributos del objeto padre~\cite{snap2022git}. % versión 5 -> blocks for analyzing data and transforming media: https://dl.acm.org/doi/abs/10.1145/3328778.3372549. 
 
-Mientras que en Scratch 2.0 optaron por mantener el software privativo Flash Player para el contenido multimedia de los proyectos de sus usuarios hasta el desarrollo de la versión 3 en 2019, en la versión 4 de Snap! se decidió reimplementar BYOB en JavaScript usando el lenguaje de marcado HTML5. En consecuencia se puede acceder a Snap! desde cualquier navegador, con independencia del SO. Los usuarios registrados pueden almacenar sus proyectos de Snap! en un servidor en la nube de forma privada o pueden decidir compartirlos o publicarlos en el sitio web de Snap! Está menos orientado que Scratch a la interacción entre los miembros de su comunidad, por lo que no incide en la remezcla y ofrece menos tutoriales. De hecho la comunidad de Snap! posee una incidencia drásticamente menor, contando en marzo de 2021 con 511.000 cuentas de usuario con 4.525.000 proyectos creados, de los cuales sólo el 37\% habían sido compartidos\footnote{\url{https://forum.snap.berkeley.edu/t/how-many-snap-users-are-there/5598/7}}. Está dirigido a jóvenes entre 14 y 20 años~\cite{harvey2013snap}.
+Mientras que en Scratch 2.0 optaron por mantener el software privativo Flash Player para el contenido multimedia de los proyectos de sus usuarios hasta el desarrollo de la versión 3 en 2019, en la versión 4 de Snap! se decidió reimplementar BYOB en JavaScript usando el lenguaje de marcado HTML5. En consecuencia, se puede acceder a Snap! desde cualquier navegador, con independencia del SO. Los usuarios registrados pueden almacenar sus proyectos de Snap! en un servidor en la nube de forma privada o pueden decidir compartirlos o publicarlos en el sitio web de Snap! Está menos orientado que Scratch a la interacción entre los miembros de su comunidad, por lo que no incide en la remezcla y ofrece menos tutoriales. De hecho la comunidad de Snap! posee una incidencia drásticamente menor, contando en marzo de 2021 con 511.000 cuentas de usuario con 4.525.000 proyectos creados, de los cuales sólo el 37\% habían sido compartidos\footnote{\url{https://forum.snap.berkeley.edu/t/how-many-snap-users-are-there/5598/7}}. Está dirigido a jóvenes entre 14 y 20 años~\cite{harvey2013snap}. %%
  
 \section{Dr. Snap!}
 \label{sec:dr_snap}
@@ -511,11 +508,11 @@ Si el usuario está autenticado podrá hacer seguimiento de la etapa de desarrol
 
 \section{Python}
 \label{sec:python}
-Python\footnote{\url{https://www.python.org}} es un lenguaje de programación \emph{open-source} de alto nivel, interpretado, multiparadigma, aunque con un marcado enfoque hacia la programación orientada a objetos. Fue desarrollado por Guido van Rossum entre diciembre de 1989 y febrero de 1991, fecha en que la primera versión estuvo disponible~\cite{van2007python}. La última versión estable es la 3.10.4.
+Python\footnote{\url{https://www.python.org}} es un lenguaje de programación de alto nivel, interpretado, multiparadigma, aunque con un marcado enfoque hacia la programación orientada a objetos. Fue desarrollado por Guido van Rossum entre diciembre de 1989 y febrero de 1991, fecha en que la primera versión estuvo disponible~\cite{van2007python}. La última versión estable es la 3.10.4.
 
 Entre sus principios de diseño priman la legibilidad en su sintaxis, la sencillez, ser compacto, explícito, conciso, con estructuras planas~\cite{peters2010zen} y busca mejora la productividad. Es relativamente sencillo empezar a programar en Python y tiene una curva de aprendizaje moderada. Por ello, es una poderosa herramienta de aprendizaje para el pensamiento computacional~\cite{wang2021research}.
 
-Es multiplataforma, puesto que permite su ejecución en cualquier SO. Es de propósito general, contando con una extensa colección de librerías y módulos aplicables al desarrollo web, a la ciberseguridad o a la ciencia y análisis de datos. Todo ello conlleva a que sea uno de los lenguajes más utilizados. 
+Es multiplataforma, puesto que permite su ejecución en cualquier sistema operativo. Es de propósito general, contando con una extensa colección de librerías y módulos aplicables al desarrollo web, a la ciberseguridad o a la ciencia y análisis de datos. Todo ello conlleva a que sea uno de los lenguajes más utilizados. 
 
 \section{Jupyter Notebooks}
 \label{sec:jupyter}
@@ -554,7 +551,7 @@ Seaborn\footnote{\url{http://seaborn.pydata.org}} es una librería de Python de 
 \section{Scikit-Learn} 
 \label{sec:sklearn}
 
-David Cournapeau inició el proyecto Scikit-Learn en el Google Summer of Code en 2007. Matthieu Brucher se unió en 2008. En 2010 se publicó su primera versión\footnote{\url{https://scikit-learn.org/stable/about.html}}. Actualmente es una librería open-source bajo licencia BSD desarrollada por colaboradores internacionales.% coordinada y mantenida principalmente por un equipo de investigadores del Inria (French Institute for Research in Computer Science and Automation).
+David Cournapeau inició el proyecto Scikit-Learn en el Google Summer of Code en 2007. Matthieu Brucher se unió en 2008. En 2010 se publicó su primera versión\footnote{\url{https://scikit-learn.org/stable/about.html}}. Actualmente es una librería open-source bajo licencia BSD desarrollada por colaboradores internacionales, coordinada y mantenida principalmente por un equipo de investigadores del Inria \emph{(French Institute for Research in Computer Science and Automation)}.
 
 Con dependencias de NumPy y SciPy, es una API de propósito general que facilita la aplicación de algoritmos de Machine Learning supervisado y no supervisado e incluye módulos de preprocesamiento de datos, comparación, validación y selección de modelos y reducción de dimensionalidad~\cite{pedregosa2011scikit}. Su API está diseñada para ser simple, eficiente, accesible para investigadores de diversa áreas y reutilizable. Está compuesta por tres interfaces: de transformación de los datos representados como arrays de numpy, de estimación para crear y entrenar los modelos y de predicción. Sus principios de diseño son: consistencia en los objetos, inspección de atributos públicos, no proliferación de clases, composición y valores predeterminados sensibles~\cite{sklearn_api}.
 
@@ -595,10 +592,10 @@ Cuando se analiza con Dr. Scratch un proyecto, ya sea a través de su url o carg
 
 Se accedió al servidor en remoto vía ssh mediante clave pública-privada para descargar los 271558 proyectos de Scratch que se encontraban en el directorio \texttt{drscratchv3/uploads/}. Ocupaban cerca de 80GB y estaban fechados entre el 1 junio de 2019 y el 31 de julio de 2021. Se fueron copiando por lotes en local, gracias a scp y rsync, en función del mes y año. 
 
-El módulo \texttt{analyzer.py} de Dr. Scratch asigna puntuaciones a cada una de las 7 habilidades del pensamiento computacional en función de los bloques empleados. Para ello, analiza el documento JSON que almacena el código fuente de cada proyecto, ubicado en el directorio comprimido. Se adaptó el módulo para que pudiera ser ejecutado desde línea de comandos como programa principal, pasándole como argumento el proyecto de Scratch a analizar (en formato comprimido .sb*) o la ruta al mismo. Se modificó para que imprimiera por pantalla las métricas de cada habilidad, el total obtenido al sumarlas y la valoración media para cada proyecto, en una fila separada por comas. Se redirigió la salida estándar al fichero \emph{results.csv}.  
+El módulo \texttt{analyzer} de Dr. Scratch asigna puntuaciones a cada una de las 7 habilidades del pensamiento computacional en función de los bloques empleados. Para ello, analiza el documento JSON que almacena el código fuente de cada proyecto, ubicado en el directorio comprimido. Se adaptó el módulo para que pudiera ser ejecutado desde línea de comandos como programa principal, pasándole como argumento el proyecto de Scratch a analizar (en formato comprimido .sb*) o la ruta al mismo. Se modificó para que imprimiera por pantalla las métricas de cada habilidad, el total obtenido al sumarlas y la valoración media para cada proyecto, en una fila separada por comas. Se redirigió la salida estándar al fichero \emph{results.csv}.  
 Con un bucle for en bash scripting se automatizó el análisis para todos los lotes de proyectos, indicando el path al directorio donde se localizan. El flujograma del script se representa en~\ref{fig:script_extract}.
 
-Aquellos proyectos que generaban excepciones por fallos en la descompresión del proyecto, en la conversión del objeto JSON a un diccionario o en el acceso y obtención de elementos o claves al recorrer la estructura de diccionarios anidados, fueron registrados redirigiendo el flujo de errores estándar, \emph{stderr}, al fichero \texttt{error.csv}. Este fichero indicaba la ruta al proyecto, el tipo de excepción capturada y la línea donde se produce. Contenía 1714 proyectos excluidos del análisis de datos posterior.
+Aquellos proyectos que generaban excepciones por fallos en la descompresión del proyecto, en la conversión del objeto JSON a un diccionario o en el acceso y obtención de elementos o claves al recorrer la estructura de diccionarios anidados, fueron registrados redirigiendo el flujo de errores estándar, \emph{stderr}, al fichero \emph{error.csv}. Este fichero indicaba la ruta al proyecto, el tipo de excepción capturada y la línea donde se produce. Contenía 1714 proyectos excluidos del análisis de datos posterior.
 
 \begin{figure}[ht]
     \centering
@@ -609,13 +606,13 @@ Aquellos proyectos que generaban excepciones por fallos en la descompresión del
 
 Para los proyectos de Snap!, mi tutor, Gregorio, me pasó un enlace a un archivo comprimido. Se transfirió su contenido a un disco duro externo. El directorio generado ocupaba 31,9 GB e incluía 113906 proyectos almacenados cada uno en un directorio distinto.
 
-Para extraer la información seleccionada de esta fuente de datos se codificó un script de python, \texttt{get\_csv.py} cuyo diagrama se muestra en~\ref{fig:script_extract}. Si se ejecuta como programa principal, se crea el fichero \emph{result\_snap\_metrics.csv}. Gracias a la librería \texttt{glob}, se recorre una lista con las rutas a los proyectos de Snap! conforme a un patrón específico y se van rellenando las filas del CSV para cada proyecto según los atributos escogidos. Para ello llama a la función \texttt{calcular\_puntuacion(file\_xml)} del módulo \texttt{analyzer.py}. Este módulo recogía las funciones encargadas de calcular el desarrollo del PC de la lógica de la aplicación web de Dr. Snap! Se adaptó para que el parámetro de entrada de la función \texttt{calcular\_puntuacion(file\_xml)} no sea la url, sino el path del proyecto Snap! a analizar, almacenado como documento XML en un árbol de directorios contenidos en un disco duro externo. Se extrajo a otro módulo la parte encargada de parsear el documento XML, que describe la estructura del código fuente del proyecto solicitado al servidor de Snap! Berkeley. 
+Para extraer la información seleccionada de esta fuente de datos se codificó un script de python, \texttt{get\_csv.py} cuyo diagrama se muestra en~\ref{fig:script_extract}. Si se ejecuta como programa principal, se crea el fichero \emph{result\_snap\_metrics.csv}. Gracias a la librería \texttt{glob}, se recorre una lista con las rutas a los proyectos de Snap! conforme a un patrón específico y se van rellenando las filas del CSV para cada proyecto según los atributos escogidos. Para ello llama a la función \texttt{calcular\_puntuacion()} del módulo \texttt{analyzer}. Este módulo recogía las funciones encargadas de calcular el desarrollo del PC de la lógica de la aplicación web de Dr. Snap! Se adaptó para que el parámetro de entrada de la función \texttt{calcular\_puntuacion(file\_xml)} no sea la url, sino el path del proyecto Snap! a analizar, almacenado como documento XML en un árbol de directorios contenidos en un disco duro externo. Se extrajo a otro módulo la parte encargada de parsear el documento XML, que describe la estructura del código fuente del proyecto solicitado al servidor de Snap! Berkeley. 
 
-En el módulo parser se importa el módulo estándar xml.sax. Se genera un parser SAX que procesa el documento como un stream, de manera que el parser genérico creado lee eventos de interés según se van produciendo, y llama a métodos concretos del manejador que especifican qué hacer cuando encuentra determinadas etiquetas anidadas dentro del nodo raíz o elemento project y cómo tratar algunos de sus atributos. En concreto, guarda el nombre del proyecto, los nombres de los bloques utilizados en cada script contenido dentro de un personaje o sprite, los nombres de los bloques personalizados o funciones propias definidas por el programador, así como los bloques utilizados para su implementación y los nombres de las variables declaradas. Además realiza un recuento de las etiquetas sprite, script, bloque, bloque personalizado y variable que aparecen en el documento XML del proyecto. Esta información se almacena en variables del objeto hasta que el parser encuentra el fin de la etiqueta project. Llama al método de la clase del manejador endElement y se almacenan los datos en un documento JSON.
+En el módulo \texttt{parser} se importa el módulo estándar \texttt{xml.sax}. Se genera un parser SAX que procesa el documento como un stream, de manera que el parser genérico creado lee eventos de interés según se van produciendo, y llama a métodos concretos del manejador que especifican qué hacer cuando encuentra determinadas etiquetas anidadas dentro del nodo raíz o elemento project y cómo tratar algunos de sus atributos. En concreto, guarda el nombre del proyecto, los nombres de los bloques utilizados en cada script contenido dentro de un personaje o sprite, los nombres de los bloques personalizados o funciones propias definidas por el programador, así como los bloques utilizados para su implementación y los nombres de las variables declaradas. Además realiza un recuento de las etiquetas sprite, script, bloque, bloque personalizado y variable que aparecen en el documento XML del proyecto. Esta información se almacena en variables del objeto hasta que el parser encuentra el fin de la etiqueta project. Llama al método de la clase del manejador endElement y se almacenan los datos en un documento JSON.
 
-Se define una clase ParserXML cuyo constructor consta de dos atributos: un objeto que es el parser genérico creado a partir de make\_parser() y un manejador que instancia un objeto de la clase myContentHandler, que hereda a su vez de la clase ContentHandler predefinida en el módulo handler de la librería xml.sax. Se vincula el parser con el manejador modificado, para que cuando encuentre eventos de contenido, se desencadene la ejecución de los métodos del manejador con la extensión de funcionalidad indicada anteriormente, tomada de Dr. Snap! La clase recibe como parámetro de entrada la ruta del documento XML con la estructura del proyecto codificado en Snap!, almacenado en el disco duro externo. El parser analiza el fichero XML según el comportamiento indicado en el manejador, salvo que localice en el flujo de datos errores en la sintaxis del XML, caracteres terminales no permitidos o \emph{invalid\_token}. En ese caso el proyecto se registra en un fichero donde se indica el tipo de error que se produce y en qué punto salta la excepción. Todos los documentos XML mal formados fueron corregidos. 
+Se define una clase \texttt{ParserXML} cuyo constructor consta de dos atributos: un objeto que es el parser genérico creado a partir de \texttt{make\_parser()} y un manejador que instancia un objeto de la clase \texttt{myContentHandler}, que hereda a su vez de la clase \texttt{ContentHandler} predefinida en el módulo \texttt{handler} de la librería xml.sax. Se vincula el parser con el manejador modificado, para que cuando encuentre eventos de contenido, se desencadene la ejecución de los métodos del manejador con la extensión de funcionalidad indicada anteriormente, tomada de Dr. Snap! La clase recibe como parámetro de entrada la ruta del documento XML con la estructura del proyecto codificado en Snap!, almacenado en el disco duro externo. El parser analiza el fichero XML según el comportamiento indicado en el manejador, salvo que localice en el flujo de datos errores en la sintaxis del XML, caracteres terminales no permitidos o \emph{invalid\_token}. En ese caso el proyecto se registra en un fichero donde se indica el tipo de error que se produce y en qué punto salta la excepción. Todos los documentos XML mal formados fueron corregidos. 
 
-Cuando se llama a calcular\_puntuacion desde el módulo principal get\_csv, se instancia un objeto de la clase ParserXML que devuelve un fichero en formato JSON, con el contenido que nos interesa en una estructura de datos más compacta, legible y ligera. Se convierte en un diccionario de listas, que es el parámetro de entrada de las funciones que analizan las habilidades del pensamiento computacional en función de los bloques utilizados en los proyectos, el nº de scripts y el nº de sprites. Se corrigieron duplicidades y se mejoró el código del módulo analyzer.
+Cuando se llama a \texttt{calcular\_puntuacion} desde el módulo principal \texttt{get\_csv}, se instancia un objeto de la clase \texttt{ParserXML} que devuelve un fichero en formato JSON, con el contenido que nos interesa en una estructura de datos más compacta, legible y ligera. Se convierte en un diccionario de listas, que es el parámetro de entrada de las funciones que analizan las habilidades del pensamiento computacional en función de los bloques utilizados en los proyectos, el nº de scripts y el nº de sprites. Se corrigieron duplicidades y se mejoró el código del módulo \emph{analyzer}.
 
 \section{Limpieza y tratamiento de datos} 
 \label{sec:clean_data}
@@ -628,13 +625,13 @@ A pesar de que se ha tenido especial cuidado en la fase de obtención y selecci�
     \caption{Diagrama de flujo: limpieza de datos}\label{fig:script_clean}
 \end{figure}
 
-A partir de este script se obtienen 269842 proyectos de Scratch y 112894 proyectos de Snap! únicos y válidos con un nivel asignado de tipo categórico y cuyas puntuaciones totales y parciales para cada habilidad del PC son variables discretas. Estos datos determinan el tipo de agrupaciones y distribuciones que visualizar en la siguiente etapa.
+A partir de este script se obtienen 269842 proyectos de Scratch y 113894 proyectos de Snap! únicos y válidos con un nivel asignado de tipo categórico y cuyas puntuaciones totales y parciales para cada habilidad del PC son variables discretas. Estos datos determinan el tipo de agrupaciones y distribuciones que visualizar en la siguiente etapa.
 
 
-\section{EDA univariante: distribuciones por nivel, total y dimensiones CT} 
+\section{EDA univariante: distribuciones por nivel, total y dimensiones del pensamiento computacional (PC)} 
 \label{sec:EDA_univariante}
 
-Las observaciones o proyectos de Scratch y de Snap! recogidos en la estructura de datos tabular por sí mismas no aportan mucha información. Para comenzar a describir y resumir los datos de ambas poblaciones se filtran en función del nivel, que es una variable categórica ordinal con 3 posibles valores: básico, intermedio y avanzado. Se recurre al método value\_counts() de Pandas para determinar las frecuencias de ocurrencia y se ordenan de menor a mayor nivel. Se preparan los datos para ser representados como diagrama de barras y de sectores, gracias a las funciones pertinentes de las bibliotecas seaborn y matplotlib.pyplot.  
+Las observaciones o proyectos de Scratch y de Snap! recogidos en la estructura de datos tabular por sí mismas no aportan mucha información. Para comenzar a describir y resumir los datos de ambas poblaciones se filtran en función del nivel, que es una variable categórica ordinal con 3 posibles valores: básico, intermedio y avanzado. Se recurre al método \texttt{value\_counts()} de Pandas para determinar las frecuencias de ocurrencia y se ordenan de menor a mayor nivel. Se preparan los datos para ser representados como diagrama de barras y de sectores, gracias a las funciones pertinentes de las bibliotecas seaborn y matplotlib.pyplot.  
 
 \begin{figure}[H]
     \centering
@@ -650,18 +647,18 @@ Se instancia un objeto de la clase dataframe escogiendo las siete variables disc
 \section{EDA: resumen por métricas estadísticas} 
 \label{sec:EDA_estadísticos}
 
-Se llama al método describe() del objeto \texttt{df\_ct} para obtener, de cada variable discreta del pensamiento computacional, su media, su desviación típica, el rango de valores, la posición de sus cuartiles cuando se ordenan los proyectos de menor a mayor puntuación y su mediana, que coincide con el segundo cuartil. La media y la mediana describen cada distribución por el centro de gravedad o la puntuación del proyecto situado en su centro. Con ellas podemos saber qué habilidades consiguen mejores puntuaciones. Con la varianza y la desviación típica se conoce la dispersión de los proyectos con respecto a la media. 
+Se llama al método \texttt{describe()} del objeto \texttt{df\_ct} para obtener, de cada variable discreta del pensamiento computacional, su media, su desviación típica, el rango de valores, la posición de sus cuartiles cuando se ordenan los proyectos de menor a mayor puntuación y su mediana, que coincide con el segundo cuartil. La media y la mediana describen cada distribución por el centro de gravedad o la puntuación del proyecto situado en su centro. Con ellas podemos saber qué habilidades consiguen mejores puntuaciones. Con la varianza y la desviación típica se conoce la dispersión de los proyectos con respecto a la media. 
 
 Se representa el diagrama de cajas de las habilidades con la función \texttt{boxplot()}. Nos permite comparar las distribuciones en función de su rango intercuartílico ($IQR=Q_3 - Q_1$), los límites superior e inferior calculados a partir de él y la presencia de \emph{outliers} o valores atípicos. Se analizan en detalle en los apartados~\ref{subsec:estad_pc_Scratch} y~\ref{subsec:estad_pc_Snap}.   
 
-\section{EDA: correlaciones de las dimensiones CT} 
+\section{EDA: correlaciones de las dimensiones del PC} 
 \label{sec:EDA_corr}
 
 Con el objetivo de establecer el grado de dependencia existente entre la puntuación total con cada una de las variables o habilidades que la conforman, entre estas habilidades entre sí y la evolución de estas asociaciones según aumenta la puntuación total, se calcula el coeficiente de correlación de Pearson, definido en la ecuación~\ref{eq:correlacion}. 
 
 Primero se recurre al método \texttt{corrwith()} del objeto \texttt{df\_ct} para determinar cómo aumenta la puntuación total según se incrementa cada variable del pensamiento computacional. Devuelve un objeto de tipo serie que nos ayuda a identificar qué habilidades presentan menores interdependencias lineales con el total resultante de la agregación de sus valores.
 
-A continuación se obtiene la matriz simétrica con los coeficientes de correlación de Pearson entre cada par de capacidades. Se aplica el método corr() sobre \texttt{df\_ct} y se representa la matriz mediante un mapa de calor que resalta las habilidades con relaciones positivas más fuertes. Así se puede comprobar si las capacidades que conceptualmente se desarrollan juntas, como sincronización y paralelismo o control de flujo y pensamiento lógico, realmente muestran esa dependencia en las poblaciones de  proyectos de Scratch y Snap! analizadas.
+A continuación se obtiene la matriz simétrica con los coeficientes de correlación de Pearson entre cada par de capacidades. Se aplica el método \texttt{corr()} sobre \texttt{df\_ct} y se representa la matriz mediante un mapa de calor que resalta las habilidades con relaciones positivas más fuertes. Así se puede comprobar si las capacidades que conceptualmente se desarrollan juntas, como sincronización y paralelismo o control de flujo y pensamiento lógico, realmente muestran esa dependencia en las poblaciones de  proyectos de Scratch y Snap! analizadas.
 
 \begin{figure}[H]
     \centering
@@ -676,7 +673,7 @@ Para mostrar las dependencias lineales que se van produciendo según aumenta la 
 
 Al no disponer de una variable de salida u objetivo y contar con una elevada cantidad de proyectos, se aplica un modelo de aprendizaje no supervisado particional, clustering K-Means. Agrupa los proyectos por similitud, extrayendo patrones entre sus características basados en la  distancia al centro de cada grupo. Es preciso conocer a priori el nº de grupos o centros (k). Para determinarlo se sigue el diagrama de flujo~\ref{fig:kmeans}. 
 
-Se definen los proyectos como puntos en un espacio métrico de siete dimensiones, que son las características del pensamiento computacional analizadas. Se obtiene un array X con tantas filas como proyectos y tantas columnas como habilidades CT. Se establece un rango de valores de k a probar. Se ejecuta \emph{KMeans(n\_clusters=k, init='k-means++', max\_iter=300, n\_init=10, random\_state=0)} para cada valor de k. Tras iteraciones sucesivas en que se asignan los proyectos al centro más cercano y se recalculan las medias aritméticas de los k grupos, que serán los nuevos centroides, el algoritmo converge. Los centros y los proyectos asignados se estabilizan. El algoritmo devuelve la iteración con menor inercia para ese valor de k, siendo la inercia la suma de los cuadrados de la distancia euclídea intra-clúster.
+Se definen los proyectos como puntos en un espacio métrico de siete dimensiones, que son las características del pensamiento computacional analizadas. Se obtiene un array X con tantas filas como proyectos y tantas columnas como habilidades PC. Se establece un rango de valores de k a probar. Se ejecuta \texttt{KMeans()} para cada valor de k. Tras iteraciones sucesivas en que se asignan los proyectos al centro más cercano y se recalculan las medias aritméticas de los k grupos, que serán los nuevos centroides, el algoritmo converge. Los centros y los proyectos asignados se estabilizan. El algoritmo devuelve la iteración con menor inercia para ese valor de k, siendo la inercia la suma de los cuadrados de la distancia euclídea intra-clúster.
 
 Una vez se tienen los valores de inercia para los distintos valores de k, se busca un compromiso entre un bajo valor de inercia y un nº de grupos no muy elevado. Si k es muy elevado, proyectos similares pertenecerán a grupos diferentes, produciéndose granularidad. Su representación gráfica es la curva de Elbow. El valor de k donde se produzca un cambio abrupto de pendiente a partir del cual no disminuya demasiado la inercia será el nº de grupos escogido. Si no se distingue con claridad ese punto se recurre a otros métodos de validación interna. Para los proyectos de Snap! he aplicado tres técnicas que utilizan como parámetro las etiquetas que indican a cuál de los k grupos pertenece cada proyecto, tras aplicar K-Means. 
 
@@ -720,14 +717,13 @@ Para poder responder a cómo es el proceso de aprendizaje empírico que se manif
 
 En este caso no estamos interesados en segmentar los proyectos en k grupos aplicando el algoritmo K-Means directamente. El criterio elegido para su partición es la puntuación total que obtienen. El objeto devuelto por groupby() agrupa los proyectos de nuestro dataset en función de su puntuación total. K-Means toma el grupo de una puntuación con k=1 y se ejecuta iterativamente hasta que el centroide o centro se sitúa en el punto medio que minimiza la suma de las distancias euclídeas de cada proyecto del grupo a este centro. Cuando el algoritmo converge, se calcula cuál es el proyecto más cercano a este centroide, expresado como un vector de características cuyas coordenadas son las 7 dimensiones del pensamiento computacional que mejor caracterizan al grupo. Se repite el proceso para cada grupo definido por su puntuación total.
 
-Una vez se ha obtenido el proyecto representativo de cada puntuación total, se concatenan los dataframes de una fila, en los que se ha representado cada vector, en una única tabla \texttt{learning\_by\_total}, a la que se añade la variable total. Se representan los prototipos de cada puntuación total, para visualizar la mejora de qué habilidad nos permite pasar a la siguiente puntuación y qué valores recibe cada capacidad en cada nivel de complejidad. Los resultados se recogen en los diagramas de barras~\ref{fig:path_Scratch} y~\ref{fig:path_Snap}.
-
 \begin{figure}
     \centering
     \includegraphics[height=.6\textheight]{img/ruta_de_aprendizajeCaja.png}
-    \caption{Diagrama de flujo de get\_df\_representative(df, n), incluido en la obtención de las rutas de aprendizaje.}\label{fig:diagrama_rutas}
+    \caption{Diagrama de flujo para la obtención de rutas de aprendizaje.}\label{fig:diagrama_rutas}
 \end{figure}
 
+Una vez se ha obtenido el proyecto representativo de cada puntuación total, se concatenan los dataframes de una fila, en los que se ha representado cada vector, en una única tabla \texttt{learning\_by\_total}, a la que se añade la variable total. Se representan los prototipos de cada puntuación total, para visualizar la mejora de qué habilidad nos permite pasar a la siguiente puntuación y qué valores recibe cada capacidad en cada nivel de complejidad. Los resultados se recogen en los diagramas de barras~\ref{fig:path_Scratch} y~\ref{fig:path_Snap}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -757,7 +753,7 @@ Para paralelismo, sincronización, control de flujo e interactividad con el usua
        \textbf{Control de flujo} & Secuencia de bloques. & Repetir n veces, por siempre o bucle for. & Repetir hasta. \\ \hline
        \textbf{Interactividad con el usuario} & Eventos: bandera verde o pulsar una tecla. Sensores:   
        tecla u objeto pulsado. & Preguntar al usuario y obtener respuesta.
-       Eventos con el ratón sobre el objeto.%ratón pulsado
+       Eventos con el ratón sobre el objeto.
        & Detección de colisiones, acciones en audio y vídeo. \\ \hline
        \textbf{Representación de los datos} & Modificadores de atributos de los objetos. & Funciones con variables. & Funciones con listas. \\ \hline
     \end{tabular}}
@@ -903,7 +899,7 @@ Se complementa el análisis univariante calculando los estadísticos descriptivo
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{img/describe_Scratch.png}
-    \caption{Media, desviación estándar y cuartiles de cada CT}
+    \caption{Media, desviación estándar y cuartiles de cada habilidad del PC en Scratch}
     \label{fig:describe_Scratch}
 \end{figure}
 
@@ -912,7 +908,7 @@ A continuación se representa en la figura~\ref{fig:cajas_Scratch} la concentrac
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{img/diag_cajas_Scratch2.png}
-    \caption{Diagrama de cajas de cada dimensión del CT}
+    \caption{Diagrama de cajas de cada dimensión del PC en Scratch}
     \label{fig:cajas_Scratch}
 \end{figure}
 
@@ -932,10 +928,10 @@ Siguiendo con el análisis exploratorio de datos o EDA se calculan los coeficien
     \hline
     \textbf{Correlación} & \textbf{Abstracción} & \textbf{Paralelismo} & \textbf{Lógica} & \textbf{Sincronización} & \textbf{Control de flujo} & \textbf{\begin{tabular}[c]{@{}c@{}}Interactividad\\ con el usuario\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Representación\\ de los datos\end{tabular}} \\
     \hline
-    \textbf{Total} & 0.772359 & 0.720550 &  0.787795 & 0.753190 & 0.772396 & 0.609517 &  0.786001 \\
+    \textbf{Total} & 0.772359 & 0.720550 &  0.787795 & 0.753190 & 0.772396 & 0.609517 &  0.786001 \\ 
     \hline
     \end{tabular} }
-    \caption{Correlación de la puntuación total con cada dimensión del PC}
+    \caption{Correlación de la puntuación total con cada dimensión del PC en Scratch}
     \label{table:corr_total_Scratch}
  \end{center}
 \end{table}
@@ -992,7 +988,7 @@ la matriz de correlación~\ref{fig:corr1} muestra una correlación perfecta posi
         \caption{Matriz de correlación. Total=1}
         \label{fig:corr1}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 1}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 1.}
 \end{figure}
 
 \begin{figure}[H]
@@ -1007,14 +1003,14 @@ la matriz de correlación~\ref{fig:corr1} muestra una correlación perfecta posi
         \caption{Matriz de correlación. Total=2}
         \label{fig:corr2}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 2}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 2.}
 \end{figure}
 
 Como se percibe en la figura~\ref{fig:total2} la mayor parte de los proyectos cuentan con 1 punto en paralelismo y en interactividad con el usuario, que agregados conforman el total de 2.
 
 De la matriz de correlación de la figura~\ref{fig:corr2} se deduce que aquellos pares de variables en los que la correlación no es perfecta y positiva, tienen una correlación débil y negativa. Entre paralelismo e interactividad con el usuario se produce una dependencia lineal perfecta, ya que cuando el usuario pulsa la bandera verde se desencadena la ejecución de varios flujos de código simultáneamente. Estas dos dimensiones se relacionan en sentido inverso con las otras aptitudes. El resto de dimensiones mantienen entre sí una relación perfecta positiva porque no puntúan. 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_3_Scratch}
@@ -1026,7 +1022,7 @@ De la matriz de correlación de la figura~\ref{fig:corr2} se deduce que aquellos
         \caption{Matriz de correlación. Total=3}
         \label{fig:corr3}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 3}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 3.}
 \end{figure}
 
 En la figura~\ref{fig:total3} se observa que los proyectos completan los 3 puntos totales con 1 o 2 puntos en paralelismo, 1 punto en interactividad con el usuario o incluso 1 punto en control de flujo, puesto que la frecuencia de ocurrencia es superior a 4000.
@@ -1049,15 +1045,14 @@ En la matriz de correlación~\ref{fig:corr4} queda patente que existe dependenci
         \caption{Matriz de correlación. Total=4}
         \label{fig:corr4}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 4}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 4.}
 \end{figure}
-
 
 Según el diagrama de barras~\ref{fig:total5} correspondiente a la puntuación total de 5, paralelismo e interactividad con el usuario son las capacidades mejor valoradas, puesto que la mitad de los proyectos consiguen 2 puntos. También aumenta la cantidad de proyectos que consiguen 1 punto en lógica y sincronización.
 
 Al aumentar las puntuaciones, hay menos pares de dimensiones con coeficiente de correlación perfecto. Las máximas correlaciones en sentido positivo se producen entre paralelismo e interactividad con el usuario, y en menor medida entre representación de los datos y abstracción, entre sincronización y lógica y entre representación de los datos y lógica, como se observa en la figura~\ref{fig:corr5}. Resulta llamativo que no exista correlación entre sincronización y paralelismo, ya que si se ejecutan varios conjuntos de bloques a la vez tiene que existir algún evento que sincronice los procesos de manera que se comuniquen entre sí. Vuelve a aparecer una correlación moderada en sentido negativo entre paralelismo y abstracción con el mismo coeficiente que en la puntuación total de 4 puntos. También se obtiene una correlación de este tipo entre interactividad con el usuario y abstracción.%%
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_5_Scratch}
@@ -1069,14 +1064,14 @@ Al aumentar las puntuaciones, hay menos pares de dimensiones con coeficiente de 
         \caption{Matriz de correlación. Total=5}
         \label{fig:corr5}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 5}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 5.}
 \end{figure}
 
 Según se distingue en el diagrama de barras~\ref{fig:total6} correspondiente a la puntuación total de 6, se eleva la cantidad de proyectos con 1 punto en sincronización, control de flujo, interactividad con el usuario y representación de los datos.
 
 Paralelismo y abstracción obtienen una correlación moderada en sentido negativo similar a la puntuación anterior. No hay correlación entre abstracción y sincronización, ni entre paralelismo y representación de los datos. Las mayores correlaciones se obtienen entre: control de flujo y sincronización, de modo que la secuenciación precisa, concreta y ordenada de instrucciones o bloques afecta a la organización temporal de los distintos flujos de código para que interactúen entre sí; entre lógica y representación de los datos, ya que tener una alta capacidad para buscar la solución al problema e implementar distintas acciones en función de condiciones, influye en almacenar en atributos y variables los datos tanto de condiciones como de resultados. Entre paralelismo e interactividad con el usuario existe una alta  dependencia ya que el usuario puede pulsar sobre una tecla u objeto provocando la ejecución simultánea de varias secuencias de bloques.%%
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_6_Scratch}
@@ -1088,12 +1083,14 @@ Paralelismo y abstracción obtienen una correlación moderada en sentido negativ
         \caption{Matriz de correlación. Total=6}
         \label{fig:corr6}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 6}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 6.}
 \end{figure}
 
 Para la puntuación total de 7, lo más destacable en la representación de frecuencias de la figura~\ref{fig:total7} es que el nº de proyectos con una puntuación de 2 en paralelismo aumenta.
 
-\begin{figure}[H]
+La correlación es perfecta positiva entre control de flujo y sincronización y entre lógica y representación de los datos, como se visualiza en la matriz~\ref{fig:corr7}. Se alcanzan valores elevados entre lógica y sincronización, representación de los datos y sincronización, control de flujo y lógica, interactividad con el usuario y control de flujo y entre interactividad con el usuario y sincronización. Que no exista correlación entre sincronización y paralelismo resulta contradictorio, ya que si se ejecutan flujos de código a la vez debería desarrollarse la capacidad de sincronizarlos, aunque no precisamente con el bloque de espera evaluado con 1 punto. Tampoco existe correlación entre abstracción y representación de los datos, puesto que aún no se ha desarrollado la capacidad de dividir el problema en partes más simples.
+
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_7_Scratch}
@@ -1105,12 +1102,10 @@ Para la puntuación total de 7, lo más destacable en la representación de frec
         \caption{Matriz de correlación. Total=7}
         \label{fig:corr7}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 7}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 7.}
 \end{figure}
 
-La correlación es perfecta positiva entre control de flujo y sincronización y entre lógica y representación de los datos, como se visualiza en la matriz~\ref{fig:corr7}. Se alcanzan valores elevados entre lógica y sincronización, representación de los datos y sincronización, control de flujo y lógica, interactividad con el usuario y control de flujo y entre interactividad con el usuario y sincronización. Que no exista correlación entre sincronización y paralelismo resulta contradictorio, ya que si se ejecutan flujos de código a la vez debería desarrollarse la capacidad de sincronizarlos, aunque no precisamente con el bloque de espera evaluado con 1 punto. Tampoco existe correlación entre abstracción y representación de los datos, puesto que aún no se ha desarrollado la capacidad de dividir el problema en partes más simples.
-
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_8_Scratch}
@@ -1122,7 +1117,7 @@ La correlación es perfecta positiva entre control de flujo y sincronización y 
         \caption{Matriz de correlación. Total=8}
         \label{fig:corr8}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 8}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 8.}
 \end{figure}
 
 Cuando el total es 8, en interactividad con el usuario predominan los 2 puntos, mientras que en abstracción las puntuaciones siguen siendo bajas, como se ve en el diagrama de barras~\ref{fig:total8}.
@@ -1131,7 +1126,7 @@ En la matriz de correlación~\ref{fig:corr8} se obtiene de nuevo una casi perfec
 
 Para la puntuación total de 9, en la matriz de correlación~\ref{fig:corr9} se observan valores elevados próximos a 1, que indican correlación casi perfecta, en lógica con representación de los datos, en paralelismo con interactividad con el usuario, en control de flujo con representación de los datos y en control de flujo con sincronización. Las correlaciones entre sincronización con lógica y entre control de flujo con lógica son menores pero también elevadas. Sigue sin existir correlación entre control de flujo y abstracción, entre sincronización y abstracción, entre sincronización y paralelismo y entre lógica y paralelismo. Se vuelve además a obtener una correlación negativa moderada entre paralelismo y abstracción similar a la conseguida en puntuaciones anteriores, aún cuando se incrementa la destreza en abstracción, como se ve en el diagrama~\ref{fig:total9}.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_9_Scratch}
@@ -1143,14 +1138,14 @@ Para la puntuación total de 9, en la matriz de correlación~\ref{fig:corr9} se 
         \caption{Matriz de correlación. Total=9}
         \label{fig:corr9}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 9}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 9.}
 \end{figure}
 
 Para la puntuación total de 10, en el diagrama de barras~\ref{fig:total10} aumenta la obtención de 2 puntos en lógica y de 3 puntos en representación de los datos, por el uso de listas. 
 
 Existe una correlación perfecta directa entre lógica y paralelismo. Se consigue también una alta correlación positiva entre lógica e interactividad con el usuario y entre esta última y paralelismo. No hay dependencia lineal entre control de flujo y abstracción, ni entre sincronización y lógica, ni entre sincronización y paralelismo. Igual que en la puntuación anterior se obtiene una correlación moderada en sentido negativo entre abstracción y paralelismo. La capacidad de dividir el problema en partes sencillas de implementar y depurar, debería ayudar a descubrir cuáles de estas partes pueden ser ejecutadas de manera simultánea o concurrente, con una adecuada sincronización. Sin embargo el aumento de una habilidad hace que disminuya la otra. Además ambas son independientes de sincronización puesto que solo se usan bloques de espera. 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_10_Scratch}
@@ -1162,8 +1157,10 @@ Existe una correlación perfecta directa entre lógica y paralelismo. Se consigu
         \caption{Matriz de correlación. Total=10}
         \label{fig:corr10}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 10}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 10.}
 \end{figure}
+
+Para la puntuación total de 11, en el diagrama de barras~\ref{fig:total11} destaca el aumento de proyectos que consiguen 3 puntos en pensamiento lógico.
 
 \begin{figure}[H]
     \centering
@@ -1177,16 +1174,14 @@ Existe una correlación perfecta directa entre lógica y paralelismo. Se consigu
         \caption{Matriz de correlación. Total=11}
         \label{fig:corr11}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 11}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 11.}
 \end{figure}
-
-Para la puntuación total de 11, en el diagrama de barras~\ref{fig:total11} destaca el aumento de proyectos que consiguen 3 puntos en pensamiento lógico.
 
 En la matriz de correlación~\ref{fig:corr11} se observan valores elevados entre interactividad con el usuario y paralelismo, entre sincronización y representación de los datos y entre control de flujo con interactividad con el usuario. Son independientes linealmente: control de flujo y abstracción, representación de los datos y abstracción, lógica y representación de los datos, lógica y control de flujo, interactividad del usuario y representación de los datos. Vuelve a existir correlación en sentido negativo entre paralelismo y abstracción. También se da una correlación negativa prácticamente perfecta entre lógica y abstracción. Al aumentar el uso de estructuras selectivas que pueden incluir operadores lógicos, disminuye la capacidad para plantear soluciones a problemas descomponiéndolos en scripts o funciones encargadas de tareas concretas que pueden ser reutilizadas cuando se extrae lo relevante, se reconocen patrones y se generaliza. % Evolución de la programación estructurada a la modular
 
 Para la puntuación de 12, según la matriz~\ref{fig:corr12}, existe una correlación elevada directa entre lógica y paralelismo, y entre paralelismo e interactividad con el usuario. Por ello cuando el usuario pulsa una tecla o un objeto se desencadena la ejecución de varias tareas a la vez. Se da una correlación positiva menor entre sincronización y abstracción y entre interactividad con el usuario y lógica. No hay correlación entre sincronización e interactividad con el usuario. La correlación en sentido negativo entre paralelismo y abstracción se aproxima a -1, mientras que entre lógica y abstracción es fuerte pero no perfecta, comparada con la puntuación anterior. 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_12_Scratch}
@@ -1198,7 +1193,7 @@ Para la puntuación de 12, según la matriz~\ref{fig:corr12}, existe una correla
         \caption{Matriz de correlación. Total=12}
         \label{fig:corr12}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 12}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 12.}
 \end{figure}
 
 Para la puntuación total de 13, el diagrama de barras~\ref{fig:total13} refleja un aumento en el uso de clones o instancias de los personajes creadas dinámicamente con el mismo comportamiento que el objeto inicial, como se infiere de la cantidad de proyectos con 3 puntos en abstracción.
@@ -1218,11 +1213,13 @@ y entre representación de los datos y abstracción. Al declarar atributos y lis
         \caption{Matriz de correlación. Total=13}
         \label{fig:corr13}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 13}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 13.}
 \end{figure}
 
 Para la puntuación total de 14, en el diagrama de barras~\ref{fig:total14} la puntuación más frecuente en lógica es 3. En los proyectos que la consiguen 
 se evalúan varias situaciones utilizando operadores lógicos, que permiten elegir entre distintas alternativas, obteniendo salidas diferentes.
+
+En la matriz~\ref{fig:corr14} se observa una correlación positiva casi perfecta entre control de flujo e interactividad con el usuario. La dependencia lineal es elevada y positiva entre: paralelismo e interactividad con el usuario, representación de los datos con abstracción, control de flujo con paralelismo y lógica con paralelismo. Interactividad del usuario y sincronización son incorreladas, indicando que la gestión de las respuestas del usuario ante determinadas preguntas, de los movimientos con el ratón sobre objetos o de cómo responde el programa cuando se pulsa una tecla, no afecta a la capacidad del programador para planificar el orden en que se ejecutan las distintas tareas de modo que interactúen entre sí.
 
 \begin{figure}[H]
     \centering
@@ -1236,10 +1233,8 @@ se evalúan varias situaciones utilizando operadores lógicos, que permiten eleg
         \caption{Matriz de correlación. Total=14}
         \label{fig:corr14}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 14}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 14.}
 \end{figure}
-
-En la matriz~\ref{fig:corr14} se observa una correlación positiva casi perfecta entre control de flujo e interactividad con el usuario. La dependencia lineal es elevada y positiva entre: paralelismo e interactividad con el usuario, representación de los datos con abstracción, control de flujo con paralelismo y lógica con paralelismo. Interactividad del usuario y sincronización son incorreladas, indicando que la gestión de las respuestas del usuario ante determinadas preguntas, de los movimientos con el ratón sobre objetos o de cómo responde el programa cuando se pulsa una tecla, no afecta a la capacidad del programador para planificar el orden en que se ejecutan las distintas tareas de modo que interactúen entre sí.%%
 
 \begin{figure}[H]
     \centering
@@ -1253,7 +1248,7 @@ En la matriz~\ref{fig:corr14} se observa una correlación positiva casi perfecta
         \caption{Matriz de correlación. Total=15}
         \label{fig:corr15}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 15}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 15.}
 \end{figure}
 
 Con respecto a la puntuación total de 15, en el diagrama de barras~\ref{fig:total15} se percibe un incremento en las frecuencias correspondientes a los 3 puntos tanto en abstracción, al emplear clones, como en representación de los datos, por utilizar listas.
@@ -1264,7 +1259,7 @@ En la puntuación total de 16 se consigue que la máxima puntuación sea la más
 
 Según la figura~\ref{fig:corr16} se producen elevadas dependencias en sentido positivo, ordenadas de mayor a menor, entre interactividad del usuario y control de flujo, entre lógica y paralelismo, entre abstracción y representación de los datos, entre lógica y abstracción y entre paralelismo y abstracción. La dependencia lineal de este último par ha cambiado de sentido con respecto a las 12 primeras puntuaciones totales, de manera que al aumentar la capacidad para dar modularidad al código y utilizar clones, se incrementa la habilidad de discernir qué funciones y procedimientos pueden ejecutarse simultáneamente cuando se produzca un evento. No existe correlación entre control de flujo y sincronización, ni entre interactividad del usuario y sincronización, ni entre control de flujo y abstracción, ni entre interactividad del usuario y abstracción, ni entre paralelismo y sincronización, ni entre lógica y sincronización. 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_16_Scratch}
@@ -1276,7 +1271,7 @@ Según la figura~\ref{fig:corr16} se producen elevadas dependencias en sentido p
         \caption{Matriz de correlación. Total=16}
         \label{fig:corr16}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 16}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 16.}
 \end{figure}
 
 Con respecto a la puntuación total de 17, mientras que abstracción, \emph{paralelismo}, lógica y representación de datos están prácticamente desarrolladas, control de flujo e interactividad del usuario se mantienen en los 2 puntos, como se aprecia en la figura~\ref{fig:total17}. La cantidad de proyectos de Scratch que consiguen 1 y 3 puntos en sincronización es similar.
@@ -1298,10 +1293,12 @@ No existe dependencia lineal entre control de flujo y abstracción, entre contro
         \caption{Matriz de correlación. Total=17}
         \label{fig:corr17}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 17}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 17.}
 \end{figure}
 
 El paso de los 17 a los 18 puntos totales está marcado por el desarrollo casi completo de la sincronización, como se deduce al comparar los diagramas de barras~\ref{fig:total17} y ~\ref{fig:total18}.
+
+Se conservan las correlaciones casi perfectas explicadas en la puntuación anterior y se añaden las que surgen entre sincronización con las otras habilidades evaluadas con 3 puntos. Por ello cuando se establece previamente el orden en que los programas serán ejecutados, de forma que interactúen y se comuniquen entre sí con mensajes, eventos o esperando el resultado de algún script, resulta más fácil que las distintas partes en que se descompone el problema puedan ejecutarse en paralelo, empleen estructuras selectivas que indiquen por donde continúa el flujo del programa y se utilicen métodos propios de listas para modificar los datos que contiene, que a su vez pueden ser usados como condiciones o eventos. Existe una correlación positiva baja entre control de flujo y lógica. Entre cada par de variables no comentadas, se puede decir que no existe correlación. Todo esto queda reflejado en la matriz~\ref{fig:corr18}.
 
 \begin{figure}[H]
     \centering
@@ -1315,10 +1312,8 @@ El paso de los 17 a los 18 puntos totales está marcado por el desarrollo casi c
         \caption{Matriz de correlación. Total=18}
         \label{fig:corr18}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 18}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 18.}
 \end{figure}
-
-Se conservan las correlaciones casi perfectas explicadas en la puntuación anterior y se añaden las que surgen entre sincronización con las otras habilidades evaluadas con 3 puntos. Por ello cuando se establece previamente el orden en que los programas serán ejecutados, de forma que interactúen y se comuniquen entre sí con mensajes, eventos o esperando el resultado de algún script, resulta más fácil que las distintas partes en que se descompone el problema puedan ejecutarse en paralelo, empleen estructuras selectivas que indiquen por donde continúa el flujo del programa y se utilicen métodos propios de listas para modificar los datos que contiene, que a su vez pueden ser usados como condiciones o eventos. Existe una correlación positiva baja entre control de flujo y lógica. Entre cada par de variables no comentadas, se puede decir que no existe correlación. Todo esto queda reflejado en la matriz~\ref{fig:corr18}.
 
 \begin{figure}[H]
     \centering
@@ -1332,7 +1327,7 @@ Se conservan las correlaciones casi perfectas explicadas en la puntuación anter
         \caption{Matriz de correlación. Total=19}
         \label{fig:corr19}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 19}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 19.}
 \end{figure}
 
 Cuando la complejidad de los proyectos alcanza los 19 puntos, control de flujo e interactividad con el usuario siguen en 2 puntos, y el resto de dimensiones se perfilan aún más en los 3 puntos, marcando un desarrollo completo (ver figura~\ref{fig:total19}).
@@ -1355,13 +1350,13 @@ La correlación es perfecta positiva entre todas las dimensiones del pensamiento
         \caption{Matriz de correlación. Total=20}
         \label{fig:corr20}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 20}
+     \caption{Distribución de puntuaciones y correlación entre dimensiones si el total es 20.}
 \end{figure}
 
 Por lo tanto la última dimensión en desarrollarse por completo es interactividad con el usuario. El cambio de los 2 a los 3 puntos se produce por implementar acciones en los personajes que respondan a las modificaciones en el audio y el vídeo que realiza el usuario para interactuar con el proyecto de Scratch, aunque en el conjunto de proyectos analizado no se aplica demasiado. Resulta llamativo que sea de las primeras habilidades en manifestarse y de las últimas en completarse, y que mantenga dependencias lineales con control de flujo desde los 10 puntos totales %
 y con paralelismo hasta los 15 puntos totales. No obstante, con paralelismo comparte métricas similares, puesto que se ejecutan varios programas a la vez al pulsar sobre objetos, teclas o la bandera verde, que son acciones puntuadas con 1 y 2 en interactividad con el usuario. 
 
-\subsection{Aprendizaje no supervisado: clustering K-Means con los proyectos de Scratch}
+\subsection{Aprendizaje no supervisado: clustering K-Means en proyectos de Scratch}
 \label{subsec:kmeans_Scratch}
 
 Se utiliza este algoritmo de aprendizaje no supervisado, para dividir los 269842 proyectos de Scratch en subconjuntos no solapados o particiones. Se obtienen grupos de manera que los proyectos dentro de un clúster son muy similares, y totalmente distintos a los proyectos que pertenecen a otros grupos. La semejanza o diferencia se mide en función de la distancia euclídea a un centroide del clúster, que a partir de cierto nº de iteraciones, se colocará en el centro del clúster. K-Means trata de minimizar las distancias intra-partición y maximiza las distancias inter-partición.
@@ -1454,7 +1449,7 @@ Con ello se consigue determinar el camino de aprendizaje seguido y la habilidad 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{img/path_CT_Scratch1.png}
+    \includegraphics[width=0.8\textwidth]{img/path_CT_Scratch1.png}
     \caption{Ruta de aprendizaje de las dimensiones del PC en Scratch}\label{fig:path_Scratch}
 \end{figure}
 
@@ -1516,7 +1511,7 @@ Se continúa explorando la información contenida en los datos clasificando los 
 \begin{figure}[H]
     \centering
     \includegraphics[width=.95\textwidth]{img/freq_level_Snap.png}
-    \caption{Distribución de proyectos de Snap por nivel asignado}\label{fig:level_Snap}
+    \caption{Distribución de proyectos de Snap! por nivel asignado}\label{fig:level_Snap}
 \end{figure}
 
 ¿Cómo se distribuyen los proyectos de Snap! entre las puntuaciones asignadas a cada nivel?
@@ -1677,7 +1672,7 @@ Se busca ver la evolución de las correlaciones existentes entre cada par de hab
 
 Como en el apartado~\ref{subsec:corr_21_Scratch}, se descartan los valores mínimo y máximo de la puntuación total, ya que todas las habilidades tienen la misma puntuación en cada proyecto de Snap! y no existen variaciones con respecto al valor medio, ni entre cada par de variables de manera conjunta, ni en cada una de ellas por separado. Así la covarianza y la desviación típica son nulas cuando el total es 0 o 21 y el cálculo de su coeficiente de correlación no tiene sentido (ver fórmula~\eqref{eq:correlacion}). 
 
-Los proyectos más simples evaluados con 1 punto consiguen esta valoración principalmente por el desarrollo de la abstracción, como se demuestra en el diagrama de barras~\ref{fig:total1_Snap}. Llama la atención que la descomposición del problema en partes sencillas sea la primera habilidad en manifestarse. Estos proyectos contienen funciones definidas por el programador, varios scripts que resuelven subproblemas bien definidos y varios personajes u objetos cada uno con sus propios atributos y programas, o clones que son instancias de los objetos. En la matriz de correlación~\ref{fig:corr1_Snap} las dependencias lineales son perfectas positivas entre cada par de dimensiones con valores nulos, salvo en abstracción con el resto de dimensiones, donde es perfecta negativa. % clones creados dinámicamente o no en Snap!
+Los proyectos más simples evaluados con 1 punto consiguen esta valoración principalmente por el desarrollo de la abstracción, como se demuestra en el diagrama de barras~\ref{fig:total1_Snap}. Llama la atención que la descomposición del problema en partes sencillas sea la primera habilidad en manifestarse. Estos proyectos contienen funciones definidas por el programador, varios scripts que resuelven subproblemas bien definidos y varios personajes u objetos cada uno con sus propios atributos y programas, o clones que son instancias de los objetos. En la matriz de correlación~\ref{fig:corr1_Snap} las dependencias lineales son perfectas positivas entre cada par de dimensiones con valores nulos, salvo en abstracción con el resto de dimensiones, donde es perfecta negativa.
 
 \begin{figure}[H]
     \centering
@@ -1691,7 +1686,7 @@ Los proyectos más simples evaluados con 1 punto consiguen esta valoración prin
         \caption{Matriz de correlación. Total=1}
         \label{fig:corr1_Snap}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 1}
+     \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 1.}
 \end{figure}
 
 \begin{figure}[H]
@@ -1706,7 +1701,7 @@ Los proyectos más simples evaluados con 1 punto consiguen esta valoración prin
         \caption{Matriz de correlación. Total=2}
         \label{fig:corr2_Snap}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 2}
+     \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 2.}
 \end{figure}
 
 Como se distingue en la distribución~\ref{fig:total2_Snap}, la puntuación total de 2 se obtiene de las distintas combinaciones del punto conseguido en control de flujo, interactividad con el usuario o abstracción. Entre estas dos últimas se da una correlación positiva casi perfecta. Control de flujo muestra una correlación positiva alta con el resto de dimensiones, mientras que en interactividad con el usuario y abstracción no existe correlación con las habilidades no desarrolladas. Estas dimensiones que no puntúan presentan entre sí correlaciones positivas perfectas, como se ve en la matriz~\ref{fig:corr2_Snap}.
@@ -1723,7 +1718,7 @@ Como se distingue en la distribución~\ref{fig:total2_Snap}, la puntuación tota
         \caption{Matriz de correlación. Total=3}
         \label{fig:corr3_Snap}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 3}
+     \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 3.}
 \end{figure}
 
 Aumenta la cantidad de proyectos que consiguen puntuar en representación de los datos y se consigue una ligera mejora en control de flujo, como se distingue en la distribución~\ref{fig:total3_Snap}.
@@ -1749,7 +1744,7 @@ Tampoco hay correlación entre condicionales con representación de los datos, n
         \caption{Matriz de correlación. Total=4}
         \label{fig:corr4_Snap}
     \end{subfigure}
-     \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 4}
+     \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 4.}
 \end{figure}
 
 En la distribución~\ref{fig:total5_Snap}, cuando se filtra para un nivel de complejidad total de 5, los proyectos con 2 puntos prevalecen en control de flujo. En sincronización aumenta la cantidad de proyectos que consiguen 1 punto, si bien la mayoría no puntúan.
@@ -1768,7 +1763,7 @@ En la matriz~\ref{fig:corr5_Snap} se mantiene una correlación perfecta entre si
         \caption{Matriz de correlación. Total=5}
         \label{fig:corr5_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 5}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 5.}
 \end{figure}
 
 \begin{figure}[H]
@@ -1783,7 +1778,7 @@ En la matriz~\ref{fig:corr5_Snap} se mantiene una correlación perfecta entre si
         \caption{Matriz de correlación. Total=6}
         \label{fig:corr6_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 6}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 6.}
 \end{figure}
 
 En la distribución~\ref{fig:total6_Snap} la proporción de proyectos con 1 punto en sincronización, paralelismo e interactividad con el usuario se eleva. En menor medida, se consiguen 2 puntos en estas dos últimas, así como en abstracción. Incluso se obtienen 3 puntos al emplear estructuras de datos complejas como entrada de sus programas, siendo la primera capacidad en completarse.
@@ -1802,12 +1797,12 @@ En la matriz~\ref{fig:corr6_Snap} de nuevo se presentan las mismas dependencias 
         \caption{Matriz de correlación. Total=7}
         \label{fig:corr7_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 7}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 7.}
 \end{figure}
 
 En el diagrama de barras~\ref{fig:total7_Snap} disminuye la habilidad demostrada en sincronización, mientras que trasciende la abstracción. En paralelismo se igualan los proyectos con 1 y 2 puntos.
 
-En la matriz de correlación~\ref{fig:corr7_Snap} de la puntuación global de 7, sincronización y condicionales son totalmente interdependientes entre sí puesto que apenas consiguen puntuar. Se conserva una correlación elevada entre interactividad con el usuario y representación de los datos y se obtienen además dependencias lineales elevadas entre cada una de ellas con abstracción. Al dividir la resolución del problema en partes mediante objetos o personajes, bloques personalizados o scripts con una funcionalidad muy concreta más fácil de programar y mantener, o con clones, se modifican y almacenan los datos que requieren en listas, variables, o atributos de los objetos y a su vez se gestionan los eventos causados por el usuario. Paralelismo y control de flujo están fuertemente correladas. Implica que si un personaje realiza varias acciones a la vez o varios personajes ejecutan simultáneamente el mismo código, se incrementa la capacidad de que cada programa siga una estructura secuencial o iterativa. No existe correlación entre paralelismo con condicionales, ni entre paralelismo con sincronización. La correlación negativa más remarcable es la que ocurre entre control de flujo con condicionales, que también se produce en las puntuaciones totales anteriores. %==
+En la matriz de correlación~\ref{fig:corr7_Snap} de la puntuación global de 7, sincronización y condicionales son totalmente interdependientes entre sí puesto que apenas consiguen puntuar. Se conserva una correlación elevada entre interactividad con el usuario y representación de los datos y se obtienen además dependencias lineales elevadas entre cada una de ellas con abstracción. Al dividir la resolución del problema en partes mediante objetos o personajes, bloques personalizados o scripts con una funcionalidad muy concreta más fácil de programar y mantener, o con clones, se modifican y almacenan los datos que requieren en listas, variables, o atributos de los objetos y a su vez se gestionan los eventos causados por el usuario. Paralelismo y control de flujo están fuertemente correladas. Implica que si un personaje realiza varias acciones a la vez o varios personajes ejecutan simultáneamente el mismo código, se incrementa la capacidad de que cada programa siga una estructura secuencial o iterativa. No existe correlación entre paralelismo con condicionales, ni entre paralelismo con sincronización. La correlación negativa más remarcable es la que ocurre entre control de flujo con condicionales, que también se produce en las puntuaciones totales anteriores.
 
 \begin{figure}[H]
     \centering
@@ -1821,14 +1816,14 @@ En la matriz de correlación~\ref{fig:corr7_Snap} de la puntuación global de 7,
         \caption{Matriz de correlación. Total=8}
         \label{fig:corr8_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 8}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 8.}
 \end{figure}
 
 En la puntuación total de 8 el uso de condicionales adquiere mayor relevancia y cerca de unos 1000 proyectos consiguen la máxima puntuación en paralelismo y control de flujo. En interactividad con el usuario y representación de los datos se incrementan los proyectos con 2 puntos, como se aprecia en el gráfico~\ref{fig:total8_Snap}.
 
 En la matriz~\ref{fig:corr8_Snap} se observan correlaciones positivas muy altas entre interactividad con el usuario y representación de los datos, y entre ambas con control de flujo, de forma que se desencadena la ejecución de secuencias y ciclos de sentencias que modifican los atributos de los objetos y los datos contenidos en listas y variables cuando el usuario responde a una pregunta, pulsa una tecla o mueve un objeto con el ratón. Sincronización y condicionales también son interdependientes, pues cuando se codifican sentencias alternativas en función de condiciones, se planifica la interacción de los distintos procesos con bloques de parada, espera e intercambio de mensajes. Interactividad con el usuario y sincronización están incorreladas.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_9_Snap}
@@ -1840,7 +1835,7 @@ En la matriz~\ref{fig:corr8_Snap} se observan correlaciones positivas muy altas 
         \caption{Matriz de correlación. Total=9}
         \label{fig:corr9_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 9}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 9.}
 \end{figure}
   
 Como se aprecia en el diagrama~\ref{fig:total9_Snap}, si el total es 9 puntos, la sincronización alcanza un nivel intermedio, aumentando a la vez la cantidad de proyectos con un desarrollo avanzado en paralelismo y control de flujo. 
@@ -1864,14 +1859,12 @@ Cuando el total asciende a los 10 puntos, tanto en sincronización como en contr
         \caption{Matriz de correlación. Total=10}
         \label{fig:corr10_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 10}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 10.}
 \end{figure}
 
 En la figura~\ref{fig:corr10_Snap}, se comprueba la conservación de fuertes correlaciones directas entre representación de los datos e interactividad, entre ambas habilidades con abstracción, entre paralelismo y control de flujo y entre esta última con interactividad. Sincronización es independiente tanto de abstracción como de paralelismo. Establecer el orden en que se ejecutan los procesos mediante intercambio de mensajes o bloques de parada, no se ve influenciado por la modularidad presente en el código, ni porque estos módulos sean ejecutados a la vez por varios personajes cuando se reciben mensajes, o se producen eventos o condiciones. Las correlaciones negativas entre condicionales con control de flujo o con paralelismo son más intensas que en el caso anterior, sobre todo con esta última, que resulta perfecta. La ejecución simultánea de varios scripts, disminuye la ejecución de sentencias alternativas tras la evaluación de condiciones.
 
 En el diagrama de barras~\ref{fig:total11_Snap} de se observa una sustancial mejora en condicionales. En paralelismo y en interactividad con el usuario la puntuación más frecuente es 2 puntos.
-
-En la matriz de correlación~\ref{fig:corr11_Snap} se mantiene una fuerte dependencia lineal entre abstracción con interactividad y entre control de flujo con cada una de las siguientes: paralelismo, representación de los datos e interactividad con el usuario. Sin embargo la relación entre representación de los datos e interactividad con el usuario se modera. Control de flujo y sincronización están incorreladas, puesto que la estructura secuencial o iterativa seguida en los programas, no se relaciona con cómo interactúen entre sí para organizar su ejecución en el tiempo, ni entre interactividad con el usuario con condicionales, diferenciando entre los flujos de código que desencadenan su ejecución cuando ocurre un evento inducido por el usuario y aquellos sujetos a condiciones o cambios de estado provocados en el programa. Condicionales y paralelismo conservar una elevada interdependencia negativa.
 
 \begin{figure}[H]
     \centering
@@ -1885,8 +1878,10 @@ En la matriz de correlación~\ref{fig:corr11_Snap} se mantiene una fuerte depend
         \caption{Matriz de correlación. Total=11}
         \label{fig:corr11_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 11}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 11.}
 \end{figure}
+
+En la matriz de correlación~\ref{fig:corr11_Snap} se mantiene una fuerte dependencia lineal entre abstracción con interactividad y entre control de flujo con cada una de las siguientes: paralelismo, representación de los datos e interactividad con el usuario. Sin embargo la relación entre representación de los datos e interactividad con el usuario se modera. Control de flujo y sincronización están incorreladas, puesto que la estructura secuencial o iterativa seguida en los programas, no se relaciona con cómo interactúen entre sí para organizar su ejecución en el tiempo, ni entre interactividad con el usuario con condicionales, diferenciando entre los flujos de código que desencadenan su ejecución cuando ocurre un evento inducido por el usuario y aquellos sujetos a condiciones o cambios de estado provocados en el programa. Condicionales y paralelismo conservar una elevada interdependencia negativa.
 
 \begin{figure}[H]
     \centering
@@ -1900,7 +1895,7 @@ En la matriz de correlación~\ref{fig:corr11_Snap} se mantiene una fuerte depend
         \caption{Matriz de correlación. Total=12}
         \label{fig:corr12_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 12}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 12.}
 \end{figure}
 
 Si se comparan las distribuciones~\ref{fig:total11_Snap} y~\ref{fig:total12_Snap}, la alteración más destacable es que se eleva la cantidad de proyectos con 2 puntos en interactividad con el usuario.
@@ -1924,12 +1919,8 @@ En la matriz~\ref{fig:corr13_Snap} se refuerzan las correlaciones directas de la
         \caption{Matriz de correlación. Total=13}
         \label{fig:corr13_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 13}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 13.}
 \end{figure}
-
-Según el diagrama~\ref{fig:total14_Snap}, crece la cantidad de proyectos que consiguen 2 puntos en abstracción, cuando el total se sitúa en 14 puntos.
-
-Como se demuestra en la matriz~\ref{fig:corr14_Snap}, persisten las fuertes correlaciones positivas comentadas anteriormente. Además se obtiene una correlación casi perfecta entre control de flujo y sincronización. Si se ordenan instrucciones como una secuencia de pasos o se incluyen bucles que se repiten por siempre, un nº determinado de veces, o hasta que se cumpla una condición, aumenta la capacidad para organizar la ejecución de hilos y procesos para que interactúen entre sí. No existe dependencia lineal ni entre control de flujo con condicionales; ni entre paralelismo con condicionales, de modo que la ejecución simultánea de procesos no afecta a que se empleen estructuras selectivas; ni entre abstracción con sincronización o con paralelismo, por lo que si se descompone el problema en funciones o bloques propios encargados de tareas concretas, dando modularidad al código, o usando instancias de objetos, no dependerá de que los objetos se sincronicen para ejecutar sus scripts según un orden preestablecido o incluso simultáneamente.
 
 \begin{figure}[H]
     \centering
@@ -1943,8 +1934,17 @@ Como se demuestra en la matriz~\ref{fig:corr14_Snap}, persisten las fuertes corr
         \caption{Matriz de correlación. Total=14}
         \label{fig:corr14_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 14}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 14.}
 \end{figure}
+
+Según el diagrama~\ref{fig:total14_Snap}, crece la cantidad de proyectos que consiguen 2 puntos en abstracción, cuando el total se sitúa en 14 puntos.
+
+Como se demuestra en la matriz~\ref{fig:corr14_Snap}, persisten las fuertes correlaciones positivas comentadas anteriormente. Además se obtiene una correlación casi perfecta entre control de flujo y sincronización. Si se ordenan instrucciones como una secuencia de pasos o se incluyen bucles que se repiten por siempre, un nº determinado de veces, o hasta que se cumpla una condición, aumenta la capacidad para organizar la ejecución de hilos y procesos para que interactúen entre sí. No existe dependencia lineal ni entre control de flujo con condicionales; ni entre paralelismo con condicionales, de modo que la ejecución simultánea de procesos no afecta a que se empleen estructuras selectivas; ni entre abstracción con sincronización o con paralelismo, por lo que si se descompone el problema en funciones o bloques propios encargados de tareas concretas, dando modularidad al código, o usando instancias de objetos, no dependerá de que los objetos se sincronicen para ejecutar sus scripts según un orden preestablecido o incluso simultáneamente.
+
+Como se observa en la distribución~\ref{fig:total15_Snap}, el paso al nivel avanzado está marcado por la asimilación completa de la sincronización y del control de flujo en la mayor parte de los proyectos.   
+
+De hecho, ambas dimensiones presentan una dependencia lineal casi perfecta entre ellas y con paralelismo. Cuando se emplean estructuras de control iterativas, se utilizan mecanismos de parada, mensajes o espera condicionados a recibir una respuesta, a que se cumpla una condición o se produzca un evento para sincronizar los distintos flujos de código, algunos de los cuales pueden ejecutarse en paralelo.
+Condicionales refuerza su dependencia con datos y con interactividad con el usuario, habilidades que a su vez están perfectamente correlacionadas. Al implementar las instrucciones alternativas que se seleccionan tras evaluar una situación usando 1, 2, o 3 de las estructuras condicionales presentes en Snap!: se modifican las variables y las listas y se incluyen sentencias que se ejecutarán en función de la acción realizada por el usuario al mover o pinchar con el ratón un objeto, dar una respuesta con el teclado, pulsar una tecla o utilizar el micrófono, sonidos o vídeo. Abstracción sigue correlacionada con condicionales, pero es independiente de sincronización, de control de flujo y de paralelismo, según la matriz~\ref{fig:corr15_Snap}.
 
 \begin{figure}[H]
     \centering
@@ -1958,15 +1958,12 @@ Como se demuestra en la matriz~\ref{fig:corr14_Snap}, persisten las fuertes corr
         \caption{Matriz de correlación. Total=15}
         \label{fig:corr15_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 15}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 15.}
 \end{figure}
 
-Como se observa en la distribución~\ref{fig:total15_Snap}, el paso al nivel avanzado está marcado por la asimilación completa de la sincronización y del control de flujo en la mayor parte de los proyectos.   
+Según la distribución~\ref{fig:total16_Snap}, las modas cuando el total alcanza los 16 puntos son: 2 puntos en condicionales, abstracción, interactividad con el usuario y representación de los datos y 3 puntos en sincronización, paralelismo y control de flujo.
 
-De hecho, ambas dimensiones presentan una dependencia lineal casi perfecta entre ellas y con paralelismo. Cuando se emplean estructuras de control iterativas, se utilizan mecanismos de parada, mensajes o espera condicionados a recibir una respuesta, a que se cumpla una condición o se produzca un evento para sincronizar los distintos flujos de código, algunos de los cuales pueden ejecutarse en paralelo.
-Condicionales refuerza su dependencia con datos y con interactividad con el usuario, habilidades que a su vez están perfectamente correlacionadas. Al implementar las instrucciones alternativas que se seleccionan tras evaluar una situación usando 1, 2, o 3 de las estructuras condicionales presentes en Snap!: se modifican las variables y las listas y se incluyen sentencias que se ejecutarán en función de la acción realizada por el usuario al mover o pinchar con el ratón un objeto, dar una respuesta con el teclado, pulsar una tecla o utilizar el micrófono, sonidos o vídeo. Abstracción sigue correlacionada con condicionales, pero es independiente de sincronización, de control de flujo y de paralelismo, según la matriz~\ref{fig:corr15_Snap}.
-
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_16_Snap}
@@ -1978,14 +1975,12 @@ Condicionales refuerza su dependencia con datos y con interactividad con el usua
         \caption{Matriz de correlación. Total=16}
         \label{fig:corr16_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 16}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 16.}
 \end{figure}
 
-Según la distribución~\ref{fig:total16_Snap}, las modas cuando el total alcanza los 16 puntos son: 2 puntos en condicionales, abstracción, interactividad con el usuario y representación de los datos y 3 puntos en sincronización, paralelismo y control de flujo.
+La matriz~\ref{fig:corr16_Snap} refleja las mismas correlaciones perfectas, fuertes y nulas analizadas en la matriz~\ref{fig:corr15_Snap}. No obstante, hay capacidades cuyas dependencias no eran tan elevadas en la puntuación anterior, como las que se producen entre paralelismo con condicionales, de forma que si los objetos ejecutan varias secuencias de instrucciones al mismo tiempo, estas secuencias contendrán sentencias alternativas o condicionales. Otro par de correlaciones que se ven reforzadas son las que se dan entre abstracción con interactividad con el usuario o con representación de los datos, de manera que si se extrae lo relevante del problema a resolver y se descompone en programas, ya sean scripts o funciones propias, y/o se instancian personajes, se crean y actualizan las variables y listas que contienen los datos que se van obteniendo en los programas, y se controlan los distintos eventos que el usuario provoque al interactuar con el proyecto. En cambio, en control de flujo sigue bajando su dependencia con datos y con interactividad. 
 
-La matriz~\ref{fig:corr16_Snap} refleja las mismas correlaciones perfectas, fuertes y nulas analizadas en la matriz~\ref{fig:corr15_Snap}. No obstante, hay capacidades cuyas dependencias no eran tan elevadas en la puntuación anterior, como las que se producen entre paralelismo con condicionales, de forma que si los objetos ejecutan varias secuencias de instrucciones al mismo tiempo, estas secuencias contendrán sentencias alternativas o condicionales. Otro par de correlaciones que se ven reforzadas son las que se dan entre abstracción con interactividad con el usuario o con representación de los datos, de manera que si se extrae lo relevante del problema a resolver y se descompone en programas, ya sean scripts o funciones propias, y/o se instancian personajes, se crean y actualizan las variables y listas que contienen los datos que se van obteniendo en los programas, y se controlan los distintos eventos que el usuario provoque al interactuar con el proyecto. En cambio, control de flujo sigue disminuyendo su interdependencia tanto con datos como con interactividad. 
-
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[h]{.49\textwidth} 
         \includegraphics[width=\textwidth]{img/distribucion_17_Snap}
@@ -1997,7 +1992,7 @@ La matriz~\ref{fig:corr16_Snap} refleja las mismas correlaciones perfectas, fuer
         \caption{Matriz de correlación. Total=17}
         \label{fig:corr17_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 17}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 17.}
 \end{figure}
 
 En el diagrama~\ref{fig:total17_Snap} se perfilan las puntuaciones más frecuentes indicadas en la puntuación total anterior, aglutinando mayor proporción de proyectos para cada dimensión.
@@ -2020,12 +2015,12 @@ Además su correlación se hace prácticamente perfecta con sincronización, con
         \caption{Matriz de correlación. Total=18}
         \label{fig:corr18_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 18}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 18.}
 \end{figure}
 
 Las capacidades más difíciles de asimilar son interactividad, abstracción y representación de datos, como se infiere del diagrama~\ref{fig:total19_Snap}. Es complicado que un proyecto reúna todos los elementos considerados en abstracción y por ello se distribuye uniformemente entre los 2 y los 3 puntos. Las listas imperan sobre las variables, conformando estructuras de datos más complejas. 
 
-Los coeficientes de correlación entre abstracción e interactividad con el usuario y entre esta última con representación de los datos son menores que las obtenidas en las puntuaciones totales anteriores. Sin embargo, son mucho más elevadas que las correlaciones que se obtienen entre interactividad con el usuario con el resto de dimensiones. No hay dependencia lineal entre las acciones que pueda realizar el usuario del programa, ya sea responder preguntas, mover objetos o personajes o insertar audio o vídeo, con emplear sentencias condicionales, ni con ordenar la ejecución de los distintos flujos de código de manera que interactúen entre sí, ni con el empleo de bucles, ni con la ejecución simultánea de varios scripts asociados a uno o varios objetos o personajes. Las correlaciones presentes entre abstracción y el resto de dimensiones son moderadas y las dependencias lineales entre representación de los datos con las demás capacidades son elevadas pero no perfectas.%=
+Los coeficientes de correlación entre abstracción e interactividad con el usuario y entre esta última con representación de los datos son menores que las obtenidas en las puntuaciones totales anteriores. Sin embargo, son mucho más elevadas que las correlaciones que se obtienen entre interactividad con el usuario con el resto de dimensiones. No hay dependencia lineal entre las acciones que pueda realizar el usuario del programa, ya sea responder preguntas, mover objetos o personajes o insertar audio o vídeo, con emplear sentencias condicionales, ni con ordenar la ejecución de los distintos flujos de código de manera que interactúen entre sí, ni con el empleo de bucles, ni con la ejecución simultánea de varios scripts asociados a uno o varios objetos o personajes. Las correlaciones presentes entre abstracción y el resto de dimensiones son moderadas y las dependencias lineales entre representación de los datos con las demás capacidades son elevadas pero no perfectas.
 
 \begin{figure}[H]
     \centering
@@ -2039,7 +2034,7 @@ Los coeficientes de correlación entre abstracción e interactividad con el usua
         \caption{Matriz de correlación. Total=19}
         \label{fig:corr19_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 19}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 19.}
 \end{figure}
 
 Interactividad con el usuario será la última habilidad en adquirirse, como se deduce del diagrama~\ref{fig:total20_Snap}. Al mantenerse en 2 puntos para la mayoría de proyectos, sus coeficientes de correlación con el resto de variables son perfectos negativos. Implica que la gestión de los eventos que provoque el usuario sobre el programa, disminuye el desarrollo de otras capacidades. El resto de dimensiones guardan entre sí una correlación positiva perfecta.
@@ -2056,11 +2051,11 @@ Interactividad con el usuario será la última habilidad en adquirirse, como se 
         \caption{Matriz de correlación. Total=20}
         \label{fig:corr20_Snap}
     \end{subfigure}
-    \caption{Distribución de puntuaciones asignadas y correlación entre dimensiones del PC cuando la puntuación total vale 20}
+    \caption{Snap!: Distribución de valores y correlación entre dimensiones si el total es 20.}
 \end{figure}
 
 
-\subsection{Aprendizaje no supervisado: clustering K-Means con los proyectos de Snap!}
+\subsection{Aprendizaje no supervisado: clustering K-Means en proyectos de Snap!}
 \label{subsec:kmeans_Snap}
 
 Tras el análisis de las correlaciones entre cada par de habilidades para cada grupo de proyectos según su nivel de complejidad total, se construye un modelo de aprendizaje no supervisado que agrupe proyectos similares en base a la semejanza inherente de sus características o dimensiones. El clustering K-Means segmenta los 113894 proyectos de Snap! en k grupos disjuntos, asignando cada proyecto definido como un vector de siete dimensiones al centro del clúster más cercano. Mediante un proceso iterativo el algoritmo busca minimizar las distancias intra-clúster y por lo tanto la inercia, provocando que se incrementen las distancias inter-clúster. 
@@ -2130,11 +2125,122 @@ Se vuelve a aplicar el algoritmo K-Means, siendo en esta ocasión 15 el nº de g
     \label{table:representative_k15}
 \end{table}
 
-En el nivel básico están los clústeres 1, 4, 5, 7, 8, 14. Todos menos el clúster 14 tienen 0 puntos en condicionales y sincronización. El clúster 5 es el que presenta menor puntuación con 1 punto total en abstracción. %Equivalente al proyecto representativo del clúster 2.
+En el nivel básico están los clústeres 1, 4, 5, 7, 8, 14. Todos menos el clúster 14 tienen 0 puntos en condicionales y sincronización. El clúster 5 es el que presenta menor puntuación con 1 punto total en abstracción. 
 En el nivel intermedio se encuentran los clústeres 0, 2, 3, 6, 9, 10, 13. El clúster 3 y el clúster 13 son muy similares, pues solo difieren en condicionales y en datos. Lo mismo ocurre entre el clúster 0 y el 9, que se diferencian en la valoración de abstracción y paralelismo. Hay tres agrupaciones cuyos proyectos más representativos tienen 9 puntos totales, que son los clústeres 2, 3 y 9. El clúster 0 y el clúster 6 coinciden en puntuación total. En el nivel avanzado solamente está el clúster 12 con 16 puntos totales, que cuenta con 3 puntos en sincronización y en control de flujo y 2 puntos en el resto de capacidades.
 
 %Al no disponer a priori de una respuesta etiquetada con la que comparar las etiquetas obtenidas tras el agrupamiento
 Se analiza a continuación cómo se disgregan los grupos del clustering con k=8 cuando se transforman en los 15 grupos del clustering con k=15, a partir de los proyectos que tienen en común. Se impone que la coincidencia supere el 5\%. Como se recoge en la tabla~\ref{table:comparativa_k}, prácticamente cada clúster de k=8 posee una similitud cercana o superior al 60\% con un único clúster de k=15. De hecho, los proyectos representativos de los clústeres 0, 2 y 3 con k=8 coinciden con los que definen los grupos 1, 5 y 4 de k=15, respectivamente, en las valoraciones recibidas en cada dimensión del pensamiento computacional. 
+
+Sin embargo, el clúster 4 se disgrega en 5 grupos para k=15, con un 40\% de parecido con el clúster 3 y una similitud inferior con el 10, el 11, el 13 y el 14. Calculando la media de la intersección de cada uno con el grupo 4 de k=8, se ven las diferencias entre las dimensiones analizadas que provocan su división en diferentes grupos. Los proyectos del clúster 3 se distinguen por emplear entre 2 y 3 tipos de condicionales. Los pertenecientes al clúster 10 se diferencian por utilizar bucles que iteran hasta que se cumple cierta condición, por lo que la puntuación media en control de flujo es la más elevada. El clúster 11 tiene la mayor media en paralelismo. El clúster 14 posee la valoración media más baja en representación de los datos. El clúster 13 difiere de los demás en todas las dimensiones expuestas.
+
+Por lo tanto, dada la similitud existente entre cada grupo del clustering con k=8 con un único grupo del clustering con k=15,  parece recomendable quedarse con la segmentación en 8 grupos. Aunque establecer un itinerario de aprendizaje a partir de sus proyectos representativos no resulta tan evidente como con Dr. Scratch.
+
+\subsection{Análisis de clustering entre niveles o puntuaciones totales. Ruta de aprendizaje demostrada en los proyectos de Snap!}
+\label{subsec:ruta_Snap}
+
+De una forma equivalente a la planteada con Scratch en el apartado~\ref{subsec:ruta_Scratch}, se agrupan los proyectos por puntuación total y se obtiene el proyecto prototipo de cada grupo, para definir el proceso de aprendizaje gradual en función de sus dimensiones. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{img/path_CT_Snap.png}
+    \caption{Ruta de aprendizaje de las dimensiones del PC en Snap!}\label{fig:path_Snap}
+\end{figure}
+
+Así según la figura~\ref{fig:path_Snap} se perfila de una manera más clara que en las distribuciones del apartado~\ref{subsec:corr_21_Snap} la habilidad cuyo desarrollo provoca el paso al siguiente nivel de complejidad. 
+
+\begin{itemize}
+ \item El cambio de nivel entre 0 y 1:  La primera dimensión en puntuar es abstracción. Se descompone el problema en partes más sencillas, para cuya resolución se emplean varios scripts y personajes o funciones implementadas por el programador encapsuladas dentro de un bloque personalizado o instancias del objeto. Resulta bastante llamativo. Podría deberse a la relevancia dada en los cursos de Snap! a la creación de funciones propias.
+ \item El cambio de nivel entre 1 y 2: Se consigue 1 punto en interactividad con el usuario. Los scripts comienzan a ejecutarse cuando se produce un evento o detectan una acción del usuario, como pulsar una tecla, la bandera verde o un objeto.
+ \item El cambio de nivel entre 2 y 3: Interactividad con el usuario ya no puntúa. Se obtiene 1 punto en control de flujo y en representación de los datos. Los proyectos están programados siguiendo una secuencia de instrucciones concreta, precisa y finita que demuestra ciertas nociones algorítmicas y se modifican las propiedades o atributos de los objetos.
+ \item El cambio de nivel entre 3 y 4: Interactividad con el usuario vuelve a conseguir 1 punto.
+ \item El cambio de nivel entre 4 y 5 puntos: Control de flujo alcanza un nivel intermedio. Se incluyen bucles en el programa, de modo que se repite la ejecución de sentencias un nº determinado de veces o de manera indefinida. %%
+ \item El cambio de nivel entre 5 y 6 puntos: Paralelismo comienza a puntuar. Se programa para que el objeto realice varias acciones simultáneamente al pulsar teclas o la bandera verde.
+ \item El cambio de nivel entre 6 y 7 puntos: Representación de los datos vale 2 puntos. Se declaran y modifican variables cuyos datos permiten la correcta ejecución de los programas.
+ \item El cambio de nivel entre 7 y 8 puntos: Datos decrementa su valor a 1 punto, de forma que únicamente se realizan operaciones sobre los atributos de los objetos y no sobre variables. Condicionales y sincronización puntúan. Se utiliza un tipo de estructura condicional para decidir por donde continua el flujo del programa ante la evaluación de alguna situación. Además, mientras un programa ejecuta instrucciones el otro espera a que termine para ejecutar las que le corresponden, siguiendo un orden temporal preestablecido.
+ \item El cambio de nivel entre 8 y 9 puntos: Paralelismo consigue 2 puntos. Varios personajes u objetos ejecutan el mismo o varios programas simultáneamente al pulsar una tecla o la bandera verde, de manera que se resuelven tareas concretas a la vez.
+ \item El cambio de nivel entre 9 y 10 puntos: Interactividad con el usuario incrementa su calificación a 2 puntos. Se requiere en el programa que el usuario responda a preguntas, mueva el ratón o se pulse sobre determinado objeto, para que se desencadene la ejecución de sentencias sujetas a dichos eventos.
+ \item El cambio de nivel entre 10 y 11 puntos: En datos se vuelve a los 2 puntos. De nuevo se declaran y modifican variables que almacenan los datos requeridos por el programa.
+ \item El cambio de nivel entre 11 y 12 puntos: Sincronización vale 2 puntos. Los programas intercambian entre sí mensajes o paran su ejecución según lo que ocurra en otros scripts.
+ \item El cambio de nivel entre 12 y 13 puntos: Condicionales aumenta su puntuación a 2 puntos. Se utilizan dos tipos de sentencias condicionales, que seleccionan el conjunto de instrucciones que se ejecutará en función de la evaluación de una situación o de varias si se emplean operadores lógicos. Se desarrolla el pensamiento lógico.
+ \item El cambio de nivel entre 13 y 14 puntos: En abstracción se obtienen 2 puntos. Se emplean dos de las técnicas consideradas, varios objetos y scripts, clones o bloques definidos por el programador, que en conjunto son capaces de resolver un problema más complicado.
+ \item El cambio de nivel entre 14 y 15 puntos: Sincronización se desarrolla por completo. Los programas del proyecto interactúan entre sí siguiendo un orden preestablecido basado en eventos, condiciones o  mensajes a un objeto concreto. 
+ \item El cambio de nivel entre 15 y 16 puntos: Control de flujo alcanza su máxima valoración al utilizarse bucles condicionales.
+ \item El cambio de nivel entre 16 y 17 puntos: Se Paralelismo obtiene 3 puntos. Uno o varios objetos ejecutan scripts a la vez cuando se cumple cierta condición, reciben un mensaje o son instancias de objetos que deben realizar las mismas tareas o instrucciones.
+ \item El cambio de nivel entre 17 y 18 puntos: Condicionales incrementa su valor a 3 puntos. Se emplean los tres tipos de sentencias condicionales: if, if-else y operadores lógicos que evalúan que se cumplan ciertas situaciones para decidir qué conjunto de bloques ejecutar. Se consiguen proyectos dinámicos que obtienen salidas diferentes en función de la evaluación de premisas o situaciones.
+ \item El cambio de nivel entre 18 y 19 puntos: Representación de los datos consigue 3 puntos. Se definen listas y se realizan operaciones sobre ellas y sobre los elementos que contienen. Se pueden formar estructuras de datos más complejas, como listas de listas, listas con resultados de funciones o cualquier conjunto de elementos de primera clase.
+ \item El cambio de nivel entre 19 y 20 puntos: Abstracción aumenta su puntuación a los 3 puntos. Se descompone la resolución del problema en tareas más sencillas en las que se extrae lo más relevante para encontrar patrones y poder resolver tareas similares con los mismos scripts o funciones propias definidas por el programador. Por lo tanto se emplean varios scripts y objetos, clones y bloques creados de cualquier tipo.
+ \item El cambio de nivel entre 20 y 21 puntos: Interactividad con el usuario es la última en desarrollarse por completo. En los programas se detectan colisiones entre objetos y se gestiona audio o vídeo que el usuario introduce durante la ejecución del programa.
+\end{itemize} 
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CONCLUSIONES %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\chapter{Conclusiones}
+\label{chap:conclusiones}
+
+\section{Consecución de objetivos}
+\label{sec:consecucion-objetivos}
+
+Los objetivos propuestos en el capítulo~\ref{chap:objetivos} han sido alcanzados, en términos generales. La importancia de este estudio radica en el volumen de datos analizados, por ello no se tomaron muestras y se decidió realizar el estudio con ambos grupos analizados en su completitud.
+
+En primer lugar había que extraer y recolectar en un fichero csv todas las métricas relevantes para conocer el impacto de cada herramienta en el desarrollo del pensamiento computacional. Se corrigieron los errores de formato y se buscó que las variables analizadas fueran comparables,  discriminantes y expresivas para ambas poblaciones, descartando una ínfima cantidad de proyectos del estudio.
+
+Para dar cumplimiento al segundo objetivo hay que matizar que son análisis cuantitativos estáticos, puesto que no se conocen las cualidades de las poblaciones, solo los valores asignados a las dimensiones en cada una de sus creaciones o artefactos. No obstante, se puede extrapolar de lo indicado sobre Scratch (sección~\ref{sec:scratch}) y Snap! (sección~\ref{sec:snap}), que los \emph{scratchers} suelen ser escolares sin conocimientos computacionales previos, mientras que el público objetivo de Snap! son jóvenes que quieren potenciar sus habilidades computacionales a través de la programación.
+
+Sin embargo, la proporción de proyectos de Snap! de nivel avanzado es 5 puntos porcentuales inferior, que se transfieren a un nivel básico, al comparar los diagramas~\ref{fig:level_Scratch} y~\ref{fig:level_Snap}. Las distribuciones~\ref{fig:total_Scratch} y~\ref{fig:total} según puntuación total están sesgadas hacia la derecha, con mayor concentración de proyectos en torno a las valoraciones centrales para Snap!, aunque su moda sea inferior. Es remarcable que encontremos proyectos más sofisticados, con niveles superiores en todas las dimensiones, en el conjunto de Scratch, cuando en Snap! persiguen profundizar en ideas computacionales más avanzadas\footnote{\url{https://bjc.berkeley.edu/curriculum}}.
+
+Es precisamente en las distribuciones~\ref{fig:barras_PC_Scratch} y~\ref{fig:barras_PC_Snap} de estas dimensiones donde se manifiesta mayor dominio en abstracción y en la comprensión de las variables y de los algoritmos iterativos por parte de los programadores en Snap!, mientras que en Scratch se centran en hacer que los personajes respondan a los eventos y condiciones, ejecutando tareas concurrentes o en paralelo. Los estadísticos corroboran estos resultados, si bien la desviación típica es más elevada para Scratch e implica que la mediana es más representativa. Su proyecto mediano cuenta con 2 puntos en paralelismo e interactividad y 1 punto en todas las demás, menos en abstracción, mientras que el proyecto mediano de Snap! consigue un total inferior, con 2 puntos en control de flujo y valores nulos para sincronización y lógica.
+
+Para satisfacer el tercer objetivo se recurre a las correlaciones, que presentan relaciones bivariadas superiores para Scratch frente a las alcanzadas en Snap! Se analiza en profundidad cómo van oscilando según se incrementa la complejidad de los proyectos. Para descubrir asociaciones ocultas entre los proyectos y segmentar según un criterio de mínima distancia, se modela con el clustering K-Means. En Scratch se establecieron 3 grupos y se propuso una ruta de aprendizaje basada en sus proyectos representativos, cotejando con los valores conseguidos en estudios previos. En Snap! se compararon las agrupaciones obtenidas con distintos valores de k, en función de similitudes y diferencias. Tras triangular resultados parece más razonable desglosar los proyectos en 8 grupos. 
+
+Por último, se han perfilado las rutas de aprendizaje demostradas por ambos grupos poblacionales. Tras aplicar el algoritmo clustering K-Means, se obtienen los proyectos representativos de cada grupo conforme a su puntuación total. A partir de las mismas, vemos que en Scratch comienzan desarrollando interactividad con el usuario y paralelismo, continúan secuenciando sus programas y descubriendo los algoritmos. Posteriormente, hacen que los personajes interactúen entre sí con bloques de espera y ajustando los tiempos de ejecución de cada script, modifican los atributos o propiedades de los objetos o personajes y condicionan su comportamiento a que se produzca cierta situación en el proyecto, para el último valor del nivel básico. Es en la etapa intermedia donde comienzan a descomponer el problema en partes más sencillas y definir procedimientos propios declarando para ello variables.
+
+En cambio, en Snap! impera el desarrollo de la abstracción, creando desde el principio funciones o bloques de cualquier tipo, que permiten ser reutilizados por cualquier objeto creado. El lema de Snap!, ``construye tus propios bloques'' tiene mucho que ver con estos resultados y en los cursos impartidos desde Berkeley inciden en ello. No obstante, sigue siendo sorprendente que la primera habilidad cognitiva que se adquiere sea la abstracción. Se modifican los atributos de los objetos y se definen variables desde la etapa básica, postergando el uso de estructuras selectivas, la ejecución simultánea de tareas y los mecanismos que las sincronizan para un nivel intermedio. En el nivel avanzado se completa la asimilación de las capacidades según unas pautas prácticamente coincidentes con las seguidas en Scratch.
+
+
+\section{Aplicación de lo aprendido}
+\label{sec:aplicacion}
+
+En este trabajo se han aplicado conocimientos transversales a varias asignaturas. Las más relevantes para su consecución son:
+
+\begin{enumerate}
+    \item \emph{Servicios y Aplicaciones en Redes de Ordenadores}: El lenguaje de programación que sustenta la implementación de este análisis de datos es Python. Es en esta asignatura donde se aprende a aplicarlo junto a Django para el desarrollo de software web, núcleo del que surgieron tanto Dr. Scratch como Dr. Snap! que analizan el desarrollo del PC a partir del código fuente almacenado en formato JSON o XML. Su comprensión es necesaria para la fase de extracción de datos o métricas relevantes.
+    \item \emph{Fundamentos de la programación, Software de Sistemas y Programación de Sistemas de Telecomunicación}: En ellas se adquieren y se profundiza en los conceptos y prácticas analizadas de las dimensiones del PC: concurrencia y sincronismo, algoritmos, modularidad y abstracción, estructuras de datos.  
+    \item \emph{Estadística y Procesamiento de Señales}: Conforman las bases del análisis estadístico univariante, bivariante y multidimensional llevado a cabo en el análisis de datos y se introducen técnicas de procesado, clasificación y estimación propias de Machine Learning.
+\end{enumerate}
+
+\section{Lecciones aprendidas}
+\label{sec:lecciones_aprendidas}
+
+Aparte de reforzar los conceptos vistos en la carrera, se han adquirido nuevas competencias:
+
+\begin{enumerate}
+    \item He aprendido a realizar un proceso de análisis descriptivo de datos completo aplicándolo y adaptándolo a casos concretos: dos extensas poblaciones de proyectos de Scratch y Snap! Desde el entendimiento de las métricas del PC, la extracción, recolección y limpieza, empleo de técnicas estadísticas que permitan resumir y extraer conocimiento de los datos, aplicación de ML no supervisado para descubrir agrupaciones por similitud e interpretación de resultados, buscando pautas y patrones en las dimensiones del PC. Para ello he conocido y trabajado con librerías de Python propias de la ciencia y análisis de datos (Pandas, Matplotlib, Seaborn y Scikit-Learn).
+    \item He descubierto la importancia que tiene la asimilación del pensamiento computacional como herramienta para el aprendizaje.
+\end{enumerate}
+
+\section{Trabajos futuros}
+\label{sec:trabajos_futuros}
+
+Este proyecto puede ser mejorado en múltiples aspectos. Puede estudiarse la viabilidad de automatizar periódicamente la fase de extracción de datos e integrar en los sitios web de Dr. Scratch y Dr. Snap! los dashboards con las resultados generales más relevantes, como las distibuciones por puntuación total, por niveles y por habilidades del PC, entre otras. Incluso se podrían añadir gráficos dinámicos e interactivos que filtren la información mostrada.
+
+Otra opción es añadir en Dr. Snap! las funcionalidades que detecten malas prácticas en los programas, atributos no inicializados, código duplicado o que no se ejecuta nunca y nombres de personajes y escenarios inadecuados. Posteriormente se podría realizar un análisis de datos de estos ``bad smells'' tanto con Scratch como con Snap!, para así poder compararlos. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% APÉNDICE(S) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\appendix
+
+\chapter{Clustering K-Means en Snap!}
+\label{app:k8}
 
 \begin{table}[H]
     \centering
@@ -2178,129 +2284,6 @@ Se analiza a continuación cómo se disgregan los grupos del clustering con k=8 
     \caption{Similitudes entre las agrupaciones con k=8 y k=15}
     \label{table:comparativa_k}
 \end{table}
-
-Sin embargo, el clúster 4 se disgrega en 5 grupos para k=15, con un 40\% de parecido con el clúster 3 y una similitud inferior con el 10, el 11, el 13 y el 14. Calculando la media de la intersección de cada uno con el grupo 4 de k=8, se ven las diferencias entre las dimensiones analizadas que provocan su división en diferentes grupos. Los proyectos del clúster 3 se distinguen por emplear entre 2 y 3 tipos de condicionales. Los pertenecientes al clúster 10 se diferencian por utilizar bucles que iteran hasta que se cumple cierta condición, por lo que la puntuación media en control de flujo es la más elevada. El clúster 11 tiene la mayor media en paralelismo. El clúster 14 posee la valoración media más baja en representación de los datos. El clúster 13 difiere de los demás en todas las dimensiones expuestas.
-
-Por lo tanto, dada la similitud existente entre cada grupo del clustering con k=8 con un único grupo del clustering con k=15,  parece recomendable quedarse con la segmentación en 8 grupos. Aunque establecer un itinerario de aprendizaje a partir de sus proyectos representativos no resulta tan evidente como con Dr. Scratch.
-
-\subsection{Análisis de clustering entre niveles o puntuaciones totales. Ruta de aprendizaje demostrada en los proyectos de Snap!}
-\label{subsec:ruta_Snap}
-
-De una forma equivalente a la planteada con Scratch en el apartado~\ref{subsec:ruta_Scratch}, se agrupan los proyectos por puntuación total y se obtiene el proyecto prototipo de cada grupo, para definir el proceso de aprendizaje gradual en función de sus dimensiones. 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1.0\textwidth]{img/path_CT_Snap.png}
-    \caption{Ruta de aprendizaje de las dimensiones del PC en Snap!}\label{fig:path_Snap}
-\end{figure}
-
-Así según la figura~\ref{fig:path_Snap} se perfila de una manera más clara que en las distribuciones del apartado~\ref{subsec:corr_21_Snap} la habilidad cuyo desarrollo provoca el paso al siguiente nivel de complejidad. 
-
-\begin{itemize}
- \item El cambio de nivel entre 0 y 1:  La primera dimensión en puntuar es abstracción. Se descompone el problema en partes más sencillas, para cuya resolución se emplean varios scripts y personajes o funciones implementadas por el programador encapsuladas dentro de un bloque personalizado o instancias del objeto. Resulta bastante llamativo. Podría deberse a la relevancia dada en los cursos de Snap! a la creación de funciones propias.
- \item El cambio de nivel entre 1 y 2: Se consigue 1 punto en interactividad con el usuario. Los scripts comienzan a ejecutarse cuando se produce un evento o detectan una acción del usuario, como pulsar una tecla, la bandera verde o un objeto.
- \item El cambio de nivel entre 2 y 3: Interactividad con el usuario ya no puntúa. Se obtiene 1 punto en control de flujo y en representación de los datos. Los proyectos están programados siguiendo una secuencia de instrucciones concreta, precisa y finita que demuestra ciertas nociones algorítmicas y se modifican las propiedades o atributos de los objetos.
- \item El cambio de nivel entre 3 y 4: Interactividad con el usuario vuelve a conseguir 1 punto.
- \item El cambio de nivel entre 4 y 5 puntos: Control de flujo alcanza un nivel intermedio. Se incluyen bucles en el programa, de modo que se repite la ejecución de sentencias un nº determinado de veces o de manera indefinida. %%
- \item El cambio de nivel entre 5 y 6 puntos: Paralelismo comienza a puntuar. Se programa para que el objeto realice varias acciones simultáneamente al pulsar teclas o la bandera verde.
- \item El cambio de nivel entre 6 y 7 puntos: Representación de los datos vale 2 puntos. Se declaran y modifican variables cuyos datos permiten la correcta ejecución de los programas.
- \item El cambio de nivel entre 7 y 8 puntos: Datos decrementa su valor a 1 punto, de forma que únicamente se realizan operaciones sobre los atributos de los objetos y no sobre variables. Condicionales y sincronización puntúan. Se utiliza un tipo de estructura condicional para decidir por donde continua el flujo del programa ante la evaluación de alguna situación. Además, mientras un programa ejecuta instrucciones el otro espera a que termine para ejecutar las que le corresponden, siguiendo un orden temporal preestablecido.
- \item El cambio de nivel entre 8 y 9 puntos: Paralelismo consigue 2 puntos. Varios personajes u objetos ejecutan el mismo o varios programas simultáneamente al pulsar una tecla o la bandera verde, de manera que se resuelven tareas concretas a la vez.
- \item El cambio de nivel entre 9 y 10 puntos: Interactividad con el usuario incrementa su calificación a 2 puntos. Se requiere en el programa que el usuario responda a preguntas, mueva el ratón o se pulse sobre determinado objeto, para que se desencadene la ejecución de sentencias sujetas a dichos eventos.
- \item El cambio de nivel entre 10 y 11 puntos: En datos se vuelve a los 2 puntos. De nuevo se declaran y modifican variables que almacenan los datos requeridos por el programa.
- \item El cambio de nivel entre 11 y 12 puntos: Sincronización vale 2 puntos. Los programas del proyecto intercambian entre sí mensajes o paran su ejecución en función de lo que ocurra en otros scripts.
- \item El cambio de nivel entre 12 y 13 puntos: Condicionales aumenta su puntuación a 2 puntos. Se utilizan dos tipos de sentencias condicionales, que seleccionan el conjunto de instrucciones que se ejecutará en función de la evaluación de una situación o de varias si se emplean operadores lógicos. Se desarrolla el pensamiento lógico.
- \item El cambio de nivel entre 13 y 14 puntos: En abstracción se obtienen 2 puntos. Se emplean dos de las técnicas de abstracción consideradas, varios objetos y scripts, clones o bloques definidos por el programador, encargados de tareas concretas, que en conjunto son capaces de resolver un problema más complicado.
- \item El cambio de nivel entre 14 y 15 puntos: Sincronización se desarrolla por completo. Los programas del proyecto interactúan entre sí siguiendo un orden preestablecido basado en eventos, condiciones o  mensajes a un objeto concreto. 
- \item El cambio de nivel entre 15 y 16 puntos: Control de flujo alcanza su máxima valoración al utilizarse bucles condicionales.
- \item El cambio de nivel entre 16 y 17 puntos: Se Paralelismo obtiene 3 puntos. Uno o varios objetos ejecutan scripts a la vez cuando se cumple cierta condición, reciben un mensaje o son instancias de objetos que deben realizar las mismas tareas o instrucciones.
- \item El cambio de nivel entre 17 y 18 puntos: Condicionales incrementa su valor a 3 puntos. Se emplean los tres tipos de sentencias condicionales: if, if-else y operadores lógicos que evalúan que se cumplan ciertas situaciones para decidir qué conjunto de bloques ejecutar. Se consiguen proyectos dinámicos que obtienen salidas diferentes en función de la evaluación de premisas o situaciones.
- \item El cambio de nivel entre 18 y 19 puntos: Representación de los datos consigue 3 puntos. Se definen listas y se realizan operaciones sobre ellas y sobre los elementos que contienen. Se pueden formar estructuras de datos más complejas, como listas de listas, listas con resultados de funciones o cualquier conjunto de elementos de primera clase.
- \item El cambio de nivel entre 19 y 20 puntos: Abstracción aumenta su puntuación a los 3 puntos. Se descompone la resolución del problema en tareas más sencillas en las que se extrae lo más relevante para encontrar patrones y poder resolver tareas similares con los mismos scripts o funciones propias definidas por el programador. Por lo tanto se emplean varios scripts y objetos, clones y bloques creados de cualquier tipo.
- \item El cambio de nivel entre 20 y 21 puntos: Interactividad con el usuario es la última en desarrollarse por completo. En los programas se detectan colisiones entre objetos y se gestiona audio o vídeo que el usuario introduce durante la ejecución del programa.
-\end{itemize} 
- 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% CONCLUSIONES %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\cleardoublepage
-\chapter{Conclusiones}
-\label{chap:conclusiones}
-
-\section{Consecución de objetivos}
-\label{sec:consecucion-objetivos}
-
-Los objetivos propuestos en el capítulo~\ref{chap:objetivos} han sido alcanzados, en términos generales. La importancia de este estudio radica en el volumen de datos analizados, por ello no se tomaron muestras y se decidió realizar el estudio con ambos grupos analizados en su completitud.
-
-En primer lugar había que extraer y recolectar en un fichero csv todas las métricas relevantes para conocer el impacto de cada herramienta en el desarrollo del pensamiento computacional. Se corrigieron los errores de formato y se buscó que las variables analizadas fueran comparables,  discriminantes y expresivas para ambas poblaciones, descartando una ínfima cantidad de proyectos del estudio.
-
-Para dar cumplimiento al segundo objetivo hay que matizar que son análisis cuantitativos estáticos, puesto que no se conocen las cualidades de las poblaciones, solo los valores asignados a las dimensiones en cada una de sus creaciones o artefactos. No obstante, se puede extrapolar de lo indicado sobre Scratch (sección~\ref{sec:scratch}) y Snap! (sección~\ref{sec:snap}), que los \emph{scratchers} suelen ser escolares sin conocimientos computacionales previos, mientras que el público objetivo de Snap! son jóvenes que quieren potenciar sus habilidades computacionales a través de la programación.
-
-Sin embargo, la proporción de proyectos de Snap! de nivel avanzado es 5 puntos porcentuales inferior, que se transfieren a un nivel básico, al comparar los diagramas~\ref{fig:level_Scratch} y~\ref{fig:level_Snap}. Las distribuciones~\ref{fig:total_Scratch} y~\ref{fig:total} según puntuación total están sesgadas hacia la derecha, con mayor concentración de proyectos en torno a las valoraciones centrales para Snap!, aunque su moda sea inferior. Es remarcable que encontremos proyectos más sofisticados, con niveles superiores en todas las dimensiones, en el conjunto de Scratch, cuando en Snap! persiguen profundizar en ideas computacionales más avanzadas\footnote{\url{https://bjc.berkeley.edu/curriculum}}.
-
-Es precisamente en las distribuciones~\ref{fig:barras_PC_Scratch} y~\ref{fig:barras_PC_Snap} de estas dimensiones donde se manifiesta mayor dominio en abstracción y en la comprensión de las variables y de los algoritmos iterativos por parte de los programadores en Snap!, mientras que en Scratch se centran en hacer que los personajes respondan a los eventos y condiciones, ejecutando tareas concurrentes o en paralelo. Los estadísticos corroboran estos resultados, si bien la desviación típica es más elevada para Scratch e implica que la mediana es más representativa. Su proyecto mediano cuenta con 2 puntos en paralelismo e interactividad y 1 punto en todas las demás, menos en abstracción, mientras que el proyecto mediano de Snap! consigue un total inferior, con 2 puntos en control de flujo y valores nulos para sincronización y lógica.
-
-Para satisfacer el tercer objetivo se recurre a las correlaciones, que presentan relaciones bivariadas superiores para Scratch frente a las alcanzadas en Snap! Se analiza en profundidad cómo van oscilando según se incrementa la complejidad de los proyectos. Para descubrir asociaciones ocultas entre los proyectos y segmentar según un criterio de mínima distancia, se modela con el clustering K-Means. En Scratch se establecieron 3 grupos y se propuso una ruta de aprendizaje basada en sus proyectos representativos, cotejando con los valores conseguidos en estudios previos. En Snap! se compararon las agrupaciones obtenidas con distintos valores de k, en función de similitudes y diferencias. Tras triangular resultados parece más razonable desglosar los proyectos en 8 grupos. 
-
-Por último, se han perfilado las rutas de aprendizaje demostradas por ambos grupos poblacionales. Tras aplicar el algoritmo clustering K-Means, se obtienen los proyectos representativos de cada grupo conforme a su puntuación total. A partir de las mismas, vemos que en Scratch comienzan desarrollando interactividad con el usuario y paralelismo, continúan secuenciando sus programas y descubriendo los algoritmos. Posteriormente, hacen que los personajes interactúen entre sí con bloques de espera y ajustando los tiempos de ejecución de cada script, modifican los atributos o propiedades de los objetos o personajes y condicionan su comportamiento a que se produzca cierta situación en el proyecto, para el último valor del nivel básico. Es en la etapa intermedia donde comienzan a descomponer el problema en partes más sencillas y definir procedimientos propios declarando para ello variables.
-
-En cambio, en Snap! impera el desarrollo de la abstracción, creando desde el principio funciones o bloques de cualquier tipo, que permiten ser reutilizados por cualquier objeto creado. El lema de Snap!, ``construye tus propios bloques'' tiene mucho que ver con estos resultados y en los cursos impartidos desde Berkeley inciden en ello. No obstante, sigue siendo sorprendente que la primera habilidad cognitiva que se adquiere sea la abstracción. Se modifican los atributos de los objetos y se definen variables desde la etapa básica, postergando el uso de estructuras selectivas, la ejecución simultánea de tareas y los mecanismos que las sincronizan para un nivel intermedio. En el nivel avanzado se completa la asimilación de las capacidades según unas pautas prácticamente coincidentes con las seguidas en Scratch.
-
-%%%%%%
-%Y si has llegado hasta aquí, siempre es bueno pasarle el corrector ortográfico, que las erratas quedan fatal en la memoria final.
-%Para eso, en Linux tenemos aspell, que se ejecuta de la siguiente manera desde la línea de \emph{shell}:
-%
-%\begin{verbatim}
-%  aspell --lang=es_ES -c memoria.tex
-%\end{verbatim}
-
-\section{Aplicación de lo aprendido}
-\label{sec:aplicacion}
-
-En este trabajo se han aplicado conocimientos transversales a varias asignaturas. Las más relevantes para su consecución son:
-
-\begin{enumerate}
-    \item \emph{Servicios y Aplicaciones en Redes de Ordenadores}: El lenguaje de programación que sustenta la implementación de este análisis de datos es Python. Es en esta asignatura donde se aprende a aplicarlo junto a Django para el desarrollo de software web, núcleo del que surgieron tanto Dr. Scratch como Dr. Snap! que analizan el desarrollo del PC a partir del código fuente almacenado en formato JSON o XML. Su comprensión es necesaria para la fase de extracción de datos o métricas relevantes.
-    \item \emph{Fundamentos de la programación, Software de Sistemas y Programación de Sistemas de Telecomunicación}: En ellas se adquieren y se profundiza en los conceptos y prácticas analizadas de las dimensiones del PC: concurrencia y sincronismo, algoritmos, modularidad y abstracción, estructuras de datos.  
-    \item \emph{Estadística y Procesamiento de Señales}: Conforman las bases del análisis estadístico univariante, bivariante y multidimensional llevado a cabo en el análisis de datos y se introducen técnicas de procesado, clasificación y estimación propias de Machine Learning.
-\end{enumerate}
-
-\section{Lecciones aprendidas}
-\label{sec:lecciones_aprendidas}
-
-Aparte de reforzar los conceptos vistos en la carrera, se han adquirido nuevas competencias:
-
-\begin{enumerate}
-    \item He aprendido a realizar un proceso de análisis descriptivo de datos completo aplicándolo y adaptándolo a casos concretos: dos extensas poblaciones de proyectos de Scratch y Snap! Desde el entendimiento de las métricas del PC, la extracción, recolección y limpieza, empleo de técnicas estadísticas que permitan resumir y extraer conocimiento de los datos, aplicación de ML no supervisado para descubrir agrupaciones por similitud e interpretación de resultados, buscando pautas y patrones en las dimensiones del PC. Para ello he conocido y trabajado con librerías de Python propias de la ciencia y análisis de datos (Pandas, Matplotlib, Seaborn y Scikit-Learn).
-    \item He descubierto la importancia que tiene la asimilación del pensamiento computacional como herramienta para el aprendizaje.
-\end{enumerate}
-
-\section{Trabajos futuros}
-\label{sec:trabajos_futuros}
-
-Este proyecto puede ser mejorado en múltiples aspectos. Puede estudiarse la viabilidad de automatizar periódicamente la fase de extracción de datos e integrar en los sitios web de Dr. Scratch y Dr. Snap! los dashboards con las resultados generales más relevantes, como las distibuciones por puntuación total, por niveles y por habilidades del PC, entre otras. Incluso se podrían añadir gráficos dinámicos e interactivos que filtren la información mostrada.
-
-Se podría tratar de aplicar otros algoritmos de aprendizaje no supervisado, adaptando el tamaño de la muestra y realizando las transformaciones en los datos requeridas por el modelo. 
-
-Otra opción es añadir en Dr. Snap! las funcionalidades que detecten malas prácticas en los programas, atributos no inicializados, código duplicado o que no se ejecuta nunca y nombres de personajes y escenarios inadecuados. Posteriormente se podría realizar un análisis de datos de estos ``bad smells'' tanto con Scratch como con Snap!, para así poder compararlos. 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% APÉNDICE(S) %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\cleardoublepage
-\appendix
-\chapter{Manual de usuario}
-\label{app:manual}
-
-Esto es un apéndice.
-Si has creado una aplicación, siempre viene bien tener un manual de usuario.
-Pues ponlo aquí.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
